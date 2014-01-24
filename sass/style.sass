@@ -1,0 +1,161 @@
+/* style.sass */
+
+
+@import "base/normalize"
+@import "base/h5bp"
+@import "base/basics"
+
+
+// Colors
+$yellow1: #a59463
+$yellow2: #a69564
+$yellow3: #d2cab1
+
+// General
+*
+	box-sizing: border-box
+	position: relative
+
+html
+	font-family: "museo-sans"
+	background-color: #000
+
+body
+	height: 100%
+
+
+html, body, div.main, .portfolio
+	max-height: 100%
+
+img
+	max-width: 100%
+	max-height: 100%
+
+div.main
+	background-color: #000
+
+
+// Header
+header.main
+	height: 34px
+	background-color: mix($yellow3, #fff)
+	h1
+		margin: 0
+		font-size: 1em
+		position: absolute
+		top: 5px
+		left: 10px
+	nav
+		position: absolute
+		top: 5px
+		right: 100px
+		a
+			display: inline-block
+			margin-left: 10px
+
+
+
+// Portfolio
+
+.portfolio 
+	nav
+		position: absolute
+		top: 16px
+		right: 5%
+		z-index: 10
+		width: 100px
+		height: 40px
+		margin-right: -9px
+		a.ir
+			transition: all 0.2s ease
+			display: block
+			height: 40px
+			width: 40px
+			background: url('../img/arrow.svg')
+			position: absolute
+			opacity: 0.65
+			&.next
+				right: 0px
+				background-position: -40px 0
+			&.prev
+				left: 0px
+			&:hover
+				opacity: 1
+
+.title
+	border-bottom: 1px solid rgba(#fff, 0.2)
+	h2
+		margin: 0 5%
+		height: 67px
+		padding-top: 15px
+		font-family: "museo-slab"
+		color: $yellow1
+		font-weight: 500
+		font-size: 1.6875em
+
+
+.slide
+	display: none
+	max-width: 90%
+	margin: 0 auto
+	transition: all 0.3s ease
+	a.infobutton
+		display: block
+		z-index: 20
+		position: absolute
+		top: 10px
+		left: -2.5%
+		margin-left: -20px
+		background: url('../img/arrow.svg') -80px 0
+		width: 40px
+		height: 40px
+		transition: all 0.3s ease
+		opacity: 0.65
+		&:hover
+			opacity: 1
+	&.visible
+		display: block
+	.image
+		z-index: 9
+		transition: all 0.3s ease
+		text-align: center
+		margin: 0 auto
+		box-sizing: content-box
+	.info
+		color: $yellow3
+		font-weight: 100
+		width: 235px
+		position: absolute
+		top: 40px
+		left: 0
+		padding-left: 10px
+		opacity: 0
+		transition: all 0.3s ease
+		h3
+			color: $yellow2
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 0.75em
+			margin: 1.25em 0 0.25em
+			letter-spacing: 1px
+		ul
+			list-style: none
+			margin: 0
+			li
+				margin: 0
+	&.show-info
+		max-width: 100%
+		a.infobutton
+			left: -2px
+			margin-left: 0
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		.info
+			opacity: 1
+		.image
+			padding-left: 250px
+
+
+@media (orientation:landscape)
