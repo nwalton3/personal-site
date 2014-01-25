@@ -8,6 +8,9 @@ var windowHeight = 0;
 // On page load
 $(function(){
 
+
+	/* Button Actions */
+
 	// Add button actions
 	$('a.infobutton').on('click', function(e) {
 		e.preventDefault();
@@ -26,9 +29,17 @@ $(function(){
 		changeSlide('prev');
 	});
 
-	// Set image resizing
+
+	/* Image Resizing */
+
 	checkHeight();
 	$(window).on('resize', checkHeight);
+
+
+	/* Typogrify */
+	$('p, .type').each(function(e){
+		$(this).html( typogr.typogrify( $(this) ) );
+	});
 
 });
 
