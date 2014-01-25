@@ -29,54 +29,76 @@ html.no-js(lang="en")
 				a(href="/") Home
 				a(href="/") Portfolio
 
-		div.main
-			.portfolio
-				nav
-					a.ir.next(href="#") Next slide
-					a.ir.prev(href="#") Previous slide
-				.project.jonah
-					.title
-						h2 Jonah
-					.intro.slide
-						p text here
-					.slide.slide-1
-						a.ir.infobutton(href="#") Show info
-						.image
+		div.main.portfolio
+			nav
+				a.ir.next(href="#") Next slide
+				a.ir.prev(href="#") Previous slide
+			#intro.project(data-project="0")
+				.title
+					h2 Work
+				#intro-1.slide.intro.last
+					.wrapper
+						.sizable
+							p Intro screen
+			#jonah.project(data-project="1").current
+				.title
+					h2 
+						a(href="#jonah") Jonah
+				#jonah-1.intro.slide.visible
+					.wrapper
+						.image.sizable
+							img(src="img/jonahintro.png")
+					.wrapper
+						.introtext.sizable
+							p I usually prefer relief printing to other traditional artforms. 
+				#jonah-2.slide
+					.wrapper
+						.button.sizable
+							a.ir.infobutton(href="#") Show info
+					.wrapper
+						.image.sizable
 							img(src="img/jonah1.jpg")
-						.info
-							h3 Process
-							ul
-								li Linoleum cut &amp; letterpress
-								li Printed on a Vandercook SP-15
-								li Bound in hard case
-							h3 Media
-							ul
-								li 8pt Univers
-								li Somerset book
-							h3 Specs
-							ul
-								li 8" x 12” x 1/2"
-								li 24 pages
-								li 2005
-					.slide.slide-2.visible
-						a.ir.infobutton(href="#") Show info
-						.image
+					.wrapper
+						.info.sizable
+							.infoinner
+								h3 Process
+								ul
+									li Linoleum cut &amp; letterpress
+									li Printed on a Vandercook SP-15
+									li Bound in hard case
+								h3 Media
+								ul
+									li 8pt Univers
+									li Somerset book
+								h3 Specs
+								ul
+									li 8" x 12” x 1/2"
+									li 24 pages
+									li 2005
+				#jonah-3.slide.last
+					.wrapper
+						.button.sizable
+							a.ir.infobutton(href="#") Show info
+					.wrapper
+						.image.sizable
 							img(src="img/jonah2.jpg")
-						.info
-							h3 Process
-							ul
-								li Linoleum cut &amp; letterpress
-								li Printed on a Vandercook SP-15
-								li Bound in hard case
-							h3 Media
-							ul
-								li 8pt Univers
-								li Somerset book
-							h3 Specs
-							ul
-								li 8" x 12” x 1/2"
-								li 24 pages
-								li 2005
+					.wrapper
+						.info.sizable
+							.infoinner
+								h3 Process
+								ul
+									li Linoleum cut &amp; letterpress
+									li Printed on a Vandercook SP-15
+									li Bound in hard case
+								h3 Media
+								ul
+									li 8pt Univers
+									li Somerset book
+								h3 Specs
+								ul
+									li 8" x 12” x 1/2"
+									li 24 pages
+									li 2005
 
 
 		footer.main

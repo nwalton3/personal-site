@@ -20,6 +20,7 @@ module.exports = (grunt) ->
 				files:
 					'js/script.min.js' : [
 						'js/libs/jquery-2.0.3.min.js', 
+						'js/libs/hisrc.js',
 						'js/script.js']
 
 
@@ -91,7 +92,7 @@ module.exports = (grunt) ->
 					livereload: true
 			js:
 				files: ['js/script.js']
-				tasks: ['uglify']
+				tasks: ['jshint', 'uglify']
 			jsmin:
 				files: ['js/script.min.js']
 				options:

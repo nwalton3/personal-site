@@ -11,6 +11,7 @@ $yellow1: #a59463
 $yellow2: #a69564
 $yellow3: #d2cab1
 
+
 // General
 *
 	box-sizing: border-box
@@ -24,15 +25,14 @@ body
 	height: 100%
 
 
-html, body, div.main, .portfolio
+html, body, .portfolio
 	max-height: 100%
+	overflow: visible
 
 img
 	max-width: 100%
 	max-height: 100%
 
-div.main
-	background-color: #000
 
 
 // Header
@@ -57,7 +57,10 @@ header.main
 
 // Portfolio
 
-.portfolio 
+.portfolio
+	background-color: #000
+	&, .project
+		overflow: visible
 	nav
 		position: absolute
 		top: 16px
@@ -73,7 +76,7 @@ header.main
 			width: 40px
 			background: url('../img/arrow.svg')
 			position: absolute
-			opacity: 0.65
+			opacity: 0.75
 			&.next
 				right: 0px
 				background-position: -40px 0
@@ -83,54 +86,71 @@ header.main
 				opacity: 1
 
 .title
+	height: 67px
+	position: absolute
+	width: 100%
+	top: 0
+	left: -3%
 	border-bottom: 1px solid rgba(#fff, 0.2)
+	opacity: 0
+	transition: all 0.3s ease
+	.current &
+		opacity: 1
+		left: 0
 	h2
 		margin: 0 5%
 		height: 67px
 		padding-top: 15px
 		font-family: "museo-slab"
-		color: $yellow1
 		font-weight: 500
 		font-size: 1.6875em
+		color: $yellow1
+		a
+			color: $yellow1
+			transition: all 0.2s ease
+			&:hover
+				color: mix($yellow1, $yellow3)
+				text-decoration: none
 
 
+
+// Slides
 .slide
-	display: none
+	top: 68px
 	max-width: 90%
 	margin: 0 auto
-	transition: all 0.3s ease
-	a.infobutton
-		display: block
-		z-index: 20
-		position: absolute
-		top: 10px
-		left: -2.5%
-		margin-left: -20px
-		background: url('../img/arrow.svg') -80px 0
-		width: 40px
-		height: 40px
-		transition: all 0.3s ease
-		opacity: 0.65
-		&:hover
-			opacity: 1
+	transition: all 0.4s ease
+	opacity: 0
 	&.visible
-		display: block
+		z-index: 100
+		opacity: 1
+	.wrapper
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		min-height: 40px
+	.sizable
+		transition: all 0.3s ease
+		box-sizing: content-box		
+		margin: 0 auto
+		min-height: 40px
 	.image
 		z-index: 9
-		transition: all 0.3s ease
-		text-align: center
-		margin: 0 auto
-		box-sizing: content-box
 	.info
+		z-index: 8
+	.infoinner
 		color: $yellow3
 		font-weight: 100
 		width: 235px
 		position: absolute
 		top: 40px
 		left: 0
-		padding-left: 10px
+		padding-right: 10px
 		opacity: 0
 		transition: all 0.3s ease
+		text-align: right
+		font-size: 14px
 		h3
 			color: $yellow2
 			font-weight: 700
@@ -143,19 +163,46 @@ header.main
 			margin: 0
 			li
 				margin: 0
-	&.show-info
+	.show-info &
 		max-width: 100%
-		a.infobutton
-			left: -2px
-			margin-left: 0
-			-webkit-transform: rotate(-45deg)
-			-moz-transform: rotate(-45deg)
-			-o-transform: rotate(-45deg)
-			transform: rotate(-45deg)
-		.info
+		.infoinner
 			opacity: 1
-		.image
+		.image, .button
 			padding-left: 250px
+		.info
+			padding-right: 250px
 
 
-@media (orientation:landscape)
+// Info button
+a.infobutton
+	display: block
+	z-index: 20
+	position: absolute
+	top: 10px
+	left: 0
+	margin-left: -45px
+	background: url('../img/arrow.svg') -80px 0
+	width: 40px
+	height: 40px
+	transition: all 0.3s ease
+	opacity: 0.75
+	&:hover
+		opacity: 1
+	.show-info &
+		left: 240px
+		-webkit-transform: rotate(-45deg)
+		-moz-transform: rotate(-45deg)
+		-o-transform: rotate(-45deg)
+		transform: rotate(-45deg)
+
+
+
+// Intro page
+.intro
+	background-color: #000
+	.image
+		padding-left: 55%
+	.introtext
+		padding-right: 45%
+
+
