@@ -39,7 +39,16 @@ html.no-js(lang="en")
 				#intro-1.slide.intro.last.visible
 					.wrapper
 						.sizable
-							p Intro screen
+							//- Render list
+							for project in projects
+								.project
+									a.projectTitle(href='#' + project.id) #{project.title}
+									ul
+										- var slideNum = 1
+										for slide in project.slides
+											- slideNum += 1;
+											li
+												a(href="#" + project.id + "-" + slideNum) Slide #{slideNum}
 
 
 			//- Render projects
