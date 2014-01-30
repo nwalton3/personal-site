@@ -64,6 +64,14 @@
           ]
         }
       ]
+    },
+    {
+      "title": "end",
+      "id": "end",
+      "image": "",
+      "leader": "This is the last",
+      "text": " slide.",
+      "slides": []
     }
   ]
 }

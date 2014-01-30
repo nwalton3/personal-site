@@ -41,14 +41,14 @@ html.no-js(lang="en")
 						.sizable
 							//- Render list
 							for project in projects
-								.projectThumb
-									a.projectTitle(href='#' + project.id) #{project.title}
-									ul
-										- var slideNum = 1
-										for slide in project.slides
-											- slideNum += 1;
-											li
-												a(href="#" + project.id + "-" + slideNum) Slide #{slideNum}
+								ul.projectThumb
+									li
+										a.projectTitle(href='#' + project.id + "-1") #{project.title}
+									- var slideNum = 1
+									for slide in project.slides
+										- slideNum += 1;
+										li
+											a(href="#" + project.id + "-" + slideNum) Slide #{slideNum}
 
 
 			//- Render projects
@@ -56,11 +56,13 @@ html.no-js(lang="en")
 
 			for project in projects
 				- projectNum += 1;
+				- var numSlides = project.slides.length, last = '';
+				- if (!numSlides) { last = ' last' }
 				.project(data-project=projectNum, id=project.id)
 					.title
 						h2
 							a(href='#' + project.id) #{project.title}
-					.intro.slide(id=project.id + '-1')
+					div(id=project.id + '-1', class='slide intro' + last)
 						.wrapper
 							.introimage.sizable
 								img(src=project.image)
@@ -73,7 +75,7 @@ html.no-js(lang="en")
 
 					//- Render slides 
 
-					- var slideNum = 1, numSlides = project.slides.length, last = '';
+					- var slideNum = 1,  last = '';
 
 					for slide in project.slides
 

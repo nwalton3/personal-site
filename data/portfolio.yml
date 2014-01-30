@@ -39,3 +39,9 @@ projects:
                 - 8" x 12" x 1/2"
                 - 24 pages
                 - 2005
+    -   title: end
+        id: end
+        image: ''
+        leader: This is the last
+        text: ' slide.'
+        slides: []
