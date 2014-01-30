@@ -1,4 +1,34 @@
 projects:
+
+# Sacred Gifts ####################
+
+    -   title: Sacred Gifts
+        id: gifts
+        image: ''
+        leader: The BYU Museum of Art
+        text: ' wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least tech-savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.'
+        slides: []
+
+# BYU Web ####################
+
+    -   title: BYU Web
+        id: byu
+        image: ''
+        leader: When BYU web community
+        text: " was tasked with redesigning BYU's home page, it was most important to me that we achieve the right mood. We took inspiration from some of the beautiful places around campus and aimed for the same sort of dignified, inviting feeling on the web. The accompanying templates are meant to make it easy for campus entities to create sites that fit with the BYU web brand."
+        slides: []
+
+# BYU Learning Suite ####################
+
+    -   title: BYU Learning Suite
+        id: ls
+        image: ''
+        leader: I worked extensively
+        text: " with instructional designers and progammers to help create the BYU Learning Suite. I wrote a style guide and created hundreds of page mockups. I also had a big part in writing the CSS for the site, and part of my ongoing work is to train new designers and programmers on best practices in web design and web application programming."
+        slides: []
+
+# Jonah ####################
+
     -   title: Jonah
         id: jonah
         image: img/jonahintro.png
