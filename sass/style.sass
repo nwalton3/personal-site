@@ -13,13 +13,18 @@ $yellow2: #a69564
 $yellow3: #d2cab1
 
 
+// Fonts
+$slab-font-family: "museo-slab"
+$sans-font-family: "museo-sans"
+
+
 // General
 *
 	box-sizing: border-box
 	position: relative
 
 html
-	font-family: "museo-sans"
+	font-family: $sans-font-family
 	background-color: #000
 
 body
@@ -102,7 +107,7 @@ header.main
 		margin: 0 5%
 		height: 67px
 		padding-top: 15px
-		font-family: "museo-slab"
+		font-family: $slab-font-family
 		font-weight: 500
 		font-size: 1.6875em
 		color: $yellow1
@@ -204,7 +209,18 @@ a.infobutton
 	.introimage
 		padding-left: 55%
 	.introtext
-		padding-right: 45%
-		padding-left: 5%
+		margin-top: 2em
+		padding-right: 49%
+		padding-left: 1%
+		font-size: 24px
+		line-height: 1.5
+		color: $yellow1
+		font-family: $slab-font-family
+		font-weight: 100
+		.leader
+			text-transform: uppercase
+			font-size: 0.8em
+			letter-spacing: 1px
+			font-weight: 300
 
 

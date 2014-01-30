@@ -1,0 +1,69 @@
+{
+  "projects": [
+    {
+      "title": "Jonah",
+      "id": "jonah",
+      "image": "img/jonahintro.png",
+      "leader": "I often prefer",
+      "text": " relief printing to other traditional media, maybe because it works so well with letterpress. This book has 20 linocut illustrations from the book of Jonah, with images and type printed on a Vandercook SP-15 proof press.",
+      "slides": [
+        {
+          "image": "img/jonah1.jpg",
+          "specs": [
+            {
+              "title": "Process",
+              "list": [
+                "Linoleum cut &amp; letterpress",
+                "Printed on a Vandercook SP-15",
+                "Bound in hard case"
+              ]
+            },
+            {
+              "title": "Media",
+              "list": [
+                "8pt Univers",
+                "Somerset book"
+              ]
+            },
+            {
+              "title": "Specs",
+              "list": [
+                "8\" x 12\" x 1/2\"",
+                "24 pages",
+                2005
+              ]
+            }
+          ]
+        },
+        {
+          "image": "img/jonah2.jpg",
+          "specs": [
+            {
+              "title": "Process",
+              "list": [
+                "Linoleum cut &amp; letterpress",
+                "Printed on a Vandercook SP-15",
+                "Bound in hard case"
+              ]
+            },
+            {
+              "title": "Media",
+              "list": [
+                "8pt Univers",
+                "Somerset book"
+              ]
+            },
+            {
+              "title": "Specs",
+              "list": [
+                "8\" x 12\" x 1/2\"",
+                "24 pages",
+                2005
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

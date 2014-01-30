@@ -65,6 +65,7 @@ module.exports = (grunt) ->
 		jade:
 			options:
 				pretty: true
+				data: (dest, src) -> return require('./data/portfolio.json')
 			compile:
 				files:[
 					expand: true
@@ -73,6 +74,12 @@ module.exports = (grunt) ->
 					dest: ''
 					ext: '.html'
 				]
+		yaml:
+			data:
+				options:
+					space: 2
+				files: 
+					'data/portfolio.json': ['data/portfolio.yml']
 
 		watch:
 			sass:
@@ -80,7 +87,7 @@ module.exports = (grunt) ->
 				tasks: ['sass', 'autoprefixer']
 
 			jade:
-				files: ['jade/**/*.jade']
+				files: ['jade/**/*.jade', 'data/portfolio.json']
 				tasks: ['jade']
 
 			image:
@@ -102,6 +109,9 @@ module.exports = (grunt) ->
 				files: ['css/**/*']
 				options:
 					livereload: true
+			yaml:
+				files: ['data/portfolio.yml']
+				tasks: ['yaml']
 
 		connect:
 			server:
@@ -116,7 +126,8 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-contrib-connect')
 	grunt.loadNpmTasks('grunt-contrib-jade')
+	grunt.loadNpmTasks('grunt-yaml');
 
 	# Default task(s).
-	grunt.registerTask('compile', ['sass', 'jade', 'jshint', 'uglify'])
+	grunt.registerTask('compile', ['sass', 'yaml', 'jade', 'jshint', 'uglify'])
 	grunt.registerTask('default', ['compile', 'connect', 'watch'])

@@ -91,6 +91,37 @@ function resizeImage( height ) {
 
 
 
+/**
+ * Func: gotoSlide
+ * Desc: 
+ * Args: @slideID - the id of the slide, without the '#'
+ */
+function gotoSlide( slideID ) {
+	var currentSlide = $('.visible'),
+		project = currentSlide.closest('.project'),
+		newSlide = '#' + slideID,
+		newProject = $(newSlide).closest('.project');
+
+	currentSlide.removeClass('visible');
+	$('#' + slideID).addClass('visible');
+
+	if(project !== newProject) {
+		gotoProject(newProject.attr('id'));
+	}
+
+}
+
+
+/**
+ * Func: gotoProject
+ * Desc: 
+ * Args: @projectID - The id of the project, without the '#'
+ */
+function gotoProject( projectID ) {
+	$('.project.current').removeClass('current');
+	$('#' + projectID).addClass('current');
+}
+
 
 /**
  * Func: ChangeSlide
@@ -108,9 +139,7 @@ function changeSlide( direction ) {
 	}
 
 	nextSlide = getNextSlide( currentSlide, next );
-
-	$('.visible').removeClass('visible');
-	$('#' + nextSlide).addClass('visible');
+	gotoSlide( nextSlide );
 }
 
 
@@ -160,7 +189,7 @@ function getNextSlide( currentSlide, next ) {
 		}
 	}
 
-	console.log('getNextSlide: '+ nextSlide);
+	console.log('getNextSlide: ' + getNextSlide);
 	return nextSlide;
 }
 
@@ -198,10 +227,7 @@ function getNextProject( project, next ) {
 
 	nextProjectID = $('.project[data-project=' + nextProjectNum + ']').attr('id');
 
-	console.log('getNextProject: ' + nextProjectID);
-	$('.project.current').removeClass('current');
-	$('#' + nextProjectID).addClass('current');
-
+	console.log('getNextProject: ' + getNextProject);
 	return nextProjectID;
 }
 

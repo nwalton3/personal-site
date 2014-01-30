@@ -33,74 +33,59 @@ html.no-js(lang="en")
 			nav
 				a.ir.next(href="#") Next slide
 				a.ir.prev(href="#") Previous slide
-			#intro.project(data-project="0")
+			#intro.project(data-project="0").current
 				.title
 					h2 Work
-				#intro-1.slide.intro.last
+				#intro-1.slide.intro.last.visible
 					.wrapper
 						.sizable
 							p Intro screen
-			#jonah.project(data-project="1").current
-				.title
-					h2 
-						a(href="#jonah") Jonah
-				#jonah-1.intro.slide.visible
-					.wrapper
-						.introimage.sizable
-							img(src="img/jonahintro.png")
-					.wrapper
-						.introtext.sizable
-							p 
-								span.leader I usually prefer
-								|  relief printing to other traditional media, maybe because it seems to fit so well with letterpress printing. This book has 20 linocut illustrations from the book of Jonah, with images and type printed on a Vandercook SP-15 proof press.
-				#jonah-2.slide
-					.wrapper
-						.button.sizable
-							a.ir.infobutton(href="#") Show info
-					.wrapper
-						.image.sizable
-							img(src="img/jonah1.jpg")
-					.wrapper
-						.info.sizable
-							.infoinner
-								h3 Process
-								ul
-									li Linoleum cut &amp; letterpress
-									li Printed on a Vandercook SP-15
-									li Bound in hard case
-								h3 Media
-								ul
-									li 8pt Univers
-									li Somerset book
-								h3 Specs
-								ul
-									li 8" x 12” x 1/2"
-									li 24 pages
-									li 2005
-				#jonah-3.slide.last
-					.wrapper
-						.button.sizable
-							a.ir.infobutton(href="#") Show info
-					.wrapper
-						.image.sizable
-							img(src="img/jonah2.jpg")
-					.wrapper
-						.info.sizable
-							.infoinner
-								h3 Process
-								ul
-									li Linoleum cut &amp; letterpress
-									li Printed on a Vandercook SP-15
-									li Bound in hard case
-								h3 Media
-								ul
-									li 8pt Univers
-									li Somerset book
-								h3 Specs
-								ul
-									li 8" x 12” x 1/2"
-									li 24 pages
-									li 2005
 
+
+			//- Render projects
+
+			for project in projects
+				.project(data-project="1", id=project.id)
+					.title
+						h2
+							a(href='#' + project.id) #{project.title}
+					.intro.slide(id=project.id + '-1')
+						.wrapper
+							.introimage.sizable
+								img(src=project.image)
+						.wrapper
+							.introtext.sizable
+								p
+									span.leader #{project.leader}
+									| #{project.text}
+
+
+					//- Render slides 
+
+					- var slideNum = 1, numSlides = project.slides.length, last = '';
+
+					for slide in project.slides
+
+						- if (slideNum == numSlides) { last = ' last'; }
+						- slideNum += 1;
+
+						div(id=project.id + '-' + slideNum, class='slide' + last)
+							.wrapper
+								.button.sizable
+									a.ir.infobutton(href="#") Show info
+							.wrapper
+								.image.sizable
+									img(src=slide.image)
+							.wrapper
+								.info.sizable
+									.infoinner
+
+
+										//- Render specs
+										for item in slide.specs
+											h3 #{item.title}
+												ul
+													for listItem in item.list
+														li #{listItem}
 
 		footer.main
