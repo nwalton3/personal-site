@@ -10,32 +10,32 @@ projects:
             specs:
             -   title: Process
                 list:
-                  - Linoleum cut &amp; letterpress
-                  - Printed on a Vandercook SP-15
-                  - Bound in hard case
+                - Linoleum cut &amp; letterpress
+                - Printed on a Vandercook SP-15
+                - Bound in hard case
             -   title: Media
                 list: 
-                  - 8pt Univers
-                  - Somerset book
+                - 8pt Univers
+                - Somerset book
             -   title: Specs
                 list:
-                  - 8" x 12" x 1/2"
-                  - 24 pages
-                  - 2005
+                - 8" x 12" x 1/2"
+                - 24 pages
+                - 2005
 
         -   image: img/jonah2.jpg
             specs:
             -   title: Process
                 list:
-                  - Linoleum cut &amp; letterpress
-                  - Printed on a Vandercook SP-15
-                  - Bound in hard case
+                - Linoleum cut &amp; letterpress
+                - Printed on a Vandercook SP-15
+                - Bound in hard case
             -   title: Media
                 list: 
-                  - 8pt Univers
-                  - Somerset book
+                - 8pt Univers
+                - Somerset book
             -   title: Specs
                 list:
-                  - 8" x 12" x 1/2"
-                  - 24 pages
-                  - 2005
+                - 8" x 12" x 1/2"
+                - 24 pages
+                - 2005
