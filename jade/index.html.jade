@@ -41,7 +41,7 @@ html.no-js(lang="en")
 						.sizable
 							//- Render list
 							for project in projects
-								.project
+								.projectThumb
 									a.projectTitle(href='#' + project.id) #{project.title}
 									ul
 										- var slideNum = 1
@@ -52,9 +52,11 @@ html.no-js(lang="en")
 
 
 			//- Render projects
+			- var projectNum = 0;
 
 			for project in projects
-				.project(data-project="1", id=project.id)
+				- projectNum += 1;
+				.project(data-project=projectNum, id=project.id)
 					.title
 						h2
 							a(href='#' + project.id) #{project.title}

@@ -189,7 +189,7 @@ function getNextSlide( currentSlide, next ) {
 		}
 	}
 
-	console.log('getNextSlide: ' + getNextSlide);
+	console.log('getNextSlide: ' + nextSlide);
 	return nextSlide;
 }
 
@@ -227,7 +227,7 @@ function getNextProject( project, next ) {
 
 	nextProjectID = $('.project[data-project=' + nextProjectNum + ']').attr('id');
 
-	console.log('getNextProject: ' + getNextProject);
+	console.log('getNextProject: ' + nextProjectID);
 	return nextProjectID;
 }
 
