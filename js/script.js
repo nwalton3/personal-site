@@ -1,8 +1,11 @@
-/* script.js */
+/*! 
+ * script.js 
+ */
 
 
 // Variables
 var windowHeight = 0;
+
 
 
 // On page load

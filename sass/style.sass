@@ -14,8 +14,8 @@ $yellow3: #d2cab1
 
 
 // Fonts
-$slab-font-family: "museo-slab"
-$sans-font-family: "museo-sans"
+$slab-font-family: "museo-slab", Helvetica, sans-serif
+$sans-font-family: "museo-sans", Helvetica, sans-serif
 
 
 // General
@@ -148,7 +148,7 @@ header.main
 	.info
 		z-index: 8
 	.infoinner
-		color: $yellow3
+		color: mix( $yellow3, $yellow1 )
 		font-weight: 100
 		width: 235px
 		position: absolute
@@ -173,6 +173,8 @@ header.main
 				margin: 0
 	.show-info &
 		max-width: 100%
+		&.intro
+			max-width: 90%
 		.infoinner
 			opacity: 1
 		.image, .button
@@ -209,11 +211,10 @@ a.infobutton
 .intro
 	background-color: #000
 	.introimage
-		padding-left: 55%
+		padding-right: 55%
 	.introtext
 		margin-top: 2em
-		padding-right: 49%
-		padding-left: 1%
+		padding-left: 50%
 		font-size: 24px
 		line-height: 1.5
 		color: $yellow1

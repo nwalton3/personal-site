@@ -88,7 +88,17 @@ html.no-js(lang="en")
 									a.ir.infobutton(href="#") Show info
 							.wrapper
 								.image.sizable
-									img(src=slide.image)
+									span(data-picture, data-alt="Slipcase and cover for Jonah book")
+										span(data-src=slide.image + '-400.jpg')
+										span(data-src=slide.image + '-800.jpg',
+											data-media="(min-width: 400px)")
+										span(data-src=slide.image + '-1600.jpg',
+											data-media="(min-width: 1600px)")
+										span(data-src=slide.image + '-3200.jpg',
+											data-media="(min-width: 3200px)")
+										// non-js browsers
+										noscript
+											img(src=slide.image + '-400.jpg', alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia")
 							.wrapper
 								.info.sizable
 									.infoinner
@@ -97,8 +107,8 @@ html.no-js(lang="en")
 										//- Render specs
 										for item in slide.specs
 											h3 #{item.title}
-												ul
-													for listItem in item.list
-														li #{listItem}
+											ul
+												for listItem in item.list
+													li #{listItem}
 
 		footer.main

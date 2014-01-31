@@ -63,28 +63,28 @@ projects:
         text: ' relief printing to other traditional media, maybe because it works so well with letterpress. This book has 20 linocut illustrations from the book of Jonah, with images and type printed on a Vandercook SP-15 proof press.'
         slides:
 
-        -   image: img/jonah1.jpg
+        -   image: img/jonah1
             specs:
             -   title: Process
                 list:
                 - Silk-screened slipcase wrapper
                 - Silk-screened endpapers
-                - Half-bound case with cloth and silk-screened paper
+                - Cloth-bound book case
                 - Foil stamped spine
             -   title: Media
                 list: 
                 - Fortune Roman type
             -   title: Specs
                 list:
-                - 4 3/4" X 6 3/4" X 3/4"
+                - 4 ¾" × 6 ¾" × ¾"
                 - 2005
 
-        -   image: img/jonah2.jpg
+        -   image: img/jonah2
             specs:
             -   title: Process
                 list:
                 - Linoleum cut &amp; letterpress
-                - Printed on Vandercook SP-15 proof press
+                - Printed on a Vandercook SP-15
                 - Bound in hard case
             -   title: Media
                 list: 
@@ -92,7 +92,7 @@ projects:
                 - Somerset paper
             -   title: Specs
                 list:
-                - 4-3/4" X 6-3/4" X 3/4"
+                - 4 ¾" × 6 ¾" × ¾"
                 - 24 pages
                 - 2005
 

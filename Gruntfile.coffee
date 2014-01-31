@@ -19,9 +19,11 @@ module.exports = (grunt) ->
 			compile:
 				files:
 					'js/script.min.js' : [
-						'js/libs/jquery-2.0.3.min.js', 
-						'js/libs/typogr.js',
-						'js/libs/hisrc.js',
+						'js/libs/jquery-2.0.3.min.js',
+						'js/plugins/typogr.js',
+						'js/plugins/picturefill.js',
+						'js/plugins/hisrc.js',
+						'js/plugins/screenfull.js',
 						'js/script.js']
 
 

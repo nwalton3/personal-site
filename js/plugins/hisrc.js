@@ -1,4 +1,4 @@
-/*
+/*!
  * Hisrc jQuery Plugin
  *
  * Copyright (c) 2012
