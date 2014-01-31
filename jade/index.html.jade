@@ -43,7 +43,7 @@ html.no-js(lang="en")
 							for project in projects
 								ul.projectThumb
 									li
-										a.projectTitle(href='#' + project.id + "-1") #{project.title}
+										a.projectTitle(href='#' + project.id) #{project.title}
 									- var slideNum = 1
 									for slide in project.slides
 										- slideNum += 1;

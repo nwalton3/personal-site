@@ -8,6 +8,34 @@ var windowHeight = 0;
 // On page load
 $(function(){
 
+	/* Handle hash navigation */
+
+	// On load
+	var url = document.location.toString();
+	var newHash = '';
+
+	if ( url.match('#') ) {
+		var split = url.split( '#' )[1];
+		if ( url.match('=') ) {
+			split = split.split( '=' )[0];
+		}
+		// Show the correct slide on load
+		gotoSlide( split );
+	}
+
+	// On hashchange
+	$(window).on('hashchange', function(e){
+		e.preventDefault();
+
+		var hash = window.location.hash;
+		if ( hash !== newHash ) {
+			// Go to the new page
+			gotoSlide ( hash );
+		}
+		newHash = hash;
+	});
+
+
 
 	/* Button Actions */
 
@@ -30,10 +58,11 @@ $(function(){
 	});
 
 
-	/* Image Resizing */
 
+	/* Image Resizing */
 	checkHeight();
 	$(window).on('resize', checkHeight);
+
 
 
 	/* Typogrify */
@@ -99,16 +128,26 @@ function resizeImage( height ) {
 function gotoSlide( slideID ) {
 	var currentSlide = $('.visible'),
 		project = currentSlide.closest('.project'),
-		newSlide = '#' + slideID,
+		newSlide = slideID[0] == '#' ? slideID : '#' + slideID,
 		newProject = $(newSlide).closest('.project');
 
+	if(newSlide.indexOf('-') === -1) {
+	  newSlide += '-1';
+	}
+
 	currentSlide.removeClass('visible');
-	$('#' + slideID).addClass('visible');
+	$(newSlide).addClass('visible');
 
 	if(project !== newProject) {
 		gotoProject(newProject.attr('id'));
 	}
 
+	index = newSlide.indexOf('-1');
+	if ( index !== -1 ) {
+		window.location.hash = newSlide.substring(0, index);
+	} else {
+		window.location.hash = newSlide.substring(0);
+	}
 }
 
 

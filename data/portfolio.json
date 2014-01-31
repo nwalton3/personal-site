@@ -1,6 +1,54 @@
 {
   "projects": [
     {
+      "title": "Sacred Gifts",
+      "id": "gifts",
+      "image": "",
+      "leader": "The BYU Museum of Art",
+      "text": " wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least tech-savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.",
+      "slides": []
+    },
+    {
+      "title": "BYU Web",
+      "id": "byu",
+      "image": "",
+      "leader": "When BYU web community",
+      "text": " was tasked with redesigning BYU's home page, it was most important to me that we achieve the right mood. We took inspiration from some of the beautiful places around campus and aimed for the same sort of dignified, inviting feeling on the web. The accompanying templates are meant to make it easy for campus entities to create sites that fit with the BYU web brand.",
+      "slides": []
+    },
+    {
+      "title": "BYU Learning Suite",
+      "id": "ls",
+      "image": "",
+      "leader": "I worked extensively",
+      "text": " with instructional designers and progammers to help create the BYU Learning Suite. I wrote a style guide and created hundreds of page mockups. I also had a big part in writing the CSS for the site, and part of my ongoing work is to train new designers and programmers on best practices in web design and web application programming.",
+      "slides": []
+    },
+    {
+      "title": "Connections",
+      "id": "thesis",
+      "image": "",
+      "leader": "For my MFA thesis",
+      "text": " I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful works ever created in print. I then designed a library exhibition highlighting many of them, including the _Bruce Rogers World Bible_; Eric Gill’s _Four Gospels_; several Philip Smith bindings; masterpieces from the Kelmscott, Doves, and Cranach presses; Limited Editions Club, Grolier Club, ",
+      "slides": []
+    },
+    {
+      "title": "Specimens",
+      "id": "bugs",
+      "image": "",
+      "leader": "I’ve been fascinated with insects",
+      "text": " ever since my freshman Biology class. So when the idea struck me that both _type_ and _bug_ collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects I’ve ever done.",
+      "slides": []
+    },
+    {
+      "title": "Love",
+      "id": "love",
+      "image": "",
+      "leader": "This letterpress broadside",
+      "text": " was created to celebrate marriage. The text was taken from CS Lewis (_Mere Christianity_) It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.",
+      "slides": []
+    },
+    {
       "title": "Jonah",
       "id": "jonah",
       "image": "img/jonahintro.png",
@@ -13,23 +61,22 @@
             {
               "title": "Process",
               "list": [
-                "Linoleum cut &amp; letterpress",
-                "Printed on a Vandercook SP-15",
-                "Bound in hard case"
+                "Silk-screened slipcase wrapper",
+                "Silk-screened endpapers",
+                "Half-bound case with cloth and silk-screened paper",
+                "Foil stamped spine"
               ]
             },
             {
               "title": "Media",
               "list": [
-                "8pt Univers",
-                "Somerset book"
+                "Fortune Roman type"
               ]
             },
             {
               "title": "Specs",
               "list": [
-                "8\" x 12\" x 1/2\"",
-                "24 pages",
+                "4 3/4\" X 6 3/4\" X 3/4\"",
                 2005
               ]
             }
@@ -42,21 +89,21 @@
               "title": "Process",
               "list": [
                 "Linoleum cut &amp; letterpress",
-                "Printed on a Vandercook SP-15",
+                "Printed on Vandercook SP-15 proof press",
                 "Bound in hard case"
               ]
             },
             {
               "title": "Media",
               "list": [
-                "8pt Univers",
-                "Somerset book"
+                "Univers &amp; Fortune Roman type",
+                "Somerset paper"
               ]
             },
             {
               "title": "Specs",
               "list": [
-                "8\" x 12\" x 1/2\"",
+                "4-3/4\" X 6-3/4\" X 3/4\"",
                 "24 pages",
                 2005
               ]
@@ -66,11 +113,11 @@
       ]
     },
     {
-      "title": "end",
-      "id": "end",
+      "title": "Ornate",
+      "id": "ornate",
       "image": "",
-      "leader": "This is the last",
-      "text": " slide.",
+      "leader": "I spent some time",
+      "text": " studying some of the art movements from around the turn of the last century (especially Vienna Secession and Arts and Crafts), and decided to experiment with some of their ideas. I brought together various writings exploring the use of ornament, translated some of the articles from the original German, and created a magazine on the subject.",
       "slides": []
     }
   ]
