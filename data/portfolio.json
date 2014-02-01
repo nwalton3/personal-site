@@ -6,7 +6,20 @@
       "image": "",
       "leader": "The BYU Museum of Art",
       "text": " wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least tech-savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.",
-      "slides": []
+      "slides": [
+        {
+          "image": "img/sg_nav",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Navigation",
+              "list": [
+                "info here"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "title": "BYU Web",
@@ -57,6 +70,7 @@
       "slides": [
         {
           "image": "img/jonah1",
+          "alt": "",
           "specs": [
             {
               "title": "Process",
@@ -84,6 +98,7 @@
         },
         {
           "image": "img/jonah2",
+          "alt": "",
           "specs": [
             {
               "title": "Process",
