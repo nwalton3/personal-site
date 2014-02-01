@@ -7,7 +7,6 @@
 var windowHeight = 0;
 
 
-
 // On page load
 $(function(){
 
@@ -151,6 +150,8 @@ function gotoSlide( slideID ) {
 	} else {
 		window.location.hash = newSlide.substring(0);
 	}
+	
+	$(window).scrollTop(0);
 }
 
 

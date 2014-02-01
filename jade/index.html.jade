@@ -49,6 +49,7 @@ html.no-js(lang="en")
 										- slideNum += 1;
 										li
 											a(href="#" + project.id + "-" + slideNum) Slide #{slideNum}
+												img(src=slide.image + '-400.jpg')
 
 
 			//- Render projects
@@ -88,14 +89,22 @@ html.no-js(lang="en")
 									a.ir.infobutton(href="#") Show info
 							.wrapper
 								.image.sizable
-									span(data-picture, data-alt="Slipcase and cover for Jonah book")
-										span(data-src=slide.image + '-400.jpg')
-										span(data-src=slide.image + '-800.jpg',
+									div(data-picture, data-disable-swap-above, data-alt="Slipcase and cover for Jonah book")
+										//- 400
+										div(data-src=slide.image + '-400.jpg')
+										div(data-src=slide.image + '-800.jpg',
+											data-media="(min-device-pixel-ratio: 2.0)")
+										//- 800
+										div(data-src=slide.image + '-800.jpg',
 											data-media="(min-width: 400px)")
-										span(data-src=slide.image + '-1600.jpg',
+										div(data-src=slide.image + '-1600.jpg',
+											data-media="(min-width: 400px) and (min-device-pixel-ratio: 2.0)")
+										//- 1600
+										div(data-src=slide.image + '-1600.jpg',
+											data-media="(min-width: 800px)")
+										//- 3200
+										div(data-src=slide.image + '-3200.jpg',
 											data-media="(min-width: 1600px)")
-										span(data-src=slide.image + '-3200.jpg',
-											data-media="(min-width: 3200px)")
 										// non-js browsers
 										noscript
 											img(src=slide.image + '-400.jpg', alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia")

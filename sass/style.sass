@@ -129,9 +129,15 @@ header.main
 	margin: 0 auto
 	transition: all 0.4s ease
 	opacity: 0
+	li
+		margin-top: -2em
+		transition: all 0.4s ease
+		display: block
 	&.visible
 		z-index: 100
 		opacity: 1
+		li
+			margin-top: 0
 	.wrapper
 		position: absolute
 		top: 0
