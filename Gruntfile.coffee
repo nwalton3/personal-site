@@ -16,16 +16,16 @@ module.exports = (grunt) ->
 				mangle: false
 				preserveComments: 'some'
 				banner: '/*! <%= pkg.name %> - v<%= pkg.version %>  */'
-			compile:
+			script:
 				files:
 					'js/script.min.js' : [
 						'js/libs/jquery-2.0.3.min.js',
 						'js/plugins/typogr.js',
-						'js/plugins/picturefill.js',
 						'js/plugins/hisrc.js',
-						'js/plugins/screenfull.js',
+						'js/plugins/responsive-img.js',
+						#'js/plugins/picturefill.js',
+						#'js/plugins/screenfull.js',
 						'js/script.js']
-
 
 		jshint:
 			options:

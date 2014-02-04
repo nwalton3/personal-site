@@ -8,7 +8,7 @@
       "text": " wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least tech-savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.",
       "slides": [
         {
-          "image": "img/sg_nav",
+          "image": "sg_nav",
           "alt": "",
           "specs": [
             {
@@ -69,7 +69,7 @@
       "text": " relief printing to other traditional media, maybe because it works so well with letterpress. This book has 20 linocut illustrations from the book of Jonah, with images and type printed on a Vandercook SP-15 proof press.",
       "slides": [
         {
-          "image": "img/jonah1",
+          "image": "jonah1",
           "alt": "",
           "specs": [
             {
@@ -97,7 +97,7 @@
           ]
         },
         {
-          "image": "img/jonah2",
+          "image": "jonah2",
           "alt": "",
           "specs": [
             {

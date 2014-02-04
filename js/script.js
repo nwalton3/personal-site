@@ -5,10 +5,22 @@
 
 // Variables
 var windowHeight = 0;
+var speedTest = null;
+$.hisrc.speedTest({
+	speedTestUri: 'http://nkwalton.com/images/speed.jpg?n=' + Math.random(),
+	speedTestKB: 48,
+	speedTestExpireMinutes: 1
+});
 
 
 // On page load
 $(function(){
+
+
+	/* Speed Test */
+	speedTest = $.hisrc.connectionTestResult;
+	console.log(speedTest);
+
 
 	/* Handle hash navigation */
 
@@ -23,6 +35,8 @@ $(function(){
 		}
 		// Show the correct slide on load
 		gotoSlide( split );
+	} else {
+		gotoSlide( 'intro-1' );
 	}
 
 	// On hashchange
@@ -66,14 +80,12 @@ $(function(){
 	$(window).on('resize', checkHeight);
 
 
-
 	/* Typogrify */
 	$('p, .type').each(function(e){
 		$(this).html( typogr.typogrify( $(this) ) );
 	});
 
 });
-
 
 
 

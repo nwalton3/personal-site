@@ -92,6 +92,7 @@ header.main
 			&:hover
 				opacity: 1
 
+
 .title
 	height: 67px
 	position: absolute
@@ -129,15 +130,9 @@ header.main
 	margin: 0 auto
 	transition: all 0.4s ease
 	opacity: 0
-	li
-		margin-top: -2em
-		transition: all 0.4s ease
-		display: block
 	&.visible
 		z-index: 100
 		opacity: 1
-		li
-			margin-top: 0
 	.wrapper
 		position: absolute
 		top: 0
@@ -213,7 +208,7 @@ a.infobutton
 
 
 
-// Intro page
+// Project intro page
 .intro
 	background-color: #000
 	.introimage
@@ -233,5 +228,36 @@ a.infobutton
 			font-weight: 300
 			.caps
 				font-size: 1em
+
+
+// Table of contents
+#intro .slide
+	ul
+		clear: both
+	li
+		margin: 5px 4px
+		margin-top: -2em
+		transition: all 0.4s ease
+		display: block
+		float: left
+		border: 1px solid mix($yellow1, #000)
+		a
+			display: block
+			height: 2em
+			transition: all 0.4s ease
+			width: 180px
+			overflow: hidden
+			img
+				width: 400px
+				height: 300px
+				max-width: 400px
+				max-height: 300px
+	&.visible
+		li
+			margin-top: 0
+			a
+				height: 100px
+
+
 
 

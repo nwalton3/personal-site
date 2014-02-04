@@ -20,7 +20,7 @@ html.no-js(lang="en")
 		script(type="text/javascript", src="//use.typekit.net/nyn3skg.js")
 		script(type="text/javascript").
 			try{Typekit.load();}catch(e){}
-		script(src='js/script.min.js')
+		script(src='js/libs/modernizr.min.js')
 
 	body
 		header.main
@@ -29,14 +29,14 @@ html.no-js(lang="en")
 				a(href="/") Home
 				a(href="/") Portfolio
 
-		div.main.portfolio
+		div.main.portfolio.show-info
 			nav
 				a.ir.next(href="#") Next slide
 				a.ir.prev(href="#") Previous slide
-			#intro.project(data-project="0").current
+			#intro.project(data-project="0")
 				.title
 					h2 Work
-				#intro-1.slide.intro.last.visible
+				#intro-1.slide.intro.last
 					.wrapper
 						.sizable
 							//- Render list
@@ -48,8 +48,9 @@ html.no-js(lang="en")
 									for slide in project.slides
 										- slideNum += 1;
 										li
-											a(href="#" + project.id + "-" + slideNum) Slide #{slideNum}
-												img(src=slide.image + '-400.jpg')
+											a(href="#" + project.id + "-" + slideNum)
+												span.slideLink.visuallyhidden Slide #{slideNum}
+												img(src='img/' + slide.image + '-400.jpg')
 
 
 			//- Render projects
@@ -89,25 +90,14 @@ html.no-js(lang="en")
 									a.ir.infobutton(href="#") Show info
 							.wrapper
 								.image.sizable
-									div(data-picture, data-disable-swap-above, data-alt=slide.alt)
-										//- 400
-										div(data-src=slide.image + '-400.jpg')
-										div(data-src=slide.image + '-800.jpg',
-											data-media="(min-device-pixel-ratio: 2.0)")
-										//- 800
-										div(data-src=slide.image + '-800.jpg',
-											data-media="(min-width: 400px)")
-										div(data-src=slide.image + '-1600.jpg',
-											data-media="(min-width: 400px) and (min-device-pixel-ratio: 2.0)")
-										//- 1600
-										div(data-src=slide.image + '-1600.jpg',
-											data-media="(min-width: 800px)")
-										//- 3200
-										div(data-src=slide.image + '-3200.jpg',
-											data-media="(min-width: 1600px)")
-										// non-js browsers
-										noscript
-											img(src=slide.image + '-400.jpg', alt=slide.alt)
+									img(alt=slide.alt,
+										data-src-base='img/',
+										data-src-base2x='img/',
+										data-src='<444:' + slide.image + '-400.jpg, <888:' + slide.image + '-800.jpg, <1777:' + slide.image + '-1600.jpg, >1777:' + slide.image + '-3200.jpg',
+										data-src2x='<444:' + slide.image + '-800.jpg, <888:' + slide.image + '-1600.jpg, >888:' + slide.image + '-3200.jpg')
+									noscript
+										img(alt=slide.alt,
+											src='img/' + slide.image + '-400.jpg')
 							.wrapper
 								.info.sizable
 									.infoinner
@@ -121,3 +111,4 @@ html.no-js(lang="en")
 													li #{listItem}
 
 		footer.main
+		script(src='js/script.min.js')
