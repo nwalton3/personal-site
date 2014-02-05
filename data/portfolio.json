@@ -27,7 +27,7 @@
       "id": "byu",
       "image": "",
       "leader": "When BYU web community",
-      "text": " was tasked with redesigning BYU's home page, it was most important to me that we achieve the right mood. We took inspiration from some of the beautiful places around campus and aimed for the same sort of dignified, inviting feeling on the web. The accompanying templates are meant to make it easy for campus entities to create sites that fit with the BYU web brand.",
+      "text": " was tasked with redesigning BYU’s home page, it was most important to me that we achieve the right mood. We took inspiration from some of the beautiful places around campus and aimed for the same sort of dignified, inviting feeling on the web. The accompanying templates are meant to make it easy for campus entities to create sites that fit with the BYU web brand.",
       "slides": []
     },
     {
@@ -43,24 +43,135 @@
       "id": "thesis",
       "image": "",
       "leader": "For my MFA thesis",
-      "text": " I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful works ever created in print. I then designed a library exhibition highlighting many of them, including the _Bruce Rogers World Bible_; Eric Gill’s _Four Gospels_; several Philip Smith bindings; masterpieces from the Kelmscott, Doves, and Cranach presses; Limited Editions Club, Grolier Club, ",
-      "slides": []
+      "text": " I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful works ever created in print. I designed a library exhibition highlighting many of them, including the <i>Bruce Rogers World Bible</i>, Eric Gill’s <i>Four Gospels</i>, masterpieces from the Kelmscott and Doves presses, Limited Editions and Grolier Club releases, Philip Smith bindings, books illustrated by Picasson and Braqua, and other breathtaking books.",
+      "slides": [
+        {
+          "image": "thesis_bible",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "thesis_bible1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "thesis_society",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Music, Deep Rivers In My Soul",
+              "list": [
+                "New York: Limited Editions Club, 2003",
+                "Poem by Maya Angelou",
+                "Etchings by Dean Mitchell",
+                "Music by Wynton Marsalis"
+              ]
+            },
+            {
+              "title": "Fra Luca de Pacioli of Borgo S. Sepulcro",
+              "list": [
+                "New York: Grolier Club, 1931",
+                "Written by Stanley Morison",
+                "Design by Bruce Rogers"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "thesis_doves",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "thesis_cases",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "thesis_cards",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "thesis_brochure",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        }
+      ]
     },
     {
       "title": "Specimens",
       "id": "bugs",
       "image": "",
       "leader": "I’ve been fascinated with insects",
-      "text": " ever since my freshman Biology class. So when the idea struck me that both _type_ and _bug_ collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects I’ve ever done.",
-      "slides": []
+      "text": " ever since my freshman Biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects I’ve ever done.",
+      "slides": [
+        {
+          "image": "bugs1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "bugs2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "bugs_bee",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "bugs_tiny",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "bugs_typographic",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        }
+      ]
     },
     {
       "title": "Love",
       "id": "love",
       "image": "",
       "leader": "This letterpress broadside",
-      "text": " was created to celebrate marriage. The text was taken from CS Lewis (_Mere Christianity_) It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.",
-      "slides": []
+      "text": " was created to celebrate marriage. The text was taken from CS Lewis (<i>Mere Christianity</i>) It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.",
+      "slides": [
+        {
+          "image": "love",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "love1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "love2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        }
+      ]
     },
     {
       "title": "Jonah",
@@ -136,7 +247,14 @@
       "image": "",
       "leader": "I spent some time",
       "text": " studying some of the art movements from around the turn of the last century (especially Vienna Secession and Arts and Crafts), and decided to experiment with some of their ideas. I brought together various writings exploring the use of ornament, translated some of the articles from the original German, and created a magazine on the subject.",
-      "slides": []
+      "slides": [
+        {
+          "image": "ornate_abuse_close",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        }
+      ]
     }
   ]
 }

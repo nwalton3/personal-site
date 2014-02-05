@@ -180,7 +180,7 @@ function updateResponsiveImages( identifier, breakpoint, bandwidth ) {
 			src = img.attr('data-src'),
 			ext = img.attr('data-ext');
 
-		img.attr('src', srcbase + src + '-' + breakpoint + ext);
+		img.attr('src', srcbase + breakpoint + 'w/' + src + ext);
 	});
 
 }

@@ -7,6 +7,7 @@
     "grunt-contrib-watch": "*",
     "grunt-contrib-jade": "*",
     "grunt-yaml": "*",
+    "marked": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-uglify": "*",
     "grunt-autoprefixer": "0.6.4",

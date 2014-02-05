@@ -50,7 +50,7 @@ html.no-js(lang="en")
 										li
 											a(href="#" + project.id + "-" + slideNum)
 												span.slideLink.visuallyhidden Slide #{slideNum}
-												img(src='img/' + slide.image + '-400.jpg')
+												img(src='img/400w/' + slide.image + slide.ext)
 
 
 			//- Render projects
@@ -72,7 +72,7 @@ html.no-js(lang="en")
 							.introtext.sizable
 								p
 									span.leader #{project.leader}
-									| #{project.text}
+									span!= project.text
 
 
 					//- Render slides 
@@ -95,7 +95,7 @@ html.no-js(lang="en")
 										data-ext=slide.ext)
 									noscript
 										img(alt=slide.alt,
-											src='img/' + slide.image + '-400.jpg')
+											src='img/400w/' + slide.image + slide.ext)
 							.wrapper
 								.info.sizable
 									.infoinner
