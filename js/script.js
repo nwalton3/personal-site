@@ -6,10 +6,12 @@
 // Variables
 var windowHeight = 0;
 var speedTest = null;
+var currentBreakpoint = null;
 $.hisrc.speedTest({
 	speedTestUri: 'http://nkwalton.com/images/speed.jpg?n=' + Math.random(),
 	speedTestKB: 48,
-	speedTestExpireMinutes: 1
+	speedTestExpireMinutes: 1,
+	forcedBandwidth: 'high'
 });
 
 
@@ -18,8 +20,15 @@ $(function(){
 
 
 	/* Speed Test */
-	speedTest = $.hisrc.connectionTestResult;
+	speedTest = $.hisrc.bandwidth;
 	console.log(speedTest);
+
+
+	/* Responsive Images */
+	checkImageBreakpoints();
+	if ( currentBreakpoint < 1600 ) {
+		$(window).on('resize', checkImageBreakpoints);
+	}
 
 
 	/* Handle hash navigation */
@@ -86,6 +95,96 @@ $(function(){
 	});
 
 });
+
+
+
+
+/**
+ * Func: CheckImageBreakpoints
+ * Desc: Check to see if responsive images need to be updated
+ * Args:  
+ */
+function checkImageBreakpoints () {
+	var viewport = $(window).width(),
+		large = 1777,
+		med = 888,
+		sm = 444;
+
+	// Check that the screen has actually gotten bigger
+	if ( viewport <= currentBreakpoint ) {
+		return;
+	}
+
+	if ( viewport >= large) {
+		if ( currentBreakpoint !== large ) {
+			updateResponsiveImages( 'img.responsive', 3200, speedTest );
+			currentBreakpoint = large;
+			$(window).off('resize', checkImageBreakpoints);
+		}
+
+	}
+	
+	// Large
+	else if ( viewport >= med ) {
+		if ( currentBreakpoint !== med ) {
+			updateResponsiveImages( 'img.responsive', 1600, speedTest );
+			currentBreakpoint = med;
+			if ( speedTest == 'high' ) {
+				$(window).off('resize', checkImageBreakpoints);
+			}
+		}
+	}
+	
+	// Medium
+	else if ( viewport >= sm) {
+		if ( currentBreakpoint !== sm ) {
+			updateResponsiveImages( 'img.responsive', 800, speedTest );
+			currentBreakpoint = sm;
+		}
+	}
+
+	// Small
+	else {
+		if ( currentBreakpoint !== 0) {
+			updateResponsiveImages( 'img.responsive', 400, speedTest );
+			currentBreakpoint = 0;
+		}
+	}
+}
+
+
+/**
+ * Func: UpdateResponsiveImages
+ * Desc: Swap out the src attribute for responsive images
+ * Args:  
+ */
+function updateResponsiveImages( identifier, breakpoint, bandwidth ) {
+	var images = $( identifier ),
+		retina = 0,
+		srcbase = 'img/';
+
+	if ( images.size() === 0 ) {
+		return;
+	}
+
+	if ( window.devicePixelRatio >= 1.2 ) {
+		retina = 1;
+	}
+
+	if (retina && bandwidth == 'high' ) {
+		breakpoint = breakpoint * 2;
+	}
+
+	images.each( function( index, image ) {
+		var img = $(image),
+			src = img.attr('data-src'),
+			ext = img.attr('data-ext');
+
+		img.attr('src', srcbase + src + '-' + breakpoint + ext);
+	});
+
+}
+
 
 
 

@@ -9,6 +9,7 @@
       "slides": [
         {
           "image": "sg_nav",
+          "ext": ".jpg",
           "alt": "",
           "specs": [
             {
@@ -70,6 +71,7 @@
       "slides": [
         {
           "image": "jonah1",
+          "ext": ".jpg",
           "alt": "",
           "specs": [
             {
@@ -98,6 +100,7 @@
         },
         {
           "image": "jonah2",
+          "ext": ".jpg",
           "alt": "",
           "specs": [
             {
