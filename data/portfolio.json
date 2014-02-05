@@ -46,6 +46,18 @@
       "text": " I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful works ever created in print. I designed a library exhibition highlighting many of them, including the <i>Bruce Rogers World Bible</i>, Eric Gill’s <i>Four Gospels</i>, masterpieces from the Kelmscott and Doves presses, Limited Editions and Grolier Club releases, Philip Smith bindings, books illustrated by Picasson and Braqua, and other breathtaking books.",
       "slides": [
         {
+          "image": "thesis_cards",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "thesis_brochure",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
           "image": "thesis_bible",
           "ext": ".jpg",
           "alt": "",
@@ -92,18 +104,6 @@
           "ext": ".jpg",
           "alt": "",
           "specs": []
-        },
-        {
-          "image": "thesis_cards",
-          "ext": ".jpg",
-          "alt": "",
-          "specs": []
-        },
-        {
-          "image": "thesis_brochure",
-          "ext": ".jpg",
-          "alt": "",
-          "specs": []
         }
       ]
     },
@@ -115,13 +115,13 @@
       "text": " ever since my freshman Biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects I’ve ever done.",
       "slides": [
         {
-          "image": "bugs1",
+          "image": "bugs_typographic",
           "ext": ".jpg",
           "alt": "",
           "specs": []
         },
         {
-          "image": "bugs2",
+          "image": "bugs_fabulous",
           "ext": ".jpg",
           "alt": "",
           "specs": []
@@ -133,13 +133,13 @@
           "specs": []
         },
         {
-          "image": "bugs_tiny",
+          "image": "bugs2",
           "ext": ".jpg",
           "alt": "",
           "specs": []
         },
         {
-          "image": "bugs_typographic",
+          "image": "bugs1",
           "ext": ".jpg",
           "alt": "",
           "specs": []
@@ -154,12 +154,6 @@
       "text": " was created to celebrate marriage. The text was taken from CS Lewis (<i>Mere Christianity</i>) It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.",
       "slides": [
         {
-          "image": "love",
-          "ext": ".jpg",
-          "alt": "",
-          "specs": []
-        },
-        {
           "image": "love1",
           "ext": ".jpg",
           "alt": "",
@@ -167,6 +161,12 @@
         },
         {
           "image": "love2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "love",
           "ext": ".jpg",
           "alt": "",
           "specs": []
