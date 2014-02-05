@@ -22,10 +22,21 @@ module.exports = (grunt) ->
 						'js/libs/jquery-2.0.3.min.js',
 						'js/plugins/typogr.js',
 						'js/plugins/hisrc.js',
-						#'js/plugins/responsive-img.js',
-						#'js/plugins/picturefill.js',
-						#'js/plugins/screenfull.js',
 						'js/script.js']
+			touch:
+				files:
+					'js/script-touch.min.js' : [
+						'js/libs/jquery-2.0.3.min.js',
+						'js/plugins/typogr.js',
+						'js/plugins/hisrc.js',
+						'js/plugins/touchswipe.js',
+						'js/touch.js',
+						'js/script.js']
+			init:
+				files:
+					'js/init.min.js' : [
+						'js/libs/modernizr.min.js',
+						'js/init.js']
 
 		jshint:
 			options:
@@ -37,9 +48,10 @@ module.exports = (grunt) ->
 				"jquery" : true
 				"browser" : true
 			files:[
-				#'js/init.js',
+				'js/init.js',
+				'js/touch.js',
 				'js/script.js'
-			]
+				]
 
 
 		sass:
@@ -101,10 +113,13 @@ module.exports = (grunt) ->
 				options:
 					livereload: true
 			js:
-				files: ['js/script.js']
-				tasks: ['jshint', 'uglify']
+				files: ['js/script.js', 'js/touch.js']
+				tasks: ['jshint', 'uglify:script', 'uglify:touch']
+			initjs:
+				files: ['js/init.js']
+				tasks: ['jshint', 'uglify:init']
 			jsmin:
-				files: ['js/script.min.js']
+				files: ['js/script.min.js', 'js/init.min.js']
 				options:
 					livereload: true
 			css:
