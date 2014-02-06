@@ -71,7 +71,8 @@ html.no-js(lang="en")
 						.wrapper
 							.introtext.sizable
 								p
-									span.leader #{project.leader}
+									span.dropcap(style="margin-left:" + project.capoffset)!= project.cap
+									span.leader!= project.leader
 									span!= project.text
 
 

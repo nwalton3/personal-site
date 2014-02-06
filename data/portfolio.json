@@ -4,7 +4,9 @@
       "title": "Sacred Gifts",
       "id": "gifts",
       "image": "",
-      "leader": "The BYU Museum of Art",
+      "cap": "T",
+      "capoffset": "-0.1em",
+      "leader": "he BYU Museum of Art",
       "text": " wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least tech-savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.",
       "slides": [
         {
@@ -26,7 +28,9 @@
       "title": "BYU Web",
       "id": "byu",
       "image": "",
-      "leader": "When BYU web community",
+      "cap": "W",
+      "capoffset": "-0.1em",
+      "leader": "hen the BYU web community",
       "text": " was tasked with redesigning BYU’s home page, it was most important to me that we achieve the right mood. We took inspiration from some of the beautiful places around campus and aimed for the same sort of dignified, inviting feeling on the web. The accompanying templates are meant to make it easy for campus entities to create sites that fit with the BYU web brand.",
       "slides": []
     },
@@ -34,7 +38,9 @@
       "title": "BYU Learning Suite",
       "id": "ls",
       "image": "",
-      "leader": "I worked extensively",
+      "cap": "I",
+      "capoffset": 0,
+      "leader": " worked extensively",
       "text": " with instructional designers and progammers to help create the BYU Learning Suite. I wrote a style guide and created hundreds of page mockups. I also had a big part in writing the CSS for the site, and part of my ongoing work is to train new designers and programmers on best practices in web design and web application programming.",
       "slides": []
     },
@@ -42,7 +48,9 @@
       "title": "Connections",
       "id": "thesis",
       "image": "",
-      "leader": "For my MFA thesis",
+      "cap": "F",
+      "capoffset": 0,
+      "leader": "or my MFA thesis",
       "text": " I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful works ever created in print. I designed a library exhibition highlighting many of them, including the <i>Bruce Rogers World Bible</i>, Eric Gill’s <i>Four Gospels</i>, masterpieces from the Kelmscott and Doves presses, Limited Editions and Grolier Club releases, Philip Smith bindings, books illustrated by Picasson and Braqua, and other breathtaking books.",
       "slides": [
         {
@@ -111,7 +119,9 @@
       "title": "Specimens",
       "id": "bugs",
       "image": "",
-      "leader": "I’ve been fascinated with insects",
+      "cap": "I",
+      "capoffset": 0,
+      "leader": "’ve been fascinated with insects",
       "text": " ever since my freshman Biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects I’ve ever done.",
       "slides": [
         {
@@ -150,7 +160,9 @@
       "title": "Love",
       "id": "love",
       "image": "",
-      "leader": "This letterpress broadside",
+      "cap": "T",
+      "capoffset": 0,
+      "leader": "his letterpress broadside",
       "text": " was created to celebrate marriage. The text was taken from CS Lewis (<i>Mere Christianity</i>) It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.",
       "slides": [
         {
@@ -177,7 +189,9 @@
       "title": "Jonah",
       "id": "jonah",
       "image": "img/jonahintro.png",
-      "leader": "I often prefer",
+      "cap": "I",
+      "capoffset": 0,
+      "leader": " often prefer",
       "text": " relief printing to other traditional media, maybe because it works so well with letterpress. This book has 20 linocut illustrations from the book of Jonah, with images and type printed on a Vandercook SP-15 proof press.",
       "slides": [
         {
@@ -245,7 +259,9 @@
       "title": "Ornate",
       "id": "ornate",
       "image": "",
-      "leader": "I spent some time",
+      "cap": "I",
+      "capoffset": 0,
+      "leader": " spent some time",
       "text": " studying some of the art movements from around the turn of the last century (especially Vienna Secession and Arts and Crafts), and decided to experiment with some of their ideas. I brought together various writings exploring the use of ornament, translated some of the articles from the original German, and created a magazine on the subject.",
       "slides": [
         {
