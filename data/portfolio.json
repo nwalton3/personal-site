@@ -51,7 +51,7 @@
       "cap": "F",
       "capoffset": 0,
       "leader": "or my MFA thesis",
-      "text": " I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful works ever created in print. I designed a library exhibition highlighting many of them, including the <i>Bruce Rogers World Bible</i>, Eric Gill’s <i>Four Gospels</i>, masterpieces from the Kelmscott and Doves presses, Limited Editions and Grolier Club releases, Philip Smith bindings, books illustrated by Picasson and Braqua, and other breathtaking books.",
+      "text": " I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful books in the world. I designed a library exhibition highlighting many of them, including the <i>Bruce Rogers World Bible</i>, Eric Gill’s <i>Four Gospels</i>, Kelmscott and Doves press masterpieces, Limited Editions and Grolier Club releases, Philip Smith bindings, Picasso and Braque illustrations, and other breathtaking works.",
       "slides": [
         {
           "image": "thesis_cards",
@@ -69,13 +69,56 @@
           "image": "thesis_bible",
           "ext": ".jpg",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "The Making of the Bruce Rogers World Bible",
+              "list": [
+                "World Publishing Co., 1949"
+              ]
+            },
+            {
+              "title": "The Bruce Rogers World Bible",
+              "list": [
+                "World Publishing Co., 1949",
+                "Designed by Bruce Rogers",
+                "Printed by A. Colish"
+              ]
+            }
+          ]
         },
         {
           "image": "thesis_bible1",
           "ext": ".jpg",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Prospectus",
+              "list": [
+                "The Bruce Rogers World Bible",
+                "World Publishing Co., 1949"
+              ]
+            },
+            {
+              "title": "Facsimiles",
+              "list": [
+                "Typographic sample",
+                "Galley Sheet",
+                "Letter from  Rogers to Colish",
+                "Composite of translator page",
+                "(From the Press of A. Colish Archives, University of elaware)"
+              ]
+            },
+            {
+              "title": "Other items",
+              "list": [
+                "Metal chase with type",
+                "Composing stick with type",
+                "Monotype matrix case",
+                "Picture of Monotype machine",
+                "Printers’ ornaments"
+              ]
+            }
+          ]
         },
         {
           "image": "thesis_society",
@@ -85,7 +128,7 @@
             {
               "title": "Music, Deep Rivers In My Soul",
               "list": [
-                "New York: Limited Editions Club, 2003",
+                "Limited Editions Club, 2003",
                 "Poem by Maya Angelou",
                 "Etchings by Dean Mitchell",
                 "Music by Wynton Marsalis"
@@ -94,7 +137,7 @@
             {
               "title": "Fra Luca de Pacioli of Borgo S. Sepulcro",
               "list": [
-                "New York: Grolier Club, 1931",
+                "Grolier Club, 1931",
                 "Written by Stanley Morison",
                 "Design by Bruce Rogers"
               ]
@@ -105,7 +148,29 @@
           "image": "thesis_doves",
           "ext": ".jpg",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "The Doves Press Bible",
+              "list": [
+                "Doves Press, 1904",
+                "Designed and printed by Emery Walker and T. J. Cobden-anderson"
+              ]
+            },
+            {
+              "title": "The Four Gospels of the Lord Jesus Christ",
+              "list": [
+                "Golden Cockerel Press, 1931",
+                "Designed and printed by Robert Gibbings and Eric Gill"
+              ]
+            },
+            {
+              "title": "Special binding for The Four Gospels",
+              "list": [
+                "Lilly Library Collection",
+                "Bound by William Matthews"
+              ]
+            }
+          ]
         },
         {
           "image": "thesis_cases",
@@ -181,7 +246,14 @@
           "image": "love",
           "ext": ".jpg",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Fully Justified",
+              "list": [
+                "If you’ve ever done letterpress, you know what it takes to get justified type. I cut a bunch of tiny paper spacers to get it just right."
+              ]
+            }
+          ]
         }
       ]
     },
@@ -231,7 +303,7 @@
             {
               "title": "Process",
               "list": [
-                "Linoleum cut &amp; letterpress",
+                "Linoleum cut & letterpress",
                 "Printed on a Vandercook SP-15",
                 "Bound in hard case"
               ]
@@ -239,7 +311,7 @@
             {
               "title": "Media",
               "list": [
-                "Univers &amp; Fortune Roman type",
+                "Univers & Fortune Roman type",
                 "Somerset paper"
               ]
             },
