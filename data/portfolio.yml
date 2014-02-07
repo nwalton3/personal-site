@@ -4,11 +4,12 @@ projects:
 
     -   title: Sacred Gifts
         id: gifts
-        image: ''
+        image: 'sg.png'
+        desc: Interface Design
         cap: T
-        capoffset: -0.1em
+        capoffset: -0.24em
         leader: he BYU Museum of Art
-        text: ' wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least tech-savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.'
+        text: ' wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.'
         slides:
         -   image: sg_nav
             ext: .jpg
@@ -23,6 +24,7 @@ projects:
     -   title: BYU Web
         id: byu
         image: ''
+        desc: Web Design
         cap: W
         capoffset: -0.1em
         leader: hen the BYU web community
@@ -34,6 +36,7 @@ projects:
     -   title: BYU Learning Suite
         id: ls
         image: ''
+        desc: Interface Design
         cap: I
         capoffset: 0
         leader: " worked extensively"
@@ -45,6 +48,7 @@ projects:
     -   title: Connections
         id: thesis
         image: ''
+        desc: Exhibition Design
         cap: F
         capoffset: 0
         leader: or my MFA thesis 
@@ -135,10 +139,11 @@ projects:
     -   title: Specimens
         id: bugs
         image: ''
+        desc: Poster / Self-promotion
         cap: I
-        capoffset: 0
-        leader: ’ve been fascinated with insects 
-        text: ' ever since my freshman Biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects I’ve ever done.'
+        capoffset: -0.2em
+        leader: nsects have fascinated me 
+        text: ' ever since my freshman biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects to date.'
         slides:
         -   image: bugs_typographic
             ext: .jpg
@@ -167,10 +172,11 @@ projects:
     -   title: Love
         id: love
         image: ''
+        desc: Letterpress
         cap: T
-        capoffset: 0
-        leader: his letterpress broadside 
-        text: ' was created to celebrate marriage. The text was taken from CS Lewis (<i>Mere Christianity</i>) It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.'
+        capoffset: -0.24em
+        leader: his broadside 
+        text: ' was created to celebrate marriage, with text taken from CS Lewis’ <i>Mere Christianity</i>. It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.'
         slides:
         -   image: love1
             ext: .jpg
@@ -194,6 +200,7 @@ projects:
     -   title: Jonah
         id: jonah
         image: img/jonahintro.png
+        desc: Letterpress / Linocut / Bookbinding
         cap: I
         capoffset: 0
         leader: " often prefer"
@@ -242,6 +249,7 @@ projects:
     -   title: Ornate
         id: ornate
         image: ''
+        desc: Research / Writing / Publication Design
         cap: I
         capoffset: 0
         leader: " spent some time"
@@ -251,3 +259,5 @@ projects:
             ext: .jpg
             alt: ''
             specs: []
+
+# Finish ####################

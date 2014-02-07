@@ -211,30 +211,58 @@ a.infobutton
 // Project intro page
 .intro
 	background-color: #000
+	font-size: 0.8em
+	@media (min-width: 450px)
+		font-size: 0.85em
+	@media (min-width: 600px)
+		font-size: 0.9em
+	@media (min-width: 750px)
+		font-size: 0.95em
+	@media (min-width: 800px)
+		font-size: 1em
+	@media (min-width: 1200px)
+		font-size: 1.1em
 	.introimage
-		padding-right: 55%
-	.introtext
-		margin-top: 2em
-		padding-left: 50%
-		font-size: 24px
-		line-height: 1.5
-		color: $yellow1
+		width: 40%
+		opacity: 0.6
+		margin: 0 auto
+		padding-right: 15%
+	.introtext 
 		font-family: $slab-font-family
-		font-weight: 100
-		.dropcap
-			font-size: 3.05em
-			float: left
-			margin: .12em .06em 0 0
-			line-height: 0.8
+		margin: 0 auto
+		max-width: 35em
+		margin: 0 auto
+		h3
+			font-size: 0.95em
 			font-weight: 100
-			opacity: 0.8
-		.leader
+			color: mix( $yellow1, #000 )
+			font-weight: 700
+			letter-spacing: 2px
+			margin: 2em 0 1.5em
+			font-family: $sans-font-family
 			text-transform: uppercase
-			font-size: 0.8em
-			letter-spacing: 1px
-			font-weight: 300
-			.caps
-				font-size: 1em
+		p
+			font-weight: 100
+			font-size: 1.5em
+			line-height: 1.5
+			color: $yellow1
+			.dropcap
+				font-family: "coquette", $slab-font-family
+				font-size: 3.05em
+				float: left
+				margin: 0.14em 0.08em 0 0
+				line-height: 0.8
+				font-weight: 100
+				opacity: 0.9
+			.leader
+				text-transform: uppercase
+				font-size: 0.8em
+				letter-spacing: 1px
+				font-weight: 300
+				font-family: "ff-ernestine-web-pro", $slab-font-family
+				margin-left: -0.1em
+				.caps
+					font-size: 1em
 
 
 // Table of contents

@@ -66,14 +66,14 @@ html.no-js(lang="en")
 							a(href='#' + project.id) #{project.title}
 					div(id=project.id + '-1', class='slide intro' + last)
 						.wrapper
-							.introimage.sizable
-								img(src=project.image)
-						.wrapper
-							.introtext.sizable
+							.introtext
+								h3 #{project.desc}
 								p
 									span.dropcap(style="margin-left:" + project.capoffset)!= project.cap
 									span.leader!= project.leader
 									span!= project.text
+							.introimage
+								img(src="img/title-pages/" + project.image)
 
 
 					//- Render slides 
