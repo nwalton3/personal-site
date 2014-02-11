@@ -41,16 +41,13 @@ html.no-js(lang="en")
 						.sizable
 							//- Render list
 							for project in projects
-								ul.projectThumb
-									li
-										a.projectTitle(href='#' + project.id) #{project.title}
-									- var slideNum = 1
-									for slide in project.slides
-										- slideNum += 1;
-										li
-											a(href="#" + project.id + "-" + slideNum)
-												span.slideLink.visuallyhidden Slide #{slideNum}
-												img(src='img/400w/' + slide.image + slide.ext)
+								a.projectLink(href='#' + project.id)
+									span.projectDesc 
+										// span.projectType #{project.desc}
+										span.projectTitle #{project.title}
+									each slide, i in project.slides
+										if i === 0
+											img(src='img/400w/' + slide.image + slide.ext)
 
 
 			//- Render projects
@@ -66,15 +63,15 @@ html.no-js(lang="en")
 							a(href='#' + project.id) #{project.title}
 					div(id=project.id + '-1', class='slide intro' + last)
 						.wrapper
+							.introimage
+								img(src="img/title-pages/" + project.image)
+						.wrapper
 							.introtext
 								h3 #{project.desc}
 								p
 									span.dropcap(style="margin-left:" + project.capoffset)!= project.cap
-									span.leader!= project.leader
+									span.leader(style="margin-left:" + project.leaderoffset)!= project.leader
 									span!= project.text
-						.wrapper
-							.introimage
-								img(src="img/title-pages/" + project.image)
 
 
 					//- Render slides 
@@ -112,3 +109,15 @@ html.no-js(lang="en")
 
 		footer.main
 		script(src='js/script.min.js')
+
+
+//-								ul.projectThumb
+//-									li.projectTitle
+//-										a(href='#' + project.id) #{project.title}
+//-									- var slideNum = 1
+//-									for slide in project.slides
+//-										- slideNum += 1;
+//-										li(class="slide-" + slideNum)
+//-											a(href="#" + project.id + "-" + slideNum)
+//-												span.slideLink.visuallyhidden Slide #{slideNum}
+//-												img(src='img/400w/' + slide.image + slide.ext)

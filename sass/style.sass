@@ -212,22 +212,16 @@ a.infobutton
 .intro
 	background-color: #000
 	font-size: 0.8em
-	@media (min-width: 450px)
-		font-size: 0.85em
-	@media (min-width: 600px)
-		font-size: 0.9em
-	@media (min-width: 750px)
-		font-size: 0.95em
-	@media (min-width: 800px)
-		font-size: 1em
-	@media (min-width: 1200px)
-		font-size: 1.1em
+
 	.introimage
-		width: 100%
-		opacity: 0.2
+		width: 32em
+		opacity: 0.15
 		margin: 0
 		min-width: 250px
 		max-width: 600px
+		margin-left: -10em
+		transition: margin-left 0.5s ease
+
 	.introtext 
 		font-family: $slab-font-family
 		margin: 0 auto
@@ -266,34 +260,97 @@ a.infobutton
 				.caps
 					font-size: 1em
 
+	@media (min-width: 450px)
+		font-size: 0.85em
+	@media (min-width: 600px)
+		font-size: 0.9em
+		.introimage
+			opacity: 0.2
+		.introtext
+			text-shadow: 0 0 10px #000
+	@media (min-width: 750px)
+		font-size: 0.95em
+	@media (min-width: 800px)
+		font-size: 1em
+		.introimage
+			margin: 0 auto
+			opacity: 0.25
+			img
+				margin-left: -19em
+		.introtext
+			text-shadow: 0 0 10px #000, 0 0 20px #000
+	@media (min-width: 1200px)
+		font-size: 1.1em
+
+
+
 
 // Table of contents
 #intro .slide
-	ul
-		clear: both
-	li
-		margin: 5px 4px
-		margin-top: -2em
-		transition: all 0.4s ease
-		display: block
-		float: left
-		border: 1px solid mix($yellow1, #000)
-		a
+	a
+		max-width: 400px
+		width: 31%
+		display: inline-block
+		margin-left: 1%
+		margin-bottom: .25em
+		overflow: hidden
+		.projectDesc
+			z-index: 101
 			display: block
-			height: 2em
-			transition: all 0.4s ease
-			width: 180px
-			overflow: hidden
-			img
-				width: 400px
-				height: 300px
-				max-width: 400px
-				max-height: 300px
-	&.visible
-		li
-			margin-top: 0
-			a
-				height: 100px
+			position: absolute
+			bottom: -1em
+			left: 0
+			width: 100%
+			background-color: rgba(#000, 0.65)
+			transition: all 0.3s ease
+			padding: .5em
+			line-height: 1.1
+			opacity: 0
+		&:hover .projectDesc
+			bottom: 0
+			opacity: 1
+		.projectTitle
+			display: block
+			font-size: 1.5em
+			font-weight: 100
+			color: $yellow3
+			font-family: $slab-font-family
+		.projectType
+			display: block
+			font-size: .75em
+			letter-spacing: 1px
+			margin-bottom: .2em
+			color: mix($yellow1, $yellow3)
+			text-transform: uppercase
+
+
+// Table of contents
+// #intro .slide
+// 	ul
+// 		clear: both
+// 	li
+// 		margin: 5px 4px
+// 		margin-top: -2em
+// 		transition: all 0.4s ease
+// 		display: block
+// 		float: left
+// 		border: 1px solid mix($yellow1, #000)
+// 		a
+// 			display: block
+// 			height: 2em
+// 			transition: all 0.4s ease
+// 			width: 180px
+// 			overflow: hidden
+// 			img
+// 				width: 400px
+// 				height: 300px
+// 				max-width: 400px
+// 				max-height: 300px
+// 	&.visible
+// 		li
+// 			margin-top: 0
+// 			a
+// 				height: 100px
 
 
 

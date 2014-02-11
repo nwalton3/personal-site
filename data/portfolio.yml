@@ -6,8 +6,9 @@ projects:
         id: gifts
         image: 'sg.png'
         desc: Interface Design
-        cap: T
         capoffset: -0.24em
+        leaderoffset: -0.1em
+        cap: T
         leader: he BYU Museum of Art
         text: ' wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.'
         slides:
@@ -23,12 +24,13 @@ projects:
 
     -   title: BYU Web
         id: byu
-        image: ''
+        image: byu.png
         desc: Web Design
-        cap: W
         capoffset: -0.1em
-        leader: hen the BYU web community
-        text: " was tasked with redesigning BYU’s home page, it was most important to me that we achieve the right mood. We took inspiration from some of the beautiful places around campus and aimed for the same sort of dignified, inviting feeling on the web. The accompanying templates are meant to make it easy for campus entities to create sites that fit with the BYU web brand."
+        leaderoffset: -0.3em
+        cap: O
+        leader: ur top priority
+        text: " for the BYU home page was achieving the right mood. We searched for inspiration in some of the most beautiful places around campus and worked to create the same dignified, inviting feeling on the web site. The BYU web templates make it easy for anyone on campus to build sites that fit within the brand."
         slides: []
 
 # BYU Learning Suite ####################
@@ -37,8 +39,9 @@ projects:
         id: ls
         image: ''
         desc: Interface Design
-        cap: I
         capoffset: 0
+        leaderoffset: -0.1em
+        cap: I
         leader: " worked extensively"
         text: " with instructional designers and progammers to help create the BYU Learning Suite. I wrote a style guide and created hundreds of page mockups. I also had a big part in writing the CSS for the site, and part of my ongoing work is to train new designers and programmers on best practices in web design and web application programming."
         slides: []
@@ -49,8 +52,9 @@ projects:
         id: thesis
         image: ''
         desc: Exhibition Design
-        cap: F
         capoffset: 0
+        leaderoffset: -0.1em
+        cap: F
         leader: or my MFA thesis 
         text: ' I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful books in the world. I designed a library exhibition highlighting many of them, including the <i>Bruce Rogers World Bible</i>, Eric Gill’s <i>Four Gospels</i>, Kelmscott and Doves press masterpieces, Limited Editions and Grolier Club releases, Philip Smith bindings, Picasso and Braque illustrations, and other breathtaking works.'
         slides:
@@ -140,8 +144,9 @@ projects:
         id: bugs
         image: ''
         desc: Poster / Self-promotion
-        cap: I
         capoffset: -0.2em
+        leaderoffset: -0.1em
+        cap: I
         leader: nsects have fascinated me 
         text: ' ever since my freshman biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects to date.'
         slides:
@@ -173,8 +178,9 @@ projects:
         id: love
         image: ''
         desc: Letterpress
-        cap: T
         capoffset: -0.24em
+        leaderoffset: -0.1em
+        cap: T
         leader: his broadside 
         text: ' was created to celebrate marriage, with text taken from CS Lewis’ <i>Mere Christianity</i>. It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.'
         slides:
@@ -199,10 +205,11 @@ projects:
 
     -   title: Jonah
         id: jonah
-        image: img/jonahintro.png
+        image: jonah.png
         desc: Letterpress / Linocut / Bookbinding
-        cap: I
         capoffset: 0
+        leaderoffset: -0.1em
+        cap: I
         leader: " often prefer"
         text: ' relief printing to other traditional media, maybe because it works so well with letterpress. This book has 20 linocut illustrations from the book of Jonah, with images and type printed on a Vandercook SP-15 proof press.'
         slides:
@@ -250,8 +257,9 @@ projects:
         id: ornate
         image: ''
         desc: Research / Writing / Publication Design
-        cap: I
         capoffset: 0
+        leaderoffset: -0.1em
+        cap: I
         leader: " spent some time"
         text: ' studying some of the art movements from around the turn of the last century (especially Vienna Secession and Arts and Crafts), and decided to experiment with some of their ideas. I brought together various writings exploring the use of ornament, translated some of the articles from the original German, and created a magazine on the subject.'
         slides:
