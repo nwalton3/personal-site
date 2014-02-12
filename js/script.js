@@ -7,8 +7,13 @@
 var windowHeight = 0;
 var speedTest = null;
 var currentBreakpoint = null;
+var baseAssetUrl = 'img/';
+//var baseAssetUrl = 'http://static.nkwalton.com/img/';
+
+
+// Run speed test
 $.hisrc.speedTest({
-	speedTestUri: 'http://nkwalton.com/images/speed.jpg?n=' + Math.random(),
+	speedTestUri: 'http://static.nkwalton.com/img/speed.jpg?n=' + Math.random(),
 	speedTestKB: 48,
 	speedTestExpireMinutes: 1,
 	forcedBandwidth: 'high'
@@ -16,19 +21,11 @@ $.hisrc.speedTest({
 
 
 // On page load
-$(function(){
+$(document).ready(function(){
 
 
 	/* Speed Test */
 	speedTest = $.hisrc.bandwidth;
-	console.log(speedTest);
-
-
-	/* Responsive Images */
-	checkImageBreakpoints();
-	if ( currentBreakpoint < 1600 ) {
-		$(window).on('resize', checkImageBreakpoints);
-	}
 
 
 	/* Handle hash navigation */
@@ -36,17 +33,22 @@ $(function(){
 	// On load
 	var url = document.location.toString();
 	var newHash = '';
+	var firstSlide = 'intro-1';
 
 	if ( url.match('#') ) {
 		var split = url.split( '#' )[1];
 		if ( url.match('=') ) {
 			split = split.split( '=' )[0];
 		}
-		// Show the correct slide on load
-		gotoSlide( split );
-	} else {
-		gotoSlide( 'intro-1' );
+
+		if ( split && $('#' + split).size() !== 0 ) {
+			// Show the correct slide on load
+			firstSlide = split;
+		} 
 	}
+	
+	gotoSlide( firstSlide );
+
 
 	// On hashchange
 	$(window).on('hashchange', function(e){
@@ -59,6 +61,14 @@ $(function(){
 		}
 		newHash = hash;
 	});
+
+
+
+	/* Responsive Images */
+	checkImageBreakpoints();
+	if ( currentBreakpoint < 1600 ) {
+		$(window).on('resize', checkImageBreakpoints);
+	}
 
 
 
@@ -105,6 +115,7 @@ $(function(){
  * Args:  
  */
 function checkImageBreakpoints () {
+
 	var viewport = $(window).width(),
 		large = 1777,
 		med = 888,
@@ -117,17 +128,16 @@ function checkImageBreakpoints () {
 
 	if ( viewport >= large) {
 		if ( currentBreakpoint !== large ) {
-			updateResponsiveImages( 'img.responsive', 3200, speedTest );
+			updateResponsiveImages( 3200, speedTest );
 			currentBreakpoint = large;
 			$(window).off('resize', checkImageBreakpoints);
 		}
-
 	}
 	
 	// Large
 	else if ( viewport >= med ) {
 		if ( currentBreakpoint !== med ) {
-			updateResponsiveImages( 'img.responsive', 1600, speedTest );
+			updateResponsiveImages( 1600, speedTest );
 			currentBreakpoint = med;
 			if ( speedTest == 'high' ) {
 				$(window).off('resize', checkImageBreakpoints);
@@ -138,7 +148,7 @@ function checkImageBreakpoints () {
 	// Medium
 	else if ( viewport >= sm) {
 		if ( currentBreakpoint !== sm ) {
-			updateResponsiveImages( 'img.responsive', 800, speedTest );
+			updateResponsiveImages( 800, speedTest );
 			currentBreakpoint = sm;
 		}
 	}
@@ -146,7 +156,7 @@ function checkImageBreakpoints () {
 	// Small
 	else {
 		if ( currentBreakpoint !== 0) {
-			updateResponsiveImages( 'img.responsive', 400, speedTest );
+			updateResponsiveImages( 400, speedTest );
 			currentBreakpoint = 0;
 		}
 	}
@@ -154,14 +164,37 @@ function checkImageBreakpoints () {
 
 
 /**
+ * Func: GetCurrentImageBreakpoint
+ * Desc: Get the current width of the responsive images
+ * Args:  
+ */
+function getCurrentImageWidth() {
+	var large = 1777,
+		med = 888,
+		sm = 444,
+		imagewidth = 400;
+
+	if ( currentBreakpoint == large ) {
+		imagewidth = 3200;
+	} else if ( currentBreakpoint == med ) {
+		imagewidth = 1600;
+	} else if ( currentBreakpoint == sm ) {
+		imagewidth = 800;
+	} 
+
+	return imagewidth;
+}
+
+
+
+/**
  * Func: UpdateResponsiveImages
  * Desc: Swap out the src attribute for responsive images
  * Args:  
  */
-function updateResponsiveImages( identifier, breakpoint, bandwidth ) {
-	var images = $( identifier ),
-		retina = 0,
-		srcbase = 'img/';
+function updateResponsiveImages( breakpoint, bandwidth ) {
+	var images = $('img.lazy'),
+		retina = 0;
 
 	if ( images.size() === 0 ) {
 		return;
@@ -175,18 +208,124 @@ function updateResponsiveImages( identifier, breakpoint, bandwidth ) {
 		breakpoint = breakpoint * 2;
 	}
 
-	images.each( function( index, image ) {
-		var img = $(image),
-			src = img.attr('data-src'),
-			ext = img.attr('data-ext');
+	// Set a loading flag
+	images.parent().addClass('toLoad');
 
-		img.attr('src', srcbase + breakpoint + 'w/' + src + ext);
-	});
-
+	// Load the relevant images
+	lazyLoadImages( breakpoint );
 }
 
 
 
+/**
+ * Func: LazyLoadImages
+ * Desc: Load the site's images
+ * Args: @identifier - string that will allow jQuery to access images
+ *		 @breakpoint - The image size (400, 800, 1600, 3200)
+ */
+function lazyLoadImages( breakpoint ) {
+	var identifier = 'img.lazy',
+		currentSlide = $('.visible'),
+		currentImage = currentSlide.find( identifier ),
+		currentProject = currentSlide.closest('.project'),
+		nextSlide = getNextSlide( currentSlide, true ),
+		nextImage = $('#' + nextSlide).find( identifier ),
+		prevSlide = getNextSlide( currentSlide, false ),
+		prevImage = $('#' + prevSlide).find( identifier ),
+		projImages = currentProject.find( identifier ),
+		nextProject = getNextProject( currentProject, true ),
+		nextProjImages = $('#' + nextProject).find( identifier ),
+		prevProject = getNextProject( currentProject, false ),
+		prevProjImages = $('#' + prevProject).find( identifier );
+
+	// 1. Load the current page's image (if it's not already)
+	loadImages( currentImage, breakpoint );
+
+	// 2. Load the next page's image (if it's not already)
+	loadImages( nextImage, breakpoint );
+
+	// 3. Load the previous page's image (if it's not already)
+	loadImages( prevImage, breakpoint );
+
+	// 4. Load the rest of the current project's images (if they're not already)
+	loadImages( projImages, breakpoint );
+
+	// 5. Load the next project's images (if they're not already)
+	loadImages( nextProjImages, breakpoint );
+
+	// 6. Load the previous project's images (if they're not already)
+	loadImages( prevProjImages, breakpoint );
+
+}
+
+
+/**
+ * Func: loadImages
+ * Desc: Load an image or images
+ * Args:  
+ */
+function loadImages( images, breakpoint ) {
+	if( !images.size() ) {
+		return;
+	}
+
+	images.each(function( index, img ){
+		loadImage( img, breakpoint );
+	});
+}
+
+
+/**
+ * Func: loadImage
+ * Desc: Load an image
+ * Args:  
+ */
+function loadImage( img, breakpoint ) {
+	var image = $(img),
+		needsLoading = image.parent().hasClass('toLoad');
+
+	if ( !needsLoading ) {
+		return;
+	}
+
+	var src = image.attr('data-src'),
+		ext = image.attr('data-ext'),
+		url = baseAssetUrl + src + ext;
+
+	if( image.hasClass( 'responsive' ) ) {
+		url = baseAssetUrl + breakpoint + 'w/' + src + ext;
+	} else if ( image.hasClass( 'titleImage' ) ) {
+		url = baseAssetUrl + 'title-pages/' + src;
+	} else if ( image.hasClass( 'front' ) ) {
+		url = baseAssetUrl + '400w/' + src + ext;
+	}
+
+	console.log( 'loading: ' + url );
+
+	image.parent().removeClass('toLoad').addClass('loading');
+
+	var loader = new ImageLoader( url );
+
+	//set event handler
+	loader.loadEvent = function( url, img ){
+		//action to perform when the image is loaded
+		addImage( image, url );
+	};
+
+	loader.load();
+}
+
+
+/**
+ * Func: addImage
+ * Desc: Add an image to the page
+ * Args:  
+ */
+function addImage( image, url ) {
+	//document.body.appendChild(image);
+	image.attr('src', url);
+	image.parent().removeClass('loading');
+}
 
 
 /**
@@ -250,6 +389,7 @@ function gotoSlide( slideID ) {
 
 	currentSlide.removeClass('visible');
 	$(newSlide).addClass('visible');
+	lazyLoadImages( getCurrentImageWidth() );
 
 	if(project !== newProject) {
 		gotoProject(newProject.attr('id'));
@@ -302,9 +442,15 @@ function changeSlide( direction ) {
 /**
  * Func: GetNextSlide
  * Desc: 
- * Args: 
+ * Args: @currentSlide - The jQuery object containing the current slide $('.visible')
+ *		 @next - Boolean: next = true; prev = false
  */
 function getNextSlide( currentSlide, next ) {
+	if ( currentSlide === undefined ) {
+		console.log( 'currentSlide is undefined' );
+		return;
+	}
+
 	var nextSlide = '',
 		nextProject = '',
 		project = currentSlide.closest('.project'),
@@ -343,7 +489,6 @@ function getNextSlide( currentSlide, next ) {
 		}
 	}
 
-	console.log('getNextSlide: ' + nextSlide);
 	return nextSlide;
 }
 
@@ -368,7 +513,6 @@ function getNextProject( project, next ) {
 		} else {
 			// Next project
 			nextProjectNum = projectNum + 1;
-			console.log('nextProjectNum: ' + nextProjectNum);
 		}	
 
 	} else if (  projectNum < 1 ) {
@@ -381,7 +525,6 @@ function getNextProject( project, next ) {
 
 	nextProjectID = $('.project[data-project=' + nextProjectNum + ']').attr('id');
 
-	console.log('getNextProject: ' + nextProjectID);
 	return nextProjectID;
 }
 
@@ -397,7 +540,6 @@ function getFirstSlide( projectID ) {
 	var project = $('#' + projectID),
 		firstSlideID = project.find('.slide.intro').attr('id');
 
-	console.log('getFirstSlide: ' + firstSlideID);
 	return firstSlideID;
 }
 
@@ -411,6 +553,5 @@ function getLastSlide( projectID ) {
 	var project = $('#' + projectID),
 		lastslideID = project.find('.slide.last').attr('id');
 
-	console.log('getLastSlide: ' + lastslideID);
 	return lastslideID;
 }

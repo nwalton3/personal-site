@@ -1,4 +1,4 @@
-/*! typogr.extend.js */
+/* typogr.extend.js */
 
 
 /* Check for browser character support
@@ -15,3 +15,4 @@ http://stackoverflow.com/questions/4635683/detect-browser-character-support-in-j
         ? 'not supported' : 'supported');
 </script>
 */
+

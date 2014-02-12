@@ -122,6 +122,13 @@ header.main
 				text-decoration: none
 
 
+.introimage, .projectLink
+	img.lazy
+		opacity: 1
+		transition: opacity 0.3s ease
+		.loading &
+			opacity: 0
+
 
 // Slides
 .slide
@@ -146,6 +153,7 @@ header.main
 		min-height: 40px
 	.image
 		z-index: 9
+		opacity: 1
 	.info
 		z-index: 8
 	.infoinner
@@ -323,6 +331,35 @@ a.infobutton
 			color: mix($yellow1, $yellow3)
 			text-transform: uppercase
 
+
+@media all and (max-width: 768px)
+	.slide 
+		position: absolute
+		width: 100%
+		.wrapper
+			&.imagewrapper, &.textwrapper
+				position: relative
+			&.buttonwrapper
+				display: none
+		&.intro .wrapper
+			margin-left: 5%
+		.infoinner
+			text-align: left
+			top: 15px
+			width: auto
+			padding-left: 5%
+			padding-right: 5%
+	.show-info .slide .image
+		padding-left: 0
+	#intro .slide a
+		width: 49%
+		margin-bottom: 0.5em
+
+@media all and (max-width: 480px)
+	#intro .slide a
+		width: 90%
+		margin-left: 5%
+		margin-bottom: 0.75em
 
 // Table of contents
 // #intro .slide

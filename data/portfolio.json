@@ -36,7 +36,51 @@
       "cap": "O",
       "leader": "ur top priority",
       "text": " for the BYU home page was achieving the right mood. We searched for inspiration in some of the most beautiful places around campus and worked to create the same dignified, inviting feeling on the web site. The BYU web templates make it easy for anyone on campus to build sites that fit within the brand.",
-      "slides": []
+      "slides": [
+        {
+          "image": "byu-home",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "byu_home-sizes",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "byu_style",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        }
+      ]
+    },
+    {
+      "title": "BYU Tickets",
+      "id": "byutickets",
+      "image": "",
+      "desc": "Web Design",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "T",
+      "leader": "he main purpose",
+      "text": " for redesigning the BYU Tickets web site was to make it easier for people to buy tickets. We removed almost everything that didn’t directly contribute to that, and converted the site to be fully responsive to meet the increasing mobile traffic.",
+      "slides": [
+        {
+          "image": "byutickets_full",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "byutickets-sizes2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        }
+      ]
     },
     {
       "title": "BYU Learning Suite",
@@ -48,7 +92,32 @@
       "cap": "I",
       "leader": " worked extensively",
       "text": " with instructional designers and progammers to help create the BYU Learning Suite. I wrote a style guide and created hundreds of page mockups. I also had a big part in writing the CSS for the site, and part of my ongoing work is to train new designers and programmers on best practices in web design and web application programming.",
-      "slides": []
+      "slides": [
+        {
+          "image": "ls-scores",
+          "ext": ".png",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "ls-grader-exam",
+          "ext": ".png",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "ls-grader-exam-essay",
+          "ext": ".png",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "ls-grader",
+          "ext": ".png",
+          "alt": "",
+          "specs": []
+        }
+      ]
     },
     {
       "title": "Connections",
@@ -113,7 +182,7 @@
                 "Galley Sheet",
                 "Letter from  Rogers to Colish",
                 "Composite of translator page",
-                "(From the Press of A. Colish Archives, University of elaware)"
+                "(From the Press of A. Colish Archives, University of Delaware)"
               ]
             },
             {
@@ -191,7 +260,7 @@
     {
       "title": "Specimens",
       "id": "bugs",
-      "image": "",
+      "image": "cicada.png",
       "desc": "Poster / Self-promotion",
       "capoffset": "-0.2em",
       "leaderoffset": "-0.1em",

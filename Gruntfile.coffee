@@ -22,6 +22,7 @@ module.exports = (grunt) ->
 						'js/libs/jquery-2.0.3.min.js',
 						'js/plugins/typogr.js',
 						'js/plugins/hisrc.js',
+						'js/plugins/imageloader.js',
 						'js/script.js']
 			touch:
 				files:
@@ -29,6 +30,7 @@ module.exports = (grunt) ->
 						'js/libs/jquery-2.0.3.min.js',
 						'js/plugins/typogr.js',
 						'js/plugins/hisrc.js',
+						'js/plugins/imageloader.js',
 						'js/plugins/touchswipe.js',
 						'js/touch.js',
 						'js/script.js']

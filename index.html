@@ -15,7 +15,7 @@
     <!-- Scripts loaded via script loader. See notes in init.js file.-->
     <script type="text/javascript" src="//use.typekit.net/nyn3skg.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="js/libs/modernizr.min.js"></script>
+    <script src="js/init.min.js"></script>
   </head>
   <body>
     <header class="main">
@@ -31,14 +31,15 @@
         <div id="intro-1" class="slide intro last">
           <div class="wrapper">
             <div class="sizable"><a href="#gifts" class="projectLink"><span class="projectDesc">
-                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Sacred Gifts</span></span><img src="img/400w/sg_nav.jpg"></a><a href="#byu" class="projectLink"><span class="projectDesc">
-                  <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Web</span></span></a><a href="#ls" class="projectLink"><span class="projectDesc">
-                  <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Learning Suite</span></span></a><a href="#thesis" class="projectLink"><span class="projectDesc">
-                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Connections</span></span><img src="img/400w/thesis_cards.jpg"></a><a href="#bugs" class="projectLink"><span class="projectDesc">
-                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Specimens</span></span><img src="img/400w/bugs_typographic.jpg"></a><a href="#love" class="projectLink"><span class="projectDesc">
-                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Love</span></span><img src="img/400w/love1.jpg"></a><a href="#jonah" class="projectLink"><span class="projectDesc">
-                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Jonah</span></span><img src="img/400w/jonah1.jpg"></a><a href="#ornate" class="projectLink"><span class="projectDesc">
-                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Ornate</span></span><img src="img/400w/ornate_abuse_close.jpg"></a>
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Sacred Gifts</span></span><img data-src="sg_nav" data-ext=".jpg" alt="" class="lazy front"></a><a href="#byu" class="projectLink"><span class="projectDesc">
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Web</span></span><img data-src="byu-home" data-ext=".jpg" alt="" class="lazy front"></a><a href="#byutickets" class="projectLink"><span class="projectDesc">
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Tickets</span></span><img data-src="byutickets_full" data-ext=".jpg" alt="" class="lazy front"></a><a href="#ls" class="projectLink"><span class="projectDesc">
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Learning Suite</span></span><img data-src="ls-scores" data-ext=".png" alt="" class="lazy front"></a><a href="#thesis" class="projectLink"><span class="projectDesc">
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Connections</span></span><img data-src="thesis_cards" data-ext=".jpg" alt="" class="lazy front"></a><a href="#bugs" class="projectLink"><span class="projectDesc">
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Specimens</span></span><img data-src="bugs_typographic" data-ext=".jpg" alt="" class="lazy front"></a><a href="#love" class="projectLink"><span class="projectDesc">
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Love</span></span><img data-src="love1" data-ext=".jpg" alt="" class="lazy front"></a><a href="#jonah" class="projectLink"><span class="projectDesc">
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Jonah</span></span><img data-src="jonah1" data-ext=".jpg" alt="" class="lazy front"></a><a href="#ornate" class="projectLink"><span class="projectDesc">
+                  <!-- span.projectType #{project.desc}--><span class="projectTitle">Ornate</span></span><img data-src="ornate_abuse_close" data-ext=".jpg" alt="" class="lazy front"></a>
             </div>
           </div>
         </div>
@@ -49,7 +50,7 @@
         </div>
         <div id="gifts-1" class="slide intro">
           <div class="wrapper">
-            <div class="introimage"><img src="img/title-pages/sg.png"></div>
+            <div class="introimage"><img data-src="sg.png" data-ext="" alt="" class="lazy titleImage"></div>
           </div>
           <div class="wrapper">
             <div class="introtext">
@@ -59,15 +60,15 @@
           </div>
         </div>
         <div id="gifts-2" class="slide last">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="sg_nav" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="sg_nav" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/sg_nav.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
                 <h3>Navigation</h3>
@@ -83,9 +84,9 @@
         <div class="title">
           <h2><a href="#byu">BYU Web</a></h2>
         </div>
-        <div id="byu-1" class="slide intro last">
+        <div id="byu-1" class="slide intro">
           <div class="wrapper">
-            <div class="introimage"><img src="img/title-pages/byu.png"></div>
+            <div class="introimage"><img data-src="byu.png" data-ext="" alt="" class="lazy titleImage"></div>
           </div>
           <div class="wrapper">
             <div class="introtext">
@@ -94,14 +95,110 @@
             </div>
           </div>
         </div>
+        <div id="byu-2" class="slide">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="byu-home" data-ext=".jpg" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/byu-home.jpg"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="byu-3" class="slide">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="byu_home-sizes" data-ext=".jpg" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/byu_home-sizes.jpg"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="byu-4" class="slide last">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="byu_style" data-ext=".jpg" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/byu_style.jpg"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div data-project='3' id="ls" class="project">
+      <div data-project='3' id="byutickets" class="project">
+        <div class="title">
+          <h2><a href="#byutickets">BYU Tickets</a></h2>
+        </div>
+        <div id="byutickets-1" class="slide intro">
+          <div class="wrapper">
+            <div class="introimage"><img data-src="" data-ext="" alt="" class="lazy titleImage"></div>
+          </div>
+          <div class="wrapper">
+            <div class="introtext">
+              <h3>Web Design</h3>
+              <p><span style="margin-left:-0.24em" class="dropcap">T</span><span style="margin-left:-0.1em" class="leader">he main purpose</span><span> for redesigning the BYU Tickets web site was to make it easier for people to buy tickets. We removed almost everything that didn’t directly contribute to that, and converted the site to be fully responsive to meet the increasing mobile traffic.</span></p>
+            </div>
+          </div>
+        </div>
+        <div id="byutickets-2" class="slide">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="byutickets_full" data-ext=".jpg" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/byutickets_full.jpg"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="byutickets-3" class="slide last">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="byutickets-sizes2" data-ext=".jpg" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/byutickets-sizes2.jpg"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-project='4' id="ls" class="project">
         <div class="title">
           <h2><a href="#ls">BYU Learning Suite</a></h2>
         </div>
-        <div id="ls-1" class="slide intro last">
+        <div id="ls-1" class="slide intro">
           <div class="wrapper">
-            <div class="introimage"><img src="img/title-pages/"></div>
+            <div class="introimage"><img data-src="" data-ext="" alt="" class="lazy titleImage"></div>
           </div>
           <div class="wrapper">
             <div class="introtext">
@@ -110,14 +207,78 @@
             </div>
           </div>
         </div>
+        <div id="ls-2" class="slide">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="ls-scores" data-ext=".png" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/ls-scores.png"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ls-3" class="slide">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="ls-grader-exam" data-ext=".png" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/ls-grader-exam.png"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ls-4" class="slide">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="ls-grader-exam-essay" data-ext=".png" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/ls-grader-exam-essay.png"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ls-5" class="slide last">
+          <div class="wrapper buttonwrapper">
+            <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
+          </div>
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="ls-grader" data-ext=".png" class="lazy responsive">
+              <noscript><img alt="" src="img/400w/ls-grader.png"></noscript>
+            </div>
+          </div>
+          <div class="wrapper textwrapper">
+            <div class="info sizable">
+              <div class="infoinner">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div data-project='4' id="thesis" class="project">
+      <div data-project='5' id="thesis" class="project">
         <div class="title">
           <h2><a href="#thesis">Connections</a></h2>
         </div>
         <div id="thesis-1" class="slide intro">
           <div class="wrapper">
-            <div class="introimage"><img src="img/title-pages/"></div>
+            <div class="introimage"><img data-src="" data-ext="" alt="" class="lazy titleImage"></div>
           </div>
           <div class="wrapper">
             <div class="introtext">
@@ -127,15 +288,15 @@
           </div>
         </div>
         <div id="thesis-2" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="thesis_cards" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="thesis_cards" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/thesis_cards.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -143,15 +304,15 @@
           </div>
         </div>
         <div id="thesis-3" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="thesis_brochure" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="thesis_brochure" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/thesis_brochure.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -159,15 +320,15 @@
           </div>
         </div>
         <div id="thesis-4" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="thesis_bible" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="thesis_bible" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/thesis_bible.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
                 <h3>The Making of the Bruce Rogers World Bible</h3>
@@ -185,15 +346,15 @@
           </div>
         </div>
         <div id="thesis-5" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="thesis_bible1" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="thesis_bible1" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/thesis_bible1.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
                 <h3>Prospectus</h3>
@@ -207,7 +368,7 @@
                   <li>Galley Sheet</li>
                   <li>Letter from  Rogers to Colish</li>
                   <li>Composite of translator page</li>
-                  <li>(From the Press of A. Colish Archives, University of elaware)</li>
+                  <li>(From the Press of A. Colish Archives, University of Delaware)</li>
                 </ul>
                 <h3>Other items</h3>
                 <ul>
@@ -222,15 +383,15 @@
           </div>
         </div>
         <div id="thesis-6" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="thesis_society" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="thesis_society" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/thesis_society.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
                 <h3>Music, Deep Rivers In My Soul</h3>
@@ -251,15 +412,15 @@
           </div>
         </div>
         <div id="thesis-7" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="thesis_doves" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="thesis_doves" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/thesis_doves.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
                 <h3>The Doves Press Bible</h3>
@@ -282,15 +443,15 @@
           </div>
         </div>
         <div id="thesis-8" class="slide last">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="thesis_cases" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="thesis_cases" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/thesis_cases.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -298,13 +459,13 @@
           </div>
         </div>
       </div>
-      <div data-project='5' id="bugs" class="project">
+      <div data-project='6' id="bugs" class="project">
         <div class="title">
           <h2><a href="#bugs">Specimens</a></h2>
         </div>
         <div id="bugs-1" class="slide intro">
           <div class="wrapper">
-            <div class="introimage"><img src="img/title-pages/"></div>
+            <div class="introimage"><img data-src="cicada.png" data-ext="" alt="" class="lazy titleImage"></div>
           </div>
           <div class="wrapper">
             <div class="introtext">
@@ -314,15 +475,15 @@
           </div>
         </div>
         <div id="bugs-2" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="bugs_typographic" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="bugs_typographic" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/bugs_typographic.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -330,15 +491,15 @@
           </div>
         </div>
         <div id="bugs-3" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="bugs_fabulous" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="bugs_fabulous" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/bugs_fabulous.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -346,15 +507,15 @@
           </div>
         </div>
         <div id="bugs-4" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="bugs_bee" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="bugs_bee" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/bugs_bee.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -362,15 +523,15 @@
           </div>
         </div>
         <div id="bugs-5" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="bugs2" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="bugs2" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/bugs2.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -378,15 +539,15 @@
           </div>
         </div>
         <div id="bugs-6" class="slide last">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="bugs1" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="bugs1" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/bugs1.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -394,13 +555,13 @@
           </div>
         </div>
       </div>
-      <div data-project='6' id="love" class="project">
+      <div data-project='7' id="love" class="project">
         <div class="title">
           <h2><a href="#love">Love</a></h2>
         </div>
         <div id="love-1" class="slide intro">
           <div class="wrapper">
-            <div class="introimage"><img src="img/title-pages/"></div>
+            <div class="introimage"><img data-src="" data-ext="" alt="" class="lazy titleImage"></div>
           </div>
           <div class="wrapper">
             <div class="introtext">
@@ -410,15 +571,15 @@
           </div>
         </div>
         <div id="love-2" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="love1" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="love1" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/love1.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -426,15 +587,15 @@
           </div>
         </div>
         <div id="love-3" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="love2" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="love2" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/love2.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -442,15 +603,15 @@
           </div>
         </div>
         <div id="love-4" class="slide last">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="love" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="love" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/love.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
                 <h3>Fully Justified</h3>
@@ -462,13 +623,13 @@
           </div>
         </div>
       </div>
-      <div data-project='7' id="jonah" class="project">
+      <div data-project='8' id="jonah" class="project">
         <div class="title">
           <h2><a href="#jonah">Jonah</a></h2>
         </div>
         <div id="jonah-1" class="slide intro">
           <div class="wrapper">
-            <div class="introimage"><img src="img/title-pages/jonah.png"></div>
+            <div class="introimage"><img data-src="jonah.png" data-ext="" alt="" class="lazy titleImage"></div>
           </div>
           <div class="wrapper">
             <div class="introtext">
@@ -478,15 +639,15 @@
           </div>
         </div>
         <div id="jonah-2" class="slide">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="jonah1" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="jonah1" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/jonah1.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
                 <h3>Process</h3>
@@ -510,15 +671,15 @@
           </div>
         </div>
         <div id="jonah-3" class="slide last">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="jonah2" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="jonah2" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/jonah2.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
                 <h3>Process</h3>
@@ -543,13 +704,13 @@
           </div>
         </div>
       </div>
-      <div data-project='8' id="ornate" class="project">
+      <div data-project='9' id="ornate" class="project">
         <div class="title">
           <h2><a href="#ornate">Ornate</a></h2>
         </div>
         <div id="ornate-1" class="slide intro">
           <div class="wrapper">
-            <div class="introimage"><img src="img/title-pages/"></div>
+            <div class="introimage"><img data-src="" data-ext="" alt="" class="lazy titleImage"></div>
           </div>
           <div class="wrapper">
             <div class="introtext">
@@ -559,15 +720,15 @@
           </div>
         </div>
         <div id="ornate-2" class="slide last">
-          <div class="wrapper">
+          <div class="wrapper buttonwrapper">
             <div class="button sizable"><a href="#" class="ir infobutton">Show info</a></div>
           </div>
-          <div class="wrapper">
-            <div class="image sizable"><img alt="" data-src="ornate_abuse_close" data-ext=".jpg" class="responsive">
+          <div class="wrapper imagewrapper">
+            <div class="image sizable"><img alt="" data-src="ornate_abuse_close" data-ext=".jpg" class="lazy responsive">
               <noscript><img alt="" src="img/400w/ornate_abuse_close.jpg"></noscript>
             </div>
           </div>
-          <div class="wrapper">
+          <div class="wrapper textwrapper">
             <div class="info sizable">
               <div class="infoinner">
               </div>
@@ -577,6 +738,5 @@
       </div>
     </div>
     <footer class="main"></footer>
-    <script src="js/script.min.js"></script>
   </body>
 </html>

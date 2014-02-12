@@ -1,7 +1,8 @@
 doctype html
 html.no-js(lang="en")
 	head
-
+		- var assetBase = '';
+		//- var assetBase = 'http://static.nkwalton.com/';
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
 		title Nate Walton
@@ -11,16 +12,16 @@ html.no-js(lang="en")
 		meta(name='viewport', content='width=device-width, , initial-scale=1')
 
 		// Place favicon.ico and apple-touch-icon.png in the root directory
-		link(rel='shortcut icon', href='favicon.ico')
+		link(rel='shortcut icon', href= assetBase + 'favicon.ico')
 
 		// Styles
-		link(rel='stylesheet', href='css/style.css')
+		link(rel='stylesheet', href= assetBase + 'css/style.css')
 
 		// Scripts loaded via script loader. See notes in init.js file.
 		script(type="text/javascript", src="//use.typekit.net/nyn3skg.js")
 		script(type="text/javascript").
 			try{Typekit.load();}catch(e){}
-		script(src='js/libs/modernizr.min.js')
+		script(src= assetBase + 'js/init.min.js')
 
 	body
 		header.main
@@ -47,7 +48,7 @@ html.no-js(lang="en")
 										span.projectTitle #{project.title}
 									each slide, i in project.slides
 										if i === 0
-											img(src='img/400w/' + slide.image + slide.ext)
+											img.lazy.front(data-src= slide.image, data-ext=slide.ext, alt='')
 
 
 			//- Render projects
@@ -64,7 +65,7 @@ html.no-js(lang="en")
 					div(id=project.id + '-1', class='slide intro' + last)
 						.wrapper
 							.introimage
-								img(src="img/title-pages/" + project.image)
+								img.lazy.titleImage(data-src=project.image, data-ext='', alt='')
 						.wrapper
 							.introtext
 								h3 #{project.desc}
@@ -84,18 +85,18 @@ html.no-js(lang="en")
 						- slideNum += 1;
 
 						div(id=project.id + '-' + slideNum, class='slide' + last)
-							.wrapper
+							.wrapper.buttonwrapper
 								.button.sizable
 									a.ir.infobutton(href="#") Show info
-							.wrapper
+							.wrapper.imagewrapper
 								.image.sizable
-									img.responsive(alt=slide.alt,
+									img.lazy.responsive(alt=slide.alt,
 										data-src=slide.image,
 										data-ext=slide.ext)
 									noscript
 										img(alt=slide.alt,
-											src='img/400w/' + slide.image + slide.ext)
-							.wrapper
+											src= assetBase + 'img/400w/' + slide.image + slide.ext)
+							.wrapper.textwrapper
 								.info.sizable
 									.infoinner
 
@@ -108,7 +109,6 @@ html.no-js(lang="en")
 													li #{listItem}
 
 		footer.main
-		script(src='js/script.min.js')
 
 
 //-								ul.projectThumb
