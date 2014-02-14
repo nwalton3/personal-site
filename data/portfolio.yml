@@ -101,7 +101,7 @@ projects:
 
     -   title: Connections
         id: thesis
-        image: ''
+        image: 'br.png'
         desc: Exhibition Design
         capoffset: 0
         leaderoffset: -0.1em
@@ -205,19 +205,15 @@ projects:
             ext: .jpg
             alt: ''
             specs: []
-        -   image: bugs_fabulous
+        -   image: bugs-zoom2
             ext: .jpg
             alt: ''
             specs: []
-        -   image: bugs_bee
+        -   image: bugs-zoom1
             ext: .jpg
             alt: ''
             specs: []
-        -   image: bugs2
-            ext: .jpg
-            alt: ''
-            specs: []
-        -   image: bugs1
+        -   image: bugs-all
             ext: .jpg
             alt: ''
             specs: []
@@ -227,7 +223,7 @@ projects:
 
     -   title: Love
         id: love
-        image: ''
+        image: 'ornament.png'
         desc: Letterpress
         capoffset: -0.24em
         leaderoffset: -0.1em
@@ -240,6 +236,10 @@ projects:
             alt: ''
             specs: []
         -   image: love2
+            ext: .jpg
+            alt: ''
+            specs: []
+        -   image: love3
             ext: .jpg
             alt: ''
             specs: []
