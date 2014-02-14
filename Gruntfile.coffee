@@ -81,15 +81,24 @@ module.exports = (grunt) ->
 		jade:
 			options:
 				pretty: true
-				data: (dest, src) -> return require('./data/portfolio.json')
-			compile:
-				files:[
-					expand: true
-					cwd: 'jade/'
-					src: ['**/*.html.jade']
-					dest: ''
-					ext: '.html'
-				]
+			portfolio:
+				options:
+					data: (dest, src) -> return require('./data/portfolio.json')
+				files:
+					'index.html' : 'jade/index.html.jade'
+			# students:
+			# 	options:
+			# 		data: (dest, src) -> return require('./data/students.json')
+			# 	files:
+			# 		'students.html' : 'jade/index.html.jade'
+			# compile:
+			# 	files:[
+			# 		expand: true
+			# 		cwd: 'jade/'
+			# 		src: ['**/*.html.jade']
+			# 		dest: ''
+			# 		ext: '.html'
+			# 	]
 		yaml:
 			data:
 				options:
