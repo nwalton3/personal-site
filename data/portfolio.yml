@@ -101,10 +101,10 @@ projects:
 
     -   title: Connections
         id: thesis
-        image: 'br.png'
+        image: 'fraluca.png'
         desc: Exhibition Design
-        capoffset: 0
-        leaderoffset: -0.1em
+        capoffset: -0.25em
+        leaderoffset: -0.05em
         cap: F
         leader: or my MFA thesis 
         text: ' I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful books in the world. I designed a library exhibition highlighting many of them, including the <i>Bruce Rogers World Bible</i>, Eric Gill’s <i>Four Gospels</i>, Kelmscott and Doves press masterpieces, Limited Editions and Grolier Club releases, Philip Smith bindings, Picasso and Braque illustrations, and other breathtaking works.'
@@ -201,15 +201,11 @@ projects:
         leader: nsects have fascinated me 
         text: ' ever since my freshman biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects to date.'
         slides:
-        -   image: bugs_typographic
-            ext: .jpg
-            alt: ''
-            specs: []
-        -   image: bugs-zoom2
-            ext: .jpg
-            alt: ''
-            specs: []
         -   image: bugs-zoom1
+            ext: .jpg
+            alt: ''
+            specs: []
+        -   image: bugs_typographic
             ext: .jpg
             alt: ''
             specs: []
@@ -236,10 +232,6 @@ projects:
             alt: ''
             specs: []
         -   image: love2
-            ext: .jpg
-            alt: ''
-            specs: []
-        -   image: love3
             ext: .jpg
             alt: ''
             specs: []
