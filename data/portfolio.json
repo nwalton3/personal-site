@@ -338,7 +338,7 @@
       "text": " relief printing to other traditional media, maybe because it works so well with letterpress. This book has 20 linocut illustrations from the book of Jonah, with images and type printed on a Vandercook SP-15 proof press.",
       "slides": [
         {
-          "image": "jonah1",
+          "image": "jonah_cover2",
           "ext": ".jpg",
           "alt": "",
           "specs": [
@@ -367,7 +367,31 @@
           ]
         },
         {
-          "image": "jonah2",
+          "image": "jonah_case2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "jonah_pray",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "jonah_storm2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "jonah_beach3",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "jonah_colophon",
           "ext": ".jpg",
           "alt": "",
           "specs": [
