@@ -1,0 +1,30 @@
+{
+  "projects": [
+    {
+      "title": "Sacred Gifts",
+      "id": "gifts",
+      "image": "sg.png",
+      "desc": "Interface Design",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "T",
+      "leader": "he BYU Museum of Art",
+      "text": " wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.",
+      "slides": [
+        {
+          "image": "sg_nav",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Navigation",
+              "list": [
+                "info here"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

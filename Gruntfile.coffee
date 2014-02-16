@@ -86,11 +86,11 @@ module.exports = (grunt) ->
 					data: (dest, src) -> return require('./data/portfolio.json')
 				files:
 					'index.html' : 'jade/index.html.jade'
-			# students:
-			# 	options:
-			# 		data: (dest, src) -> return require('./data/students.json')
-			# 	files:
-			# 		'students.html' : 'jade/index.html.jade'
+			students:
+				options:
+					data: (dest, src) -> return require('./data/students.json')
+				files:
+					'students.html' : 'jade/index.html.jade'
 			# compile:
 			# 	files:[
 			# 		expand: true
@@ -104,7 +104,8 @@ module.exports = (grunt) ->
 				options:
 					space: 2
 				files: 
-					'data/portfolio.json': ['data/portfolio.yml']
+					'data/portfolio.json': ['data/portfolio.yml'],
+					'data/students.json': ['data/students.yml']
 
 		watch:
 			sass:
@@ -112,7 +113,7 @@ module.exports = (grunt) ->
 				tasks: ['sass', 'autoprefixer']
 
 			jade:
-				files: ['jade/**/*.jade', 'data/portfolio.json']
+				files: ['jade/**/*.jade', 'data/portfolio.json', 'data/students.json']
 				tasks: ['jade']
 
 			image:
@@ -138,7 +139,7 @@ module.exports = (grunt) ->
 				options:
 					livereload: true
 			yaml:
-				files: ['data/portfolio.yml']
+				files: ['data/portfolio.yml, data/students.yml']
 				tasks: ['yaml']
 
 		connect:
