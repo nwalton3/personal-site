@@ -1,81 +1,18 @@
 extends _layout
 
+block title
+	title Nate Walton
+
 block content
 
-	div.main.portfolio.show-info
-		nav
-			a.ir.next(href="#") Next slide
-			a.ir.prev(href="#") Previous slide
-		#intro.project(data-project="0")
-			.title
-				h2 Work
-			#intro-1.slide.intro.last
-				.wrapper
-					.sizable
-						//- Render list
-						for project in projects
-							a.projectLink(href='#' + project.id)
-								span.projectDesc 
-									// span.projectType #{project.desc}
-									span.projectTitle #{project.title}
-								each slide, i in project.slides
-									if i === 0
-										img.lazy.front(data-src= slide.image, data-ext=slide.ext, alt='')
-
-
-		//- Render projects
-		- var projectNum = 0;
-
-		for project in projects
-			- projectNum += 1;
-			- var numSlides = project.slides.length, last = '';
-			- if (!numSlides) { last = ' last' }
-			.project(data-project=projectNum, id=project.id)
-				.title
-					h2
-						a(href='#' + project.id) #{project.title}
-				div(id=project.id + '-1', class='slide intro' + last)
-					.wrapper
-						.introimage
-							img.lazy.titleImage(data-src=project.image, data-ext='', alt='')
-					.wrapper
-						.introtext
-							h3 #{project.desc}
-							p
-								span.dropcap(style="margin-left:" + project.capoffset)!= project.cap
-								span.leader(style="margin-left:" + project.leaderoffset)!= project.leader
-								span!= project.text
-
-
-				//- Render slides 
-
-				- var slideNum = 1,  last = '';
-
-				for slide in project.slides
-
-					- if (slideNum == numSlides) { last = ' last'; }
-					- slideNum += 1;
-
-					div(id=project.id + '-' + slideNum, class='slide' + last)
-						.wrapper.buttonwrapper
-							.button.sizable
-								a.ir.infobutton(href="#") Show info
-						.wrapper.imagewrapper
-							.image.sizable
-								img.lazy.responsive(alt=slide.alt,
-									data-src=slide.image,
-									data-ext=slide.ext)
-								noscript
-									img(alt=slide.alt,
-										src= assetBase + 'img/400w/' + slide.image + slide.ext)
-						.wrapper.textwrapper
-							.info.sizable
-								.infoinner
-
-
-									//- Render specs
-									for item in slide.specs
-										h3 #{item.title}
-										ul
-											for listItem in item.list
-												li #{listItem}
+	.feature
+		for quote in quotes
+			.quote!= quote.text
+			.byline!= quote.byline
+	.content
+		for block in contents
+			.wrapper
+				.heading!= block.heading
+				for image in block.images
+					a(href=image.href)
+						img(src=image.url, title=image.title)

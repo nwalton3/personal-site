@@ -1,4 +1,8 @@
 {
+  "page": {
+    "title": "Student Work",
+    "menu": "teaching"
+  },
   "projects": [
     {
       "title": "Sacred Gifts",

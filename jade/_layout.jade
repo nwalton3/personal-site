@@ -4,7 +4,8 @@ html.no-js(lang="en")
 		//- var assetBase = 'http://static.nkwalton.com/';
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-		title Nate Walton
+		block title
+			title Nate Walton: #{page.title}
 		meta(name='description', content='Description about your department.')
 		meta(name='author', content='Your Department Name')
 		meta(name='keywords', content='keyword 1, keyword 2, keyword 3')
@@ -22,14 +23,13 @@ html.no-js(lang="en")
 			try{Typekit.load();}catch(e){}
 		script(src= assetBase + 'js/init.min.js')
 
-	body
+	body(class=page.menu)
 		header.main
 			h1 Nate Walton
 			nav
-				a(href="/") Articles
-				a(href="/") Work
-				a(href="/") Teaching
-				a(href="/") Contact
+				a.work(href="/") Work
+				a.teaching(href="/") Teaching
+				a.contact(href="/") Contact
 
 		block content
 

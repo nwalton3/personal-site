@@ -1,0 +1,54 @@
+{
+  "page": {
+    "title": "Home",
+    "menu": "home"
+  },
+  "quotes": [
+    {
+      "text": "Good design is a lot like clear thinking made visual.",
+      "byline": "Edward Tufte"
+    }
+  ],
+  "contents": [
+    {
+      "heading": "Portfolio",
+      "images": [
+        {
+          "url": "",
+          "title": "Image 1",
+          "href": "#"
+        },
+        {
+          "url": "",
+          "title": "Image 2",
+          "href": "#"
+        },
+        {
+          "url": "",
+          "title": "Image 3",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "heading": "Student Work",
+      "images": [
+        {
+          "url": "",
+          "title": "Image 1",
+          "href": "#"
+        },
+        {
+          "url": "",
+          "title": "Image 2",
+          "href": "#"
+        },
+        {
+          "url": "",
+          "title": "Image 3",
+          "href": "#"
+        }
+      ]
+    }
+  ]
+}

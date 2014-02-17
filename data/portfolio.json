@@ -1,4 +1,8 @@
 {
+  "page": {
+    "title": "Work",
+    "menu": "work"
+  },
   "projects": [
     {
       "title": "Sacred Gifts",
