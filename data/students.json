@@ -7,6 +7,7 @@
     {
       "title": "Sacred Gifts",
       "id": "gifts",
+      "thumbnail": 0,
       "image": "sg.png",
       "desc": "Interface Design",
       "capoffset": "-0.24em",

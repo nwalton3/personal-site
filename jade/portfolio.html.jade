@@ -19,8 +19,8 @@ block content
 									// span.projectType #{project.desc}
 									span.projectTitle #{project.title}
 								each slide, i in project.slides
-									if i === 0
-										img.lazy.front(data-src= slide.image, data-ext=slide.ext, alt='')
+									if i === project.thumbnail
+										img.lazy.front(data-src=slide.image, data-ext=slide.ext, alt='')
 
 
 		//- Render projects

@@ -7,6 +7,7 @@
     {
       "title": "Sacred Gifts",
       "id": "gifts",
+      "thumbnail": 0,
       "image": "sg.png",
       "desc": "Interface Design",
       "capoffset": "-0.24em",
@@ -16,7 +17,33 @@
       "text": " wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.",
       "slides": [
         {
-          "image": "sg_nav",
+          "image": "sg_home",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Home screen",
+              "list": [
+                "info here"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "sg_tombstone",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Navigation",
+              "list": [
+                "info here"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "sg_media",
           "ext": ".jpg",
           "alt": "",
           "specs": [
@@ -33,6 +60,7 @@
     {
       "title": "BYU Web",
       "id": "byu",
+      "thumbnail": 0,
       "image": "byu.png",
       "desc": "Web Design",
       "capoffset": "-0.1em",
@@ -64,6 +92,7 @@
     {
       "title": "BYU Tickets",
       "id": "byutickets",
+      "thumbnail": 0,
       "image": "",
       "desc": "Web Design",
       "capoffset": "-0.24em",
@@ -89,6 +118,7 @@
     {
       "title": "BYU Learning Suite",
       "id": "ls",
+      "thumbnail": 0,
       "image": "",
       "desc": "Interface Design",
       "capoffset": 0,
@@ -110,12 +140,6 @@
           "specs": []
         },
         {
-          "image": "ls-grader-exam-essay",
-          "ext": ".png",
-          "alt": "",
-          "specs": []
-        },
-        {
           "image": "ls-grader",
           "ext": ".png",
           "alt": "",
@@ -126,6 +150,7 @@
     {
       "title": "Connections",
       "id": "thesis",
+      "thumbnail": 0,
       "image": "fraluca.png",
       "desc": "Exhibition Design",
       "capoffset": "-0.25em",
@@ -142,6 +167,12 @@
         },
         {
           "image": "thesis_brochure",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "thesis-all",
           "ext": ".jpg",
           "alt": "",
           "specs": []
@@ -264,6 +295,7 @@
     {
       "title": "Specimens",
       "id": "bugs",
+      "thumbnail": 1,
       "image": "cicada.png",
       "desc": "Poster / Self-promotion",
       "capoffset": "-0.2em",
@@ -295,6 +327,7 @@
     {
       "title": "Love",
       "id": "love",
+      "thumbnail": 0,
       "image": "ornament.png",
       "desc": "Letterpress",
       "capoffset": "-0.24em",
@@ -333,6 +366,7 @@
     {
       "title": "Jonah",
       "id": "jonah",
+      "thumbnail": 3,
       "image": "jonah.png",
       "desc": "Letterpress / Linocut / Bookbinding",
       "capoffset": 0,
@@ -429,6 +463,7 @@
     {
       "title": "Ornate",
       "id": "ornate",
+      "thumbnail": 0,
       "image": "",
       "desc": "Research / Writing / Publication Design",
       "capoffset": 0,
