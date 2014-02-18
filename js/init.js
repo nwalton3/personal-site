@@ -11,8 +11,8 @@
 
 	"use strict";
 
-	var assetBase = '';
-	//var assetBase = 'http://static.nkwalton.com/';
+	//var assetBase = '';
+	var assetBase = 'http://static.nkwalton.com/';
 
 	// Load scripts
 	Modernizr.load([

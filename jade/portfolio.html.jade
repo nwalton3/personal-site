@@ -8,8 +8,8 @@ block content
 			a.ir.prev(href="#") Previous slide
 		#intro.project(data-project="0")
 			.title
-				h2 Work
-			#intro-1.slide.intro.last
+				h2!= page.title
+			#intro-0.slide.intro.last
 				.wrapper
 					.sizable
 						//- Render list
@@ -34,7 +34,7 @@ block content
 				.title
 					h2
 						a(href='#' + project.id) #{project.title}
-				div(id=project.id + '-1', class='slide intro' + last)
+				div(id=project.id + '-0', class='slide intro' + last)
 					.wrapper
 						.introimage
 							img.lazy.titleImage(data-src=project.image, data-ext='', alt='')
@@ -49,11 +49,11 @@ block content
 
 				//- Render slides 
 
-				- var slideNum = 1,  last = '';
+				- var slideNum = 0,  last = '';
 
 				for slide in project.slides
 
-					- if (slideNum == numSlides) { last = ' last'; }
+					- if (slideNum == numSlides - 1) { last = ' last'; }
 					- slideNum += 1;
 
 					div(id=project.id + '-' + slideNum, class='slide' + last)

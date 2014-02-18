@@ -1,7 +1,7 @@
 html.no-js(lang="en")
 	head
-		- var assetBase = '';
-		//- var assetBase = 'http://static.nkwalton.com/';
+		//- var assetBase = '';
+		- var assetBase = 'http://static.nkwalton.com/';
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
 		block title
@@ -25,12 +25,13 @@ html.no-js(lang="en")
 
 	body(class=page.menu)
 		header.main
-			h1 Nate Walton
+			h1 
+				a(href="/") Nate Walton
 			nav
 				a.home(href="/") Home
-				a.work(href="/portfolio.html") Work
-				a.teaching(href="/students.html") Teaching
-				a.contact(href="/contact.html") Contact
+				a.work(href="/portfolio") Work
+				a.teaching(href="/students") Teaching
+				// a.contact(href="/contact") Contact
 
 		block content
 

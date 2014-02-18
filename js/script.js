@@ -7,8 +7,12 @@
 var windowHeight = 0;
 var speedTest = null;
 var currentBreakpoint = null;
-var baseAssetUrl = 'img/';
-//var baseAssetUrl = 'http://static.nkwalton.com/img/';
+var headerheight = 0;
+var	titleheight  = 0;
+var bottomOffset = 10;
+
+//var baseAssetUrl = 'img/';
+var baseAssetUrl = 'http://static.nkwalton.com/img/';
 
 
 // Run speed test
@@ -23,6 +27,9 @@ $.hisrc.speedTest({
 // On page load
 $(document).ready(function(){
 
+	/* Set variables */
+	headerheight = $('header.main').height();
+	titleheight  = $('.project.current div.title').height();
 
 	/* Speed Test */
 	speedTest = $.hisrc.bandwidth;
@@ -33,7 +40,7 @@ $(document).ready(function(){
 	// On load
 	var url = document.location.toString();
 	var newHash = '';
-	var firstSlide = 'intro-1';
+	var firstSlide = 'intro-0';
 
 	if ( url.match('#') ) {
 		var split = url.split( '#' )[1];
@@ -116,29 +123,31 @@ $(document).ready(function(){
  */
 function checkImageBreakpoints () {
 
-	var viewport = $(window).width(),
-		large = 1777,
-		med = 888,
-		sm = 444;
+	var viewportWidth = $(window).width(),
+		viewportHeight = $(window).height(),
+		extraheight = headerheight + titleheight + bottomOffset,
+		large = {w: 1777, h: 1200 + extraheight },
+		med =   {w: 888,  h: 600  + extraheight },
+		sm =    {w: 444,  h: 300  + extraheight };
 
 	// Check that the screen has actually gotten bigger
-	if ( viewport <= currentBreakpoint ) {
+	if ( viewportWidth <= currentBreakpoint ) {
 		return;
 	}
 
-	if ( viewport >= large) {
-		if ( currentBreakpoint !== large ) {
+	if ( viewportWidth >= large.w && viewportHeight >= large.h ) {
+		if ( currentBreakpoint !== large.w ) {
 			updateResponsiveImages( 3200, speedTest );
-			currentBreakpoint = large;
+			currentBreakpoint = large.w;
 			$(window).off('resize', checkImageBreakpoints);
 		}
 	}
 	
 	// Large
-	else if ( viewport >= med ) {
-		if ( currentBreakpoint !== med ) {
+	else if ( viewportWidth >= med.w && viewportHeight >= med.h ) {
+		if ( currentBreakpoint !== med.w ) {
 			updateResponsiveImages( 1600, speedTest );
-			currentBreakpoint = med;
+			currentBreakpoint = med.w;
 			if ( speedTest == 'high' ) {
 				$(window).off('resize', checkImageBreakpoints);
 			}
@@ -146,10 +155,10 @@ function checkImageBreakpoints () {
 	}
 	
 	// Medium
-	else if ( viewport >= sm) {
-		if ( currentBreakpoint !== sm ) {
+	else if ( viewportWidth >= sm.width && viewportHeight >= sm.h ) {
+		if ( currentBreakpoint !== sm.w ) {
 			updateResponsiveImages( 800, speedTest );
-			currentBreakpoint = sm;
+			currentBreakpoint = sm.w;
 		}
 	}
 
@@ -352,9 +361,7 @@ function checkHeight() {
  */
 function resizeImage( height ) {
 
-	var headerheight = $('header.main').height(),
-		titleheight  = $('.project.current div.title').height(),
-		imageheight  = height - headerheight - titleheight - 10,
+	var imageheight  = height - headerheight - titleheight - bottomOffset,
 		imagewidth   = Math.floor( imageheight + (imageheight / 3) );
 
 	// Constrain sizes to minimum
@@ -384,7 +391,7 @@ function gotoSlide( slideID ) {
 		newProject = $(newSlide).closest('.project');
 
 	if(newSlide.indexOf('-') === -1) {
-	  newSlide += '-1';
+	  newSlide += '-0';
 	}
 
 	currentSlide.removeClass('visible');
@@ -395,7 +402,7 @@ function gotoSlide( slideID ) {
 		gotoProject(newProject.attr('id'));
 	}
 
-	index = newSlide.indexOf('-1');
+	index = newSlide.indexOf('-0');
 	if ( index !== -1 ) {
 		window.location.hash = newSlide.substring(0, index);
 	} else {

@@ -1,10 +1,14 @@
-Update script to check for height
 Home page
 Header
 Contact page
-Student portfolio
-Submit resume online
-Design for cover sheet
 More images for Ornate
 	or different images from other projects
 Binder for cover sheet
+Fix height on thesis cover page
+Specs for slides
+Cover images for BYU tickets, etc
+Update BYU home page images
+Update LS images
+Touch
+Fullscreen
+Favicon
