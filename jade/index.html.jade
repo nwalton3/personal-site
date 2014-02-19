@@ -4,6 +4,8 @@ block title
 	title Nate Walton
 
 block content
+	- var extension = '';
+	//- var extension = '.html';
 
 	.feature
 		for quote in quotes
@@ -12,7 +14,9 @@ block content
 	.content
 		for block in contents
 			.wrapper
-				.heading!= block.heading
+				a.heading(href=block.url + extension)!= block.heading
 				for image in block.images
-					a(href=image.href)
-						img(src=image.url, title=image.title)
+					a.preview.toLoad(href=block.url + extension + image.hash)
+						span.projectDesc
+							span.projectTitle #{image.title}
+						img.lazy.front(data-src=image.url, alt='')

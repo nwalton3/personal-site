@@ -25,7 +25,23 @@ $.hisrc.speedTest({
 
 
 // On page load
-$(document).ready(function(){
+$(document).ready(function(){	
+
+	if ( $('.main.portfolio').size() ) {
+		initPortfolio();
+	} else {
+		loadImages( $('img.lazy'), 0 );
+	}
+
+});
+
+
+/**
+ * Func: InitPortfolio
+ * Desc: Start the portfolio
+ * Args:  
+ */
+function initPortfolio() {
 
 	/* Set variables */
 	headerheight = $('header.main').height();
@@ -53,9 +69,8 @@ $(document).ready(function(){
 			firstSlide = split;
 		} 
 	}
-	
-	gotoSlide( firstSlide );
 
+	gotoSlide( firstSlide );
 
 	// On hashchange
 	$(window).on('hashchange', function(e){
@@ -76,7 +91,6 @@ $(document).ready(function(){
 	if ( currentBreakpoint < 1600 ) {
 		$(window).on('resize', checkImageBreakpoints);
 	}
-
 
 
 	/* Button Actions */
@@ -111,7 +125,7 @@ $(document).ready(function(){
 		$(this).html( typogr.typogrify( $(this) ) );
 	});
 
-});
+}
 
 
 
@@ -298,7 +312,7 @@ function loadImage( img, breakpoint ) {
 	}
 
 	var src = image.attr('data-src'),
-		ext = image.attr('data-ext'),
+		ext = image.attr('data-ext') ? image.attr('data-ext') : '',
 		url = baseAssetUrl + src + ext;
 
 	if( image.hasClass( 'responsive' ) ) {

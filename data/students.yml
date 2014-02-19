@@ -9,7 +9,7 @@ projects:
     -   title: Poster
         id: poster
         thumbnail: 0
-        image: ''
+        image: speed.jpg
         desc: VAGD 210
         capoffset: -0.24em
         leaderoffset: -0.1em
@@ -84,7 +84,7 @@ projects:
     -   title: CD Packaging
         id: cd
         thumbnail: 7
-        image: ''
+        image: speed.jpg
         desc: VAGD 210
         capoffset: -0.24em
         leaderoffset: -0.1em
@@ -134,7 +134,7 @@ projects:
     -   title: Music Promotion
         id: album
         thumbnail: 0
-        image: ''
+        image: speed.jpg
         desc: VAGD 210
         capoffset: -0.24em
         leaderoffset: -0.1em
@@ -172,7 +172,7 @@ projects:
     -   title: Photoshop
         id: photoshop
         thumbnail: 3
-        image: ''
+        image: speed.jpg
         desc: 'VAGD 210, VA 112' 
         capoffset: -0.24em
         leaderoffset: -0.1em

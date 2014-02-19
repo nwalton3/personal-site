@@ -10,6 +10,7 @@ AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 
 RewriteEngine on
+RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule .*[^/]$ %{REQUEST_URI}/ [L,R=301]
@@ -17,7 +18,5 @@ RewriteRule .*[^/]$ %{REQUEST_URI}/ [L,R=301]
 RewriteCond %{HTTP_HOST} ^www.nkwalton.com$ [NC]
 RewriteRule ^(.*)$ http://nkwalton.com/$1 [R=301,L]
 
-RewriteBase /
 RewriteCond $1 !\.html$
-RewriteCond $1 !\.js$
 RewriteRule ^(.+)/$ $1.html [L]

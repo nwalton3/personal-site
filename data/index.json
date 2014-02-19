@@ -12,41 +12,43 @@
   "contents": [
     {
       "heading": "Portfolio",
+      "url": "/portfolio",
       "images": [
         {
-          "url": "",
-          "title": "Image 1",
-          "href": "#"
+          "url": "sg_home.jpg",
+          "title": "Sacred Gifts",
+          "hash": "#gifts"
         },
         {
-          "url": "",
-          "title": "Image 2",
-          "href": "#"
+          "url": "byu-home.jpg",
+          "title": "BYU Web",
+          "hash": "#byu"
         },
         {
-          "url": "",
-          "title": "Image 3",
-          "href": "#"
+          "url": "thesis_cards.jpg",
+          "title": "Connections",
+          "hash": "#thesis"
         }
       ]
     },
     {
       "heading": "Student Work",
+      "url": "/students",
       "images": [
         {
-          "url": "",
-          "title": "Image 1",
-          "href": "#"
+          "url": "student/poster1.jpg",
+          "title": "Poster",
+          "hash": "#poster"
         },
         {
-          "url": "",
-          "title": "Image 2",
-          "href": "#"
+          "url": "student/album1.jpg",
+          "title": "Album",
+          "hash": "#album"
         },
         {
-          "url": "",
-          "title": "Image 3",
-          "href": "#"
+          "url": "student/photoshop3.jpg",
+          "title": "Photoshop",
+          "hash": "#photoshop"
         }
       ]
     }

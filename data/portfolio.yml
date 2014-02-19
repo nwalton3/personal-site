@@ -71,7 +71,7 @@ projects:
     -   title: BYU Tickets
         id: byutickets
         thumbnail: 0
-        image: ''
+        image: 'speed.jpg'
         desc: Web Design
         capoffset: -0.24em
         leaderoffset: -0.1em
@@ -93,7 +93,7 @@ projects:
     -   title: BYU Learning Suite
         id: ls
         thumbnail: 0
-        image: ''
+        image: 'speed.jpg'
         desc: Interface Design
         capoffset: 0
         leaderoffset: -0.1em
@@ -341,7 +341,7 @@ projects:
     -   title: Ornate
         id: ornate
         thumbnail: 0
-        image: ''
+        image: 'speed.jpg'
         desc: Research / Writing / Publication Design
         capoffset: 0
         leaderoffset: -0.1em

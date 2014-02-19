@@ -40,6 +40,19 @@ img
 	max-height: 100%
 
 
+%imageloader
+	height: 0
+	background-color: #ebe7dd
+	img
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 1
+		transition: all 0.3s ease 0.1s
+	&.loading
+		img
+			opacity: 0
+
 
 // Header
 header.main
@@ -82,7 +95,7 @@ header.main
 			margin-left: -2px
 	nav
 		position: absolute
-		top: 0
+		top: 1px
 		right: 5%
 		margin-right: 5px
 		a
@@ -165,6 +178,9 @@ header.main
 		transition: opacity 0.3s ease
 		.loading &
 			opacity: 0
+
+// a.preview
+// 	padding-bottom: 
 
 
 // Slides
@@ -330,59 +346,118 @@ a.infobutton
 
 
 
+
 // Table of contents
 #intro .slide
 	a
-		max-width: 400px
 		width: 31%
-		display: inline-block
 		margin-left: 1%
 		margin-bottom: .25em
-		overflow: hidden
-		.projectDesc
-			z-index: 101
-			display: block
-			position: absolute
-			bottom: -1em
-			left: 0
-			width: 100%
-			background-color: rgba(#000, 0.65)
-			transition: all 0.3s ease
-			padding: .5em
-			line-height: 1.1
-			opacity: 0
-		&:hover .projectDesc
-			bottom: 0
-			opacity: 1
-		.projectTitle
-			display: block
-			font-size: 1.5em
-			font-weight: 100
-			color: $yellow3
-			font-family: $slab-font-family
-		.projectType
-			display: block
-			font-size: .75em
-			letter-spacing: 1px
-			margin-bottom: .2em
-			color: mix($yellow1, $yellow3)
-			text-transform: uppercase
+		padding-bottom: 23.25%
+		@extend %imageloader
+		background-color: #15130d
+
+#intro .slide a, .home .content a.preview
+	max-width: 400px
+	display: inline-block
+	overflow: hidden
+	.projectDesc
+		z-index: 101
+		display: block
+		position: absolute
+		bottom: -1em
+		left: 0
+		width: 100%
+		background-color: rgba(#000, 0.65)
+		transition: all 0.3s ease
+		padding: .5em
+		line-height: 1.1
+		opacity: 0
+	&:hover .projectDesc
+		bottom: 0
+		opacity: 1
+	.projectTitle
+		display: block
+		font-size: 1.5em
+		font-weight: 100
+		color: $yellow3
+		font-family: $slab-font-family
+	.projectType
+		display: block
+		font-size: .75em
+		letter-spacing: 1px
+		margin-bottom: .2em
+		color: mix($yellow1, $yellow3)
+		text-transform: uppercase
+
 
 
 
 // Pages
-.home
+body.home
 	background-color: #fff
+	height: auto
+	max-height: initial
+	padding-top: 0
+	header
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 200
+		box-shadow: 0 0 2em 10px #000
 	.feature
+		margin-top: 40px
 		background-color: #000
 		font-family: "ff-ernestine-web-pro", $slab-font-family
 		color: #d7d0ba
-		padding: 2em
+		padding: 2.75em 5% 2.5em
 		.quote
 			font-size: 2.5em
+			line-height: 1.1
+			max-width: 15em
 		.byline
+			margin-top: 0.4em
 			font-size: 1.25em
+			color: #c4b898
+			margin-left: -0.25em
+			&:before
+				content: "-"
+				display: inline-block
+				margin-right: 0.25em
+	.wrapper
+		padding: 3em 0 1.5em
+		border-bottom: 1px solid #eee
+		padding-left: 10%
+		overflow: visible
+	.content
+		padding-bottom: 2em
+		a
+			display: inline-block
+			width: 28.63%
+			margin-right: 1%
+			&.preview
+				padding-bottom: 21.4725%
+				@extend %imageloader
+				@media all and (min-width: 1553px)
+					padding-bottom: 300px
 
+			&.heading
+				position: absolute
+				top: 1.75em
+				left: 5%
+				width: 80%
+				font-size: 12px
+				line-height: 1.1
+				color: #a69564
+				text-transform: uppercase
+				letter-spacing: 1px
+				transition: all 0.2s ease
+				&:hover
+					text-decoration: none
+					color: #5f5539
+	footer
+		height: 2em
 
 
 @media all and (max-width: 768px)
@@ -408,11 +483,22 @@ a.infobutton
 		width: 49%
 		margin-bottom: 0.5em
 
+
+@media all and (max-width: 550px)
+	header.main h1 a
+		width: 80px
+		overflow: hidden
+
+
 @media all and (max-width: 480px)
 	#intro .slide a
 		width: 90%
 		margin-left: 5%
 		margin-bottom: 0.75em
+
+@media all and (max-width: 375px)
+	header nav a.home
+		display: none
 
 // Table of contents
 // #intro .slide

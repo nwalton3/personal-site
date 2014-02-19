@@ -8,24 +8,26 @@ quotes:
 
 contents:
 -   heading: Portfolio
+    url: /portfolio
     images:
-    -   url: ''
-        title: Image 1
-        href: '#'
-    -   url: ''
-        title: Image 2
-        href: '#'
-    -   url: ''
-        title: Image 3
-        href: '#'
+    -   url: sg_home.jpg
+        title: Sacred Gifts
+        hash: '#gifts'
+    -   url: byu-home.jpg
+        title: BYU Web
+        hash: '#byu'
+    -   url: thesis_cards.jpg
+        title: Connections
+        hash: '#thesis'
 -   heading: Student Work
+    url: /students
     images:
-    -   url: ''
-        title: Image 1
-        href: '#'
-    -   url: ''
-        title: Image 2
-        href: '#'
-    -   url: ''
-        title: Image 3
-        href: '#'
+    -   url: student/poster1.jpg
+        title: Poster
+        hash: '#poster'
+    -   url: student/album1.jpg
+        title: Album
+        hash: '#album'
+    -   url: student/photoshop3.jpg
+        title: Photoshop
+        hash: '#photoshop'

@@ -1,9 +1,7 @@
 Home page
-Header
 Contact page
 More images for Ornate
 	or different images from other projects
-Binder for cover sheet
 Fix height on thesis cover page
 Specs for slides
 Cover images for BYU tickets, etc
@@ -12,3 +10,6 @@ Update LS images
 Touch
 Fullscreen
 Favicon
+Arrow navigation
+Touch navigation
+Make home page responsive
