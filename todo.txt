@@ -13,3 +13,4 @@ Favicon
 Arrow navigation
 Touch navigation
 Make home page responsive
+Update home page images to look better

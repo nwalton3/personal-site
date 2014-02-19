@@ -114,6 +114,17 @@ function initPortfolio() {
 	});
 
 
+	/* Key actions */
+	$(document).keydown(function(e){
+		if (e.keyCode == 37) { // Back
+			changeSlide( false );
+	    }
+	    else if (e.keyCode == 39) { // Forward
+	       changeSlide( true );
+	    }
+		return false;
+	});
+
 
 	/* Image Resizing */
 	checkHeight();
