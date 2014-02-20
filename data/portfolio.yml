@@ -23,21 +23,46 @@ projects:
             specs:
             -   title: Home screen
                 list:
-                - info here
+                - Christ and the Rich Young Ruler
+                - By Heinrich Hofmann
+            -   title: Painting Screen
+                list:
+                - The Resurrection
+                - By Carl Bloch
+            -   title: Specs
+                list:
+                - iPad app
+                - SD and Retina resolution
+                - 2013
         -   image: sg_tombstone
             ext: .jpg
             alt: ''
             specs:
-            -   title: Navigation
+            -   title: Painting Screens
                 list:
-                - info here
+                - <em>Sermon on the Mount</em>
+                - and <em>The Burial</em>
+                - By Carl Bloch
         -   image: sg_media
             ext: .jpg
             alt: ''
             specs:
-            -   title: Navigation
+            -   title: Music
                 list:
-                - info here
+                - Alleluia
+                - Performed by the Mormon Tabernacle Choir
+            -   title: Video
+                list:
+                - A Tour of a Danish Lutheran Church
+            -   title: Media in the app
+                list:
+                - Interviews
+                - Talks
+                - Informational videos
+                - Interactive panoramas
+                - Social sharing
+                - Children’s coloring
+                - Augmented reality
 
 # BYU Web ####################
 
@@ -55,16 +80,55 @@ projects:
         -   image: byu-home
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Type
+                list: 
+                - Whitney ScreenSmart
+                - Sentinel
+                - "(From H&FJ)"
+            -   title: Frameworks
+                list:
+                - HTML5 Boilerplate
+                - Bootstrap
+                - FontAwesome
+                - jQuery
+            -   title: Development Environment
+                list:
+                - Grunt
+                - Jade
+                - Sass
+            -   title: Source code
+                list:
+                - <a href="https://github.com/byuweb/HTML-Templates">GitHub Repo</a>
         -   image: byu_home-sizes
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Home Page
+                list:
+                - Responsive design
+                - 75 Requests
+                - Under 1MB
+                - Under 2s load time
+            -   title: Latest release
+                list:
+                - 2013
+            -   title: Link
+                list: 
+                - <a href="http://byu.edu">http://byu.edu</a>
         -   image: byu_style
             ext: .jpg
             alt: ''
-            specs: []
-
+            specs:
+            -   title: BYU template
+                list:
+                - 42 Requests
+                - 715K
+                - Under 1s load time
+            -   title: Links
+                list: 
+                - <a href="http://byuweb.github.io/HTML-Templates/elements.html">Style Guide</a>
+                - <a href="http://byuweb.github.io/HTML-Templates/pagetype2-update.html">Demo Page</a>
 
 # BYU Tickets ####################
 
@@ -82,11 +146,37 @@ projects:
         -   image: byutickets_full
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Type
+                list: 
+                - Verlag
+                - Whitney ScreenSmart
+                - Sentinel
+                - "(From H&FJ)"
+            -   title: Latest release
+                list:
+                - 2014
+            -   title: Frameworks
+                list:
+                - Drupal
+                - Bootstrap
+                - jQuery
+            -   title: Link
+                list: 
+                - <a href="http://byutickets-dev.byu.edu">byutickets-dev.byu.edu</a>
         -   image: byutickets-sizes2
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: BYU Tickets
+                list:
+                - Responsive design
+                - 60 Requests
+                - 1.1 MB
+                - 1.2s load time
+            -   title: Link
+                list: 
+                - <a href="http://byutickets-dev.byu.edu">byutickets-dev.byu.edu</a>
 
 # BYU Learning Suite ####################
 
@@ -95,8 +185,8 @@ projects:
         thumbnail: 0
         image: 'speed.jpg'
         desc: Interface Design
-        capoffset: 0
-        leaderoffset: -0.1em
+        capoffset: -0.19em
+        leaderoffset: 0
         cap: I
         leader: " worked extensively"
         text: " with instructional designers and progammers to help create the BYU Learning Suite. I wrote a style guide and created hundreds of page mockups. I also had a big part in writing the CSS for the site, and part of my ongoing work is to train new designers and programmers on best practices in web design and web application programming."
@@ -219,8 +309,8 @@ projects:
         thumbnail: 1
         image: cicada.png
         desc: Poster / Self-promotion
-        capoffset: -0.2em
-        leaderoffset: -0.1em
+        capoffset: -0.19em
+        leaderoffset: -0.2em
         cap: I
         leader: nsects have fascinated me 
         text: ' ever since my freshman biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects to date.'
@@ -276,11 +366,11 @@ projects:
         thumbnail: 3
         image: jonah.png
         desc: Letterpress / Linocut / Bookbinding
-        capoffset: 0
-        leaderoffset: -0.1em
-        cap: I
-        leader: " often prefer"
-        text: ' relief printing to other traditional media, maybe because it works so well with letterpress. This book has 20 linocut illustrations from the book of Jonah, with images and type printed on a Vandercook SP-15 proof press.'
+        capoffset: -0.25em
+        leaderoffset: -0.6em
+        cap: R
+        leader: " elief printing"
+        text: ' is one of my favorite artforms, probably because it works so well with letterpress. This book has 20 linocut illustrations of events in the Book of Jonah, with images and type printed on a Vandercook SP-15 proof press.'
         slides:
 
         -   image: jonah_cover2
@@ -336,22 +426,96 @@ projects:
                 - 2005
 
 
-# Ornate ####################
+# Personal ####################
 
-    -   title: Ornate
-        id: ornate
+    -   title: "Experimental"
+        id: experimental
         thumbnail: 0
-        image: 'speed.jpg'
-        desc: Research / Writing / Publication Design
-        capoffset: 0
-        leaderoffset: -0.1em
-        cap: I
-        leader: " spent some time"
-        text: ' studying some of the art movements from around the turn of the last century (especially Vienna Secession and Arts and Crafts), and decided to experiment with some of their ideas. I brought together various writings exploring the use of ornament, translated some of the articles from the original German, and created a magazine on the subject.'
+        image: 'experimental.png'
+        desc: "History, theory, and inspiration"
+        capoffset: -0.2em
+        leaderoffset: -0.2em
+        cap: D
+        leader: " esign has always been"
+        text: ' more than just visual layout for me. I love the play between different theories and ideologies, like modernism vs postmodernism, elitism vs populism, or abstraction vs representation. I also enjoy finding ways to let historical work influence me where, for example, a classical layout might give just the right feel to a modern design.'
         slides:
+        -   image: hardwork
+            ext: .png
+            alt: ''
+            specs:
+            -   title: Digital Design
+                list: 
+                - I often like to make layouts based on inspirational thoughts.
+        -   image: modernism
+            ext: .jpg
+            alt: ''
+            specs:
+            -   title: Letterpress Poster
+                list:
+                - "18.5 x 25 inches"
+                - Wood and metal type
+                - Photopolymer plates
+            -   title: '"Modernism Has Failed Us"'
+                list:
+                - Phil Baines
+                - '"Clear Enough To Read"'
+                - "<em>Emigre</em> 18:83–87"
+            -   title: '"Form Follows Function"'
+                list:
+                - Louis Sullivan
+                - '"The Tall Office Building<br>Artistically Considered"'
+                - In <em>Kindergarten Chats<br>and Other Writings</em>
+        -   image: suu-poster
+            ext: .jpg
+            alt: ''
+            specs:
+            -   title: Poster
+                list: 
+                - Designed for a talk I gave at Southern Utah University
+            -   title: Inspiration
+                list:
+                - "Composition mirrors a painting by Carl Bloch that I admire."
+            -   title: Specs
+                list:
+                - 4-color
+                - 11 x 17 inches
+                - "2011"
         -   image: ornate_abuse_close
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Ornate
+                list:
+                - Magazine
+                - 1 color
+                - 24 pages
+            -   title: Design
+                list:
+                - Layout experiments
+                - Vienna Secession theories
+            -   title: Writing
+                list:
+                - Articles about ornament
+            -   title: Translation
+                list:
+                - Translated several articles 
+                - from German
+                - "From <em>Ver Sacrum</em> and"
+                - other early 20th Century publications
+            -   title: Research
+                list:
+                - "Arts & Crafts"
+                - Vienna Secession
+                - Modernism
+                - Neue Typographie
+        -   image: hatch
+            ext: .jpg
+            alt: ''
+            specs:
+            -   title: Hatch Show Print
+                list:
+                - From a Hatch Show Print letterpress workshop at Indiana University
+
+
 
 # Finish ####################

@@ -2,7 +2,7 @@ extends _layout
 
 block content
 
-	div.main.portfolio.show-info
+	div.main.portfolio
 		nav
 			a.ir.next(href="#") Next slide
 			a.ir.prev(href="#") Previous slide
@@ -17,7 +17,7 @@ block content
 							a.projectLink(href='#' + project.id)
 								span.projectDesc 
 									// span.projectType #{project.desc}
-									span.projectTitle #{project.title}
+									span.projectTitle!= project.title
 								each slide, i in project.slides
 									if i === project.thumbnail
 										img.lazy.front(data-src=slide.image, data-ext=slide.ext, alt='')
@@ -33,7 +33,7 @@ block content
 			.project(data-project=projectNum, id=project.id)
 				.title
 					h2
-						a(href='#' + project.id) #{project.title}
+						a(href='#' + project.id)!= project.title
 				div(id=project.id + '-0', class='slide intro' + last)
 					.wrapper
 						.introimage
@@ -78,4 +78,4 @@ block content
 										h3 #{item.title}
 										ul
 											for listItem in item.list
-												li #{listItem}
+												li!= listItem

@@ -1,4 +1,3 @@
-Home page
 Contact page
 More images for Ornate
 	or different images from other projects
@@ -9,8 +8,6 @@ Update BYU home page images
 Update LS images
 Touch
 Fullscreen
-Favicon
-Arrow navigation
 Touch navigation
 Make home page responsive
 Update home page images to look better

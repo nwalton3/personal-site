@@ -11,8 +11,10 @@
 
 	"use strict";
 
-	//var assetBase = '';
 	var assetBase = 'http://static.nkwalton.com/';
+	if ( window.localAssets ) {
+		assetBase = '';
+	}
 
 	// Load scripts
 	Modernizr.load([

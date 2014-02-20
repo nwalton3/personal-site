@@ -76,7 +76,10 @@ projects:
         -   image: student/poster9
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Travel Poster
+                list: 
+                - Fall 2008
 
 
 # CD Packaging ####################
@@ -95,39 +98,66 @@ projects:
         -   image: student/cd1
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
         -   image: student/cd2
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
         -   image: student/cd3
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
         -   image: student/cd4
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
         -   image: student/cd5
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
         -   image: student/cd6
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
         -   image: student/cd7
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
         -   image: student/cd8
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
         -   image: student/cd9
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: CD package
+                list:
+                - Winter 2010
 
 # Album Promotion ####################
 
@@ -145,27 +175,45 @@ projects:
         -   image: student/album1
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Grooveshark Spash Screen
+                list:
+                - Winter 2012
         -   image: student/album2
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Grooveshark Spash Screen
+                list:
+                - Winter 2012
         -   image: student/album3
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: iTunes Feature
+                list:
+                - Winter 2012
         -   image: student/album4
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: iTunes Feature
+                list:
+                - Winter 2012
         -   image: student/album5
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Digital Album Cover
+                list:
+                - Winter 2012
         -   image: student/album6
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Digital Album Cover
+                list:
+                - Winter 2012
 
 # Photoshop ####################
 
@@ -183,16 +231,28 @@ projects:
         -   image: student/photoshop1
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Open Project
+                list:
+                - Fall 2008
         -   image: student/photoshop2
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Open Project
+                list:
+                - Fall 2008
         -   image: student/photoshop4
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Self Portrait Project
+                list:
+                - Winter 2010
         -   image: student/photoshop3
             ext: .jpg
             alt: ''
-            specs: []
+            specs:
+            -   title: Found Image Project
+                list:
+                - Summer 2009

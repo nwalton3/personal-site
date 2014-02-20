@@ -11,16 +11,16 @@ var headerheight = 0;
 var	titleheight  = 0;
 var bottomOffset = 10;
 
-//var baseAssetUrl = 'img/';
-var baseAssetUrl = 'http://static.nkwalton.com/img/';
-
+var assetBase = 'http://static.nkwalton.com/img/';
+if ( window.localAssets ) {
+	assetBase = 'img/';
+}
 
 // Run speed test
 $.hisrc.speedTest({
 	speedTestUri: 'http://static.nkwalton.com/img/speed.jpg?n=' + Math.random(),
 	speedTestKB: 48,
-	speedTestExpireMinutes: 1,
-	forcedBandwidth: 'high'
+	speedTestExpireMinutes: 5
 });
 
 
@@ -45,7 +45,7 @@ function initPortfolio() {
 
 	/* Set variables */
 	headerheight = $('header.main').height();
-	titleheight  = $('.project.current div.title').height();
+	titleheight  = $('.project:first div.title').height();
 
 	/* Speed Test */
 	speedTest = $.hisrc.bandwidth;
@@ -278,17 +278,21 @@ function lazyLoadImages( breakpoint ) {
 	// 2. Load the next page's image (if it's not already)
 	loadImages( nextImage, breakpoint );
 
-	// 3. Load the previous page's image (if it's not already)
-	loadImages( prevImage, breakpoint );
+	if ( !Modernizr.touch ) {
+		// 3. Load the previous page's image (if it's not already)
+		loadImages( prevImage, breakpoint );
 
-	// 4. Load the rest of the current project's images (if they're not already)
-	loadImages( projImages, breakpoint );
+		// 4. Load the rest of the current project's images (if they're not already)
+		loadImages( projImages, breakpoint );
 
-	// 5. Load the next project's images (if they're not already)
-	loadImages( nextProjImages, breakpoint );
+		if ( speedTest == 'high' ) {
+			// 5. Load the next project's images (if they're not already)
+			loadImages( nextProjImages, breakpoint );
 
-	// 6. Load the previous project's images (if they're not already)
-	loadImages( prevProjImages, breakpoint );
+			// 6. Load the previous project's images (if they're not already)
+			loadImages( prevProjImages, breakpoint );
+		}
+	}
 
 }
 
@@ -324,17 +328,17 @@ function loadImage( img, breakpoint ) {
 
 	var src = image.attr('data-src'),
 		ext = image.attr('data-ext') ? image.attr('data-ext') : '',
-		url = baseAssetUrl + src + ext;
+		url = assetBase + src + ext;
 
 	if( image.hasClass( 'responsive' ) ) {
-		url = baseAssetUrl + breakpoint + 'w/' + src + ext;
+		url = assetBase + breakpoint + 'w/' + src + ext;
 	} else if ( image.hasClass( 'titleImage' ) ) {
-		url = baseAssetUrl + 'title-pages/' + src;
+		url = assetBase + 'title-pages/' + src;
 	} else if ( image.hasClass( 'front' ) ) {
-		url = baseAssetUrl + '400w/' + src + ext;
+		url = assetBase + '400w/' + src + ext;
 	}
 
-	console.log( 'loading: ' + url );
+	//console.log( 'loading: ' + url );
 
 	image.parent().removeClass('toLoad').addClass('loading');
 
@@ -394,7 +398,6 @@ function resizeImage( height ) {
 		imagewidth = 240;
 		imageheight = 320;
 	}
-
 
 	// Set max sizes in css
 	$('.portfolio .sizable').css('max-width', imagewidth);
