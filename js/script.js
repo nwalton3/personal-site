@@ -49,7 +49,7 @@ function initPortfolio() {
 
 	/* Speed Test */
 	speedTest = $.hisrc.bandwidth;
-
+	
 
 	/* Handle hash navigation */
 
@@ -155,10 +155,12 @@ function checkImageBreakpoints () {
 		med =   {w: 888,  h: 600  + extraheight },
 		sm =    {w: 444,  h: 300  + extraheight };
 
+
 	// Check that the screen has actually gotten bigger
 	if ( viewportWidth <= currentBreakpoint ) {
 		return;
 	}
+
 
 	if ( viewportWidth >= large.w && viewportHeight >= large.h ) {
 		if ( currentBreakpoint !== large.w ) {
@@ -180,7 +182,7 @@ function checkImageBreakpoints () {
 	}
 	
 	// Medium
-	else if ( viewportWidth >= sm.width && viewportHeight >= sm.h ) {
+	else if ( viewportWidth >= sm.w && viewportHeight >= sm.h ) {
 		if ( currentBreakpoint !== sm.w ) {
 			updateResponsiveImages( 800, speedTest );
 			currentBreakpoint = sm.w;
@@ -194,6 +196,7 @@ function checkImageBreakpoints () {
 			currentBreakpoint = 0;
 		}
 	}
+
 }
 
 

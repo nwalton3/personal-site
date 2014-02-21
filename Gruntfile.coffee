@@ -20,6 +20,7 @@ module.exports = (grunt) ->
 				files:
 					'js/script.min.js' : [
 						'js/libs/jquery-2.0.3.min.js',
+						'js/libs/snap-svg.min.js',
 						'js/plugins/typogr.js',
 						'js/plugins/hisrc.js',
 						'js/plugins/imageloader.js',
@@ -28,6 +29,7 @@ module.exports = (grunt) ->
 				files:
 					'js/script-touch.min.js' : [
 						'js/libs/jquery-2.0.3.min.js',
+						'js/libs/snap-svg.min.js',
 						'js/plugins/typogr.js',
 						'js/plugins/hisrc.js',
 						'js/plugins/imageloader.js',

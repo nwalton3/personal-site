@@ -16,57 +16,57 @@
 
 
 	// Document ready - Execute on page load
-	$(function() {
+	// $(function() {
 
-		var body = $('body'),
-				width = $(window).width(),
-				swipewidth = Math.floor(width * 0.16);
+	// 	var body = $('body'),
+	// 			width = $(window).width(),
+	// 			swipewidth = Math.floor(width * 0.16);
 
-		if( swipewidth > 150 ) {
-			swipewidth = 150;
-		}
+	// 	if( swipewidth > 150 ) {
+	// 		swipewidth = 150;
+	// 	}
 
-		if( swipewidth < 50 ) {
-			swipewidth = 50;
-		}
+	// 	if( swipewidth < 50 ) {
+	// 		swipewidth = 50;
+	// 	}
 
-		//Enable swiping...
-		$("#main-header, #search-menu, #content, #page-footer, .nav-container").swipe( {
+	// 	//Enable swiping...
+	// 	$("#main-header, #search-menu, #content, #page-footer, .nav-container").swipe( {
 
 			
-			// Swipe left: close the side nav if it's open
-			swipeLeft:function(event, direction, distance, duration, fingerCount) {
+	// 		// Swipe left: close the side nav if it's open
+	// 		swipeLeft:function(event, direction, distance, duration, fingerCount) {
 
-				var slider = checkSliderSwipe(event.target, direction);
+	// 			var slider = checkSliderSwipe(event.target, direction);
 
-				if( !slider && body.hasClass('sideNav') ) {
-					body.toggleClass('sideNav');
-				}
-			},
+	// 			if( !slider && body.hasClass('sideNav') ) {
+	// 				body.toggleClass('sideNav');
+	// 			}
+	// 		},
 
-			// Swipe right: open the side nav if it's closed
-			swipeRight:function(event, direction, distance, duration, fingerCount) {
+	// 		// Swipe right: open the side nav if it's closed
+	// 		swipeRight:function(event, direction, distance, duration, fingerCount) {
 				
-				var slider = checkSliderSwipe(event.target, direction);
+	// 			var slider = checkSliderSwipe(event.target, direction);
 
-				if( slider ) {
+	// 			if( slider ) {
 
-				}
+	// 			}
 
-				if( !slider && !body.hasClass('sideNav') ) {
-					body.toggleClass('sideNav');
-				}
-			},
+	// 			if( !slider && !body.hasClass('sideNav') ) {
+	// 				body.toggleClass('sideNav');
+	// 			}
+	// 		},
 
-			// Will trigger as soon as swipewidth is reached rather than waiting until the end of the swipe
-			triggerOnTouchEnd:false,
+	// 		// Will trigger as soon as swipewidth is reached rather than waiting until the end of the swipe
+	// 		triggerOnTouchEnd:false,
 
-			// Default is 75px. Set to swipewidth (defined above)
-			threshold:swipewidth
-		});
+	// 		// Default is 75px. Set to swipewidth (defined above)
+	// 		threshold:swipewidth
+	// 	});
 
 
-	});
+	// });
 
 
 	/* Func: checkSliderSwipe
@@ -74,29 +74,29 @@
 	 * Args: @target - Target of swipe event (event.target)
 	 *       @direction - Direction passed from swipe functions above
 	 */
-	function checkSliderSwipe(target, direction) {
+	// function checkSliderSwipe(target, direction) {
 
-		var sliderLoaded = typeof($.anythingSlider) === "function",
-			sliderSwipe = sliderLoaded && $(target).closest('.anythingSlider').size(),
-			sliderTargetID,
-			sliderTarget;
+	// 	var sliderLoaded = typeof($.anythingSlider) === "function",
+	// 		sliderSwipe = sliderLoaded && $(target).closest('.anythingSlider').size(),
+	// 		sliderTargetID,
+	// 		sliderTarget;
 
-		if ( !sliderSwipe ) {
-			return false;
-		}
+	// 	if ( !sliderSwipe ) {
+	// 		return false;
+	// 	}
 		
-		sliderTargetID = $(target).closest('.anythingSlider').find('.anythingBase').attr('id');
-		sliderTarget = $('#' + sliderTargetID);
+	// 	sliderTargetID = $(target).closest('.anythingSlider').find('.anythingBase').attr('id');
+	// 	sliderTarget = $('#' + sliderTargetID);
 
-		if( direction === 'right' ){
-			sliderTarget.data('AnythingSlider').goBack();
-		} 
-		else {
-			sliderTarget.data('AnythingSlider').goForward();
-		}
+	// 	if( direction === 'right' ){
+	// 		sliderTarget.data('AnythingSlider').goBack();
+	// 	} 
+	// 	else {
+	// 		sliderTarget.data('AnythingSlider').goForward();
+	// 	}
 
-		return true;
-	}
+	// 	return true;
+	// }
 
 
 }(jQuery));
