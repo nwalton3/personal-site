@@ -25,13 +25,15 @@ $.hisrc.speedTest({
 
 
 // On page load
-$(document).ready(function(){	
+$(document).ready(function(){
 
 	if ( $('.main.portfolio').size() ) {
 		initPortfolio();
 	} else {
 		loadImages( $('img.lazy'), 0 );
 	}
+
+	//var arrowRight = Snap();
 
 });
 
@@ -49,7 +51,7 @@ function initPortfolio() {
 
 	/* Speed Test */
 	speedTest = $.hisrc.bandwidth;
-	
+
 
 	/* Handle hash navigation */
 

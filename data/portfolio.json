@@ -284,19 +284,86 @@
           "image": "ls-scores",
           "ext": ".png",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Scores Page",
+              "list": [
+                "Allows instructors to enters scores for any student on any assignment."
+              ]
+            },
+            {
+              "title": "Design",
+              "list": [
+                "Everything on the page is aimed at making it easy for instructors to enter scores. We concentrated on things like fast interface and keyboard navigation."
+              ]
+            },
+            {
+              "title": "Technical",
+              "list": [
+                "Backbone JS",
+                "Twitter Bootstrap",
+                "jQuery",
+                "PHP",
+                "Scss"
+              ]
+            }
+          ]
         },
         {
           "image": "ls-grader-exam",
           "ext": ".png",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Exam Scoring",
+              "list": [
+                "Allows instructor to efficiently score all students' exams."
+              ]
+            },
+            {
+              "title": "Design",
+              "list": [
+                "Again, efficiency was the aim of the page—to save instructors time and allow them to concentrate on teaching instead of technology."
+              ]
+            },
+            {
+              "title": "Technical",
+              "list": [
+                "Twitter Bootstrap",
+                "jQuery",
+                "PHP",
+                "Scss"
+              ]
+            }
+          ]
         },
         {
           "image": "ls-grader",
           "ext": ".png",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Assignment grader",
+              "list": [
+                "Allows instructors to view, score, and give feedback on submitted assignments."
+              ]
+            },
+            {
+              "title": "Design",
+              "list": [
+                "Instructors can not only view, but also annotate uploaded documents. The goal of this page was to make it as easy as possible for instructors to give students feedback on their work."
+              ]
+            },
+            {
+              "title": "Technical",
+              "list": [
+                "Twitter Bootstrap",
+                "jQuery",
+                "PHP",
+                "Scss"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -316,19 +383,52 @@
           "image": "thesis_cards",
           "ext": ".jpg",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Exhibition Postcards",
+              "list": [
+                "Highlighting the writers, artists, and designers involved in creating the books featured in the show."
+              ]
+            },
+            {
+              "title": "specs",
+              "list": [
+                "4-color",
+                "4 x 6 inches"
+              ]
+            }
+          ]
         },
         {
           "image": "thesis_brochure",
           "ext": ".jpg",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Exhibition Brochure",
+              "list": [
+                "As I researched these books, I was impressed at the collaborative nature of each of these works. My priorities for the exhibition were to show the most beautiful works, and to highlight the collaborations that led to their creation."
+              ]
+            },
+            {
+              "title": "specs",
+              "list": [
+                "3 Panels",
+                "2 colors (overlaid for 3 colors)"
+              ]
+            }
+          ]
         },
         {
           "image": "thesis-all",
           "ext": ".jpg",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Brochure and Postcards",
+              "list": []
+            }
+          ]
         },
         {
           "image": "thesis_bible",
@@ -441,7 +541,14 @@
           "image": "thesis_cases",
           "ext": ".jpg",
           "alt": "",
-          "specs": []
+          "specs": [
+            {
+              "title": "Exhibition view",
+              "list": [
+                "Contained 11 cases, each highlighting a particular aspect of collaboration, and several interactive stands that included music, narration, books, and even a printed advertisement from the Doves Press for patrons to view up&nbsp;close."
+              ]
+            }
+          ]
         }
       ]
     },
