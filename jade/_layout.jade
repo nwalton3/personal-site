@@ -1,8 +1,10 @@
 html.no-js(lang="en")
 	head
 		- var localEnv = false;
+		- var cssVersion = 4
+		- var jsVersion = 1
 
-		- var assetBase = localEnv ? '' : 'http://static.nkwalton.com/';
+		- var assetBase = localEnv ? '' : 'http://nkwalton.brighamyounguniv.netdna-cdn.com/';
 		- var extension = localenv ? '.html' : '';
 
 		meta(charset='UTF-8')
@@ -18,14 +20,15 @@ html.no-js(lang="en")
 		link(rel='shortcut icon', href=assetBase + 'favicon.ico?v=3')
 
 		// Styles
-		link(rel='stylesheet', href=assetBase + 'css/style.css')
+		link(rel='stylesheet', href=assetBase + 'css/style.css?v=' + cssVersion)
 
 		// Scripts loaded via script loader. See notes in init.js file.
 		script(type="text/javascript", src="//use.typekit.net/nyn3skg.js")
 		script(type="text/javascript").
 			try{Typekit.load();}catch(e){};
 			window.localAssets = #{localEnv};
-		script(src= assetBase + 'js/init.min.js')
+			window.jsVersion   = #{jsVersion};
+		script(src= assetBase + 'js/init.min.js?v=' + jsVersion)
 
 	body(class=page.menu)
 		header.main

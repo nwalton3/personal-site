@@ -14,13 +14,20 @@ block content
 					.sizable
 						//- Render list
 						for project in projects
-							a.projectLink(href='#' + project.id)
-								span.projectDesc 
-									// span.projectType #{project.desc}
-									span.projectTitle!= project.title
-								each slide, i in project.slides
-									if i === project.thumbnail
-										img.lazy.front(data-src=slide.image, data-ext=slide.ext, alt='')
+							.projectlinks
+								a.projectLink(href='#' + project.id)
+									span.projectDesc 
+										// span.projectType #{project.desc}
+										span.projectTitle!= project.title
+									each slide, i in project.slides
+										if i === project.thumbnail
+											img.lazy.front(data-src=slide.image, data-ext=slide.ext, alt='')
+								span.slidelinks
+									each slide, i in project.slides
+										- var extension = '-' + i;
+										if i === 0
+											- extension = '';
+										a.sublink(href='#' + project.id + extension)
 
 
 		//- Render projects

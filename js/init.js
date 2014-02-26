@@ -11,10 +11,12 @@
 
 	"use strict";
 
-	var assetBase = 'http://static.nkwalton.com/';
+	var assetBase = 'http://nkwalton.brighamyounguniv.netdna-cdn.com/';
 	if ( window.localAssets ) {
 		assetBase = '';
 	}
+
+	if ( !window.jsVersion ) { window.jsVersion = 1; }
 
 	// Load scripts
 	Modernizr.load([
@@ -22,8 +24,8 @@
 		// If touch is enabled, load alternate script file with touch support added.
 		{
 			test: Modernizr.touch,
-			nope: assetBase + "js/script.min.js",
-			yep:  assetBase + "js/script-touch.min.js"
+			nope: assetBase + "js/script.min.js?v=" + window.jsVersion,
+			yep:  assetBase + "js/script-touch.min.js?v=" + window.jsVersion
 		}
 
 	]);

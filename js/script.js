@@ -11,14 +11,14 @@ var headerheight = 0;
 var	titleheight  = 0;
 var bottomOffset = 10;
 
-var assetBase = 'http://static.nkwalton.com/img/';
+var assetBase = 'http://nkwalton.brighamyounguniv.netdna-cdn.com/img/';
 if ( window.localAssets ) {
 	assetBase = 'img/';
 }
 
 // Run speed test
 $.hisrc.speedTest({
-	speedTestUri: 'http://static.nkwalton.com/img/speed.jpg?n=' + Math.random(),
+	speedTestUri: 'http://nkwalton.brighamyounguniv.netdna-cdn.com/img/speed.jpg?n=' + Math.random(),
 	speedTestKB: 48,
 	speedTestExpireMinutes: 5
 });

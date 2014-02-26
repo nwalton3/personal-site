@@ -1,0 +1,51 @@
+@import "variables"
+
+
+// Project intro page
+.intro
+	background-color: #000
+	font-size: 0.8em
+
+	.introimage
+		width: 32em
+		opacity: 0.15
+		margin: 0
+		min-width: 250px
+		max-width: 600px
+		margin-left: -10em
+		transition: margin-left 0.5s ease
+
+	.introtext 
+		font-family: $slab-font-family
+		margin: 0 auto
+		max-width: 35em
+		margin: 0 auto 0
+		h3
+			font-size: 0.95em
+			font-weight: 100
+			color: mix( $yellow1, #000, 60% )
+			font-weight: 700
+			letter-spacing: 2px
+			margin: 2em 0 1.5em
+			font-family: $sans-font-family
+			text-transform: uppercase
+		p
+			font-weight: 100
+			font-size: 1.5em
+			line-height: 1.5
+			color: mix( $yellow1, #fff, 80% )
+			.dropcap
+				font-family: "coquette", $slab-font-family
+				color: $yellow1
+				font-size: 3.05em
+				float: left
+				margin: 0.14em 0.08em 0 0
+				line-height: 0.8
+				font-weight: 100
+				opacity: 0.9
+			.leader
+				text-transform: uppercase
+				font-size: 0.8em
+				letter-spacing: 1px
+				font-weight: 300
+				font-family: "ff-ernestine-web-pro", $slab-font-family

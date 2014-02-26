@@ -1,0 +1,163 @@
+@import "variables"
+
+// Portfolio
+
+.portfolio
+	background-color: #000
+	&, .project
+		overflow: visible
+	nav
+		position: absolute
+		top: 16px
+		right: 5%
+		z-index: 10
+		width: 100px
+		height: 40px
+		margin-right: -9px
+		z-index: 200
+		a.ir
+			transition: all 0.2s ease
+			display: block
+			height: 40px
+			width: 40px
+			background: url('../img/arrow.svg')
+			position: absolute
+			opacity: 0.75
+			&.next
+				right: 0px
+				background-position: -40px 0
+			&.prev
+				left: 0px
+			&:hover
+				opacity: 1
+
+
+.title
+	height: 67px
+	position: absolute
+	width: 100%
+	top: 0
+	left: -3%
+	border-bottom: 1px solid #272318
+	opacity: 0
+	transition: all 0.3s ease
+	.current &
+		opacity: 1
+		left: 0
+		z-index: 100
+	h2
+		margin: 0 5%
+		height: 67px
+		padding-top: 15px
+		font-family: $slab-font-family
+		font-weight: 500
+		font-size: 1.6875em
+		color: $yellow1
+		a
+			color: $yellow1
+			transition: all 0.2s ease
+			&:hover
+				color: mix($yellow1, $yellow3)
+				text-decoration: none
+
+
+.introimage, .projectLink
+	img.lazy
+		opacity: 1
+		transition: opacity 0.3s ease
+		.loading &
+			opacity: 0
+
+// a.preview
+// 	padding-bottom: 
+
+
+// Slides
+.slide
+	top: 68px
+	max-width: 90%
+	margin: 0 auto
+	transition: all 0.4s ease
+	opacity: 0
+	&.visible
+		z-index: 100
+		opacity: 1
+	.wrapper
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		min-height: 40px
+	.sizable
+		transition: all 0.3s ease
+		box-sizing: content-box		
+		margin: 0 auto
+		min-height: 40px
+	.image
+		z-index: 9
+		opacity: 1
+		pointer-events: none
+	.info
+		z-index: 8
+		a
+			color: $yellow3
+	.infoinner
+		color: mix( $yellow3, $yellow1 )
+		font-weight: 100
+		width: 235px
+		position: absolute
+		top: 40px
+		left: 0
+		padding-left: 10px
+		opacity: 0
+		transition: all 0.3s ease
+		text-align: right
+		font-size: 14px
+		h3
+			color: $yellow2
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 0.75em
+			margin: 1.25em 0 0.25em
+			letter-spacing: 1px
+		ul
+			list-style: none
+			margin: 0
+			li
+				margin: 0
+	.show-info &
+		max-width: 100%
+		&.intro
+			max-width: 90%
+		.infoinner
+			opacity: 1
+		.image, .button
+			padding-left: 250px
+		.info
+			padding-right: 250px
+	
+	&#jonah-0 .dropcap
+		margin: 0.1em 0.2em 0 0
+
+
+// Info button
+a.infobutton
+	display: block
+	z-index: 20
+	position: absolute
+	top: 10px
+	left: 0
+	margin-left: -45px
+	background: url('../img/arrow.svg') -80px 0
+	width: 40px
+	height: 40px
+	transition: all 0.3s ease
+	opacity: 0.75
+	&:hover
+		opacity: 1
+	.show-info &
+		left: 240px
+		-webkit-transform: rotate(-45deg)
+		-moz-transform: rotate(-45deg)
+		-o-transform: rotate(-45deg)
+		transform: rotate(-45deg)

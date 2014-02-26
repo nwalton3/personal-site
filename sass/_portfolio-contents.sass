@@ -1,0 +1,72 @@
+@import "variables"
+
+// Table of contents
+#intro .slide
+	a.projectLink
+		//margin-bottom: .25em
+		//padding-bottom: 23.25%
+		@extend %imageloader
+		height: 100%
+		background-color: #15130d
+
+#intro .slide a, .home .content a.preview
+	max-width: 400px
+	display: inline-block
+	overflow: hidden
+	.projectDesc
+		z-index: 101
+		display: block
+		position: absolute
+		bottom: -1em
+		left: 0
+		width: 100%
+		background-color: rgba(#000, 0.65)
+		transition: all 0.3s ease
+		padding: .5em
+		line-height: 1.1
+		opacity: 0
+	&:hover .projectDesc
+		bottom: 0
+		opacity: 1
+	.projectTitle
+		display: block
+		font-size: 1.5em
+		font-weight: 100
+		color: $yellow3
+		font-family: $slab-font-family
+		@media ( max-width: 900px )
+			font-size: 1.2em
+		@media ( max-width: 600px )
+			font-size: 1.1em	
+	.projectType
+		display: block
+		font-size: .75em
+		letter-spacing: 1px
+		margin-bottom: .2em
+		color: mix($yellow1, $yellow3)
+		text-transform: uppercase
+.projectlinks
+	width: 31%
+	margin-left: 1%
+	height: 0
+	padding-bottom: 0.75 * 31%
+	background-color: #fff
+	display: inline-block
+	a.projectLink
+		position: absolute
+		top: 0
+		left: 0
+		display: block
+		width: 100%
+
+.slidelinks
+	position: absolute
+	top: 0
+	left: 0
+	display: none
+	a
+		width: 20px
+		height: 20px
+		display: inline-block
+		background-color: $yellow1
+		margin-right: 3px
