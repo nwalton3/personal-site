@@ -33,11 +33,7 @@
 		font-size: 1.5em
 		font-weight: 100
 		color: $yellow3
-		font-family: $slab-font-family
-		@media ( max-width: 900px )
-			font-size: 1.2em
-		@media ( max-width: 600px )
-			font-size: 1.1em	
+		font-family: $slab-font-family	
 	.projectType
 		display: block
 		font-size: .75em
@@ -45,6 +41,15 @@
 		margin-bottom: .2em
 		color: mix($yellow1, $yellow3)
 		text-transform: uppercase
+
+.home .content a.preview
+	.projectTitle
+		font-size: 1.3em
+		@media ( max-width: 900px )
+			font-size: 1.2em
+		@media ( max-width: 600px )
+			font-size: 1.1em
+
 .projectlinks
 	width: 31%
 	margin-left: 1%

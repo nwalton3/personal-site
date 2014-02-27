@@ -4,7 +4,6 @@ Specs for slides
 Cover images for BYU tickets, etc
 Update BYU home page images
 Update LS images
-Touch
 Fullscreen
-Touch navigation
 Update home page images to look better
+Fix narrow widths on slide view
