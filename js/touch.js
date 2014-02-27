@@ -18,8 +18,7 @@
 	// Document ready - Execute on page load
 	$(function() {
 
-		var body = $('body'),
-			width = $(window).width(),
+		var width = $(window).width(),
 			swipewidth = Math.floor(width * 0.16);
 
 		if( swipewidth > 150 ) {

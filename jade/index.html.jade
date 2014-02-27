@@ -4,8 +4,7 @@ block title
 	title Nate Walton
 
 block content
-	- var extension = '';
-	//- var extension = '.html';
+	- var extension = localEnv ? '.html' : '';
 
 	.feature
 		for quote in quotes
