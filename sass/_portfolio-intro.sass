@@ -4,7 +4,7 @@
 // Project intro page
 .intro
 	background-color: #000
-	font-size: 0.8em
+	font-size: 0.7em
 
 	.introimage
 		width: 32em
@@ -50,8 +50,13 @@
 				font-weight: 300
 				font-family: "ff-ernestine-web-pro", $slab-font-family
 				margin-left: -0.1em
+				line-height: (1.5 / 0.8)
 				.caps
 					font-size: 1em
+	@media (min-width: 360px)
+		font-size: 0.75em
+	@media (min-width: 400px)
+		font-size: 0.8em
 	@media (min-width: 450px)
 		font-size: 0.85em
 	@media (min-width: 600px)
@@ -73,4 +78,3 @@
 			text-shadow: 0 0 10px #000, 0 0 20px #000
 	@media (min-width: 1200px)
 		font-size: 1.1em
-		

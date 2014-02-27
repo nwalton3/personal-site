@@ -6,5 +6,4 @@ Update BYU home page images
 Update LS images
 Fullscreen
 Update home page images to look better
-Fix narrow widths on slide view
 More cool stuff with touch?
