@@ -20,7 +20,7 @@ module.exports = (grunt) ->
 				files:
 					'js/script.min.js' : [
 						'js/libs/jquery-2.0.3.min.js',
-						'js/libs/snap-svg.min.js',
+						# 'js/libs/snap-svg.min.js',
 						'js/plugins/typogr.js',
 						'js/plugins/hisrc.js',
 						'js/plugins/imageloader.js',
@@ -29,7 +29,7 @@ module.exports = (grunt) ->
 				files:
 					'js/script-touch.min.js' : [
 						'js/libs/jquery-2.0.3.min.js',
-						'js/libs/snap-svg.min.js',
+						# 'js/libs/snap-svg.min.js',
 						'js/plugins/typogr.js',
 						'js/plugins/hisrc.js',
 						'js/plugins/imageloader.js',
@@ -106,14 +106,20 @@ module.exports = (grunt) ->
 			# 		dest: ''
 			# 		ext: '.html'
 			# 	]
+
 		yaml:
-			data:
-				options:
-					space: 2
-				files: 
+			options:
+				space: 2
+			pages: 
+				files:
 					'data/portfolio.json': ['data/portfolio.yml'],
 					'data/students.json': ['data/students.yml'],
 					'data/index.json': ['data/index.yml']
+			environments:
+				files:
+					'data/env/local.json': ['data/env/local.yml'],
+					'data/env/stage.json': ['data/env/stage.yml'],
+					'data/env/prod.json': ['data/env/production.yml']
 
 		watch:
 			sass:
@@ -154,6 +160,16 @@ module.exports = (grunt) ->
 			server:
 				options:
 					port: 9001
+
+
+	combineJSONFiles = ->
+		object = {}
+		i = 0
+
+		while i < arguments_.length
+			_(object).extend grunt.file.readJSON(arguments_[i])
+			++i
+		object
 
 
 	grunt.loadNpmTasks('grunt-contrib-jshint')
