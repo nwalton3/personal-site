@@ -36,13 +36,11 @@
 			
 			// Swipe left: close the side nav if it's open
 			swipeLeft:function(event, direction, distance, duration, fingerCount) {
-				console.log('swipe left');
 				changeSlide();
 			},
 
 			// Swipe right: open the side nav if it's closed
 			swipeRight:function(event, direction, distance, duration, fingerCount) {
-				console.log('swipe right');
 				changeSlide('prev');
 			},
 
