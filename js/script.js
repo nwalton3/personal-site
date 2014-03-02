@@ -11,10 +11,9 @@ var headerheight = 0;
 var	titleheight  = 0;
 var bottomOffset = 10;
 
-var assetBase = 'http://nkwalton.brighamyounguniv.netdna-cdn.com/img/';
-if ( window.localAssets ) {
-	assetBase = 'img/';
-}
+var assetBase = window.assets ? window.assets : '';
+assetBase += 'img/';
+
 
 // Run speed test
 $.hisrc.speedTest({

@@ -11,11 +11,7 @@
 
 	"use strict";
 
-	var assetBase = 'http://nkwalton.brighamyounguniv.netdna-cdn.com/';
-	if ( window.localAssets ) {
-		assetBase = '';
-	}
-
+	if ( !window.assets ) { window.assets = '/'; }
 	if ( !window.jsVersion ) { window.jsVersion = 1; }
 
 	// Load scripts
@@ -24,8 +20,8 @@
 		// If touch is enabled, load alternate script file with touch support added.
 		{
 			test: Modernizr.touch,
-			nope: assetBase + "js/script.min.js?v=" + window.jsVersion,
-			yep:  assetBase + "js/script-touch.min.js?v=" + window.jsVersion
+			nope: window.assets + "js/script.min.js?v=" + window.jsVersion,
+			yep:  window.assets + "js/script-touch.min.js?v=" + window.jsVersion
 		}
 
 	]);

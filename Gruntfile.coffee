@@ -59,26 +59,64 @@ module.exports = (grunt) ->
 
 
 		sass:
-			options:
-				style: 'compressed'
-				compass: 'config.rb'
-				#debugInfo: true
-				trace: true
-				loadPath: ['sass/','sass-extensions/**/*']
-				sourcemap: true
-			compile:
-				files:[
-					expand: true
-					cwd: 'sass/'
-					src: 'style.sass'
-					dest: 'css/'
-					ext: '.css'
-				]
+			local:
+				options:
+					style: 'compressed'
+					compass: 'config.rb'
+					#debugInfo: true
+					trace: true
+					loadPath: ['sass/','sass-extensions/**/*']
+					sourcemap: true
+				compile:
+					files:[
+						expand: true
+						cwd: 'sass/'
+						src: 'style.sass'
+						dest: 'css/'
+						ext: '.css'
+					]
+			prod:
+				options:
+					style: 'compressed'
+					compass: 'config.rb'
+					loadPath: ['sass/','sass-extensions/**/*']
+				compile:
+					files:[
+						expand: true
+						cwd: 'sass/'
+						src: 'style.sass'
+						dest: 'css/'
+						ext: '.css'
+					]
 
 		autoprefixer:
-			options:
-				map: true
-			src: 'css/*.css'
+			local:
+				options:
+					map: true
+				src: 'css/*.css'
+			prod:
+				options:
+					map: false
+				src: 'css/*.css'
+
+
+		"merge-json":
+			local:
+				files:
+					'data/index.json' : ['data/env/local.json', 'data/page/index.json']
+					'data/portfolio.json' : ['data/env/local.json', 'data/page/portfolio.json']
+					'data/students.json' : ['data/env/local.json', 'data/page/students.json']
+			stage:
+				files:
+					'data/index.json' : ['data/page/index.json', 'data/env/stage.json']
+					'data/portfolio.json' : ['data/page/portfolio.json', 'data/env/stage.json']
+					'data/students.json' : ['data/page/students.json', 'data/env/stage.json']
+			prod:
+				files:
+					'data/index.json' : ['data/page/index.json', 'data/env/prod.json']
+					'data/portfolio.json' : ['data/page/portfolio.json', 'data/env/prod.json']
+					'data/students.json' : ['data/page/students.json', 'data/env/prod.json']
+
 
 		jade:
 			options:
@@ -98,14 +136,7 @@ module.exports = (grunt) ->
 					data: (dest, src) -> return require('./data/students.json')
 				files:
 					'students.html' : 'jade/portfolio.html.jade'
-			# compile:
-			# 	files:[
-			# 		expand: true
-			# 		cwd: 'jade/'
-			# 		src: ['**/*.html.jade']
-			# 		dest: ''
-			# 		ext: '.html'
-			# 	]
+
 
 		yaml:
 			options:
@@ -124,7 +155,7 @@ module.exports = (grunt) ->
 		watch:
 			sass:
 				files: ['sass/**/*.sass', 'sass/**/*.scss']
-				tasks: ['sass', 'autoprefixer']
+				tasks: ['sass', 'autoprefixer:local']
 
 			jade:
 				files: ['jade/**/*.jade', 'data/*.json']
@@ -156,31 +187,29 @@ module.exports = (grunt) ->
 				files: ['data/*.yml']
 				tasks: ['yaml']
 
+			local:
+				files: ['data/env/local.yml']
+				tasks: ['yaml:environments', 'merge-json:local', 'jade', 'local']
+			stage:
+				files: ['data/env/stage.yml']
+				tasks: ['yaml:environments', 'merge-json:stage', 'jade', 'prod']
+			prod:
+				files: ['data/env/production.yml']
+				tasks: ['yaml:environments', 'merge-json:prod', 'jade', 'prod']
+
+
 		connect:
 			server:
 				options:
 					port: 9001
 
 
-	combineJSONFiles = ->
-		object = {}
-		i = 0
 
-		while i < arguments_.length
-			_(object).extend grunt.file.readJSON(arguments_[i])
-			++i
-		object
+	require('load-grunt-tasks')(grunt);
 
-
-	grunt.loadNpmTasks('grunt-contrib-jshint')
-	grunt.loadNpmTasks('grunt-contrib-uglify')
-	grunt.loadNpmTasks('grunt-contrib-sass')
-	grunt.loadNpmTasks('grunt-autoprefixer')
-	grunt.loadNpmTasks('grunt-contrib-watch')
-	grunt.loadNpmTasks('grunt-contrib-connect')
-	grunt.loadNpmTasks('grunt-contrib-jade')
-	grunt.loadNpmTasks('grunt-yaml');
+	grunt.registerTask('local', ['sass:local', 'autoprefixer:local'])
+	grunt.registerTask('prod', ['sass:prod', 'autoprefixer:prod'])
 
 	# Default task(s).
-	grunt.registerTask('compile', ['sass', 'yaml', 'jade', 'jshint', 'uglify'])
+	grunt.registerTask('compile', ['sass:local', 'autoprefixer:local', 'yaml', "merge-json:local", 'jade', 'jshint', 'uglify'])
 	grunt.registerTask('default', ['compile', 'connect', 'watch'])

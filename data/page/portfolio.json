@@ -1,0 +1,868 @@
+{
+  "page": {
+    "title": "Work",
+    "menu": "work"
+  },
+  "projects": [
+    {
+      "title": "Sacred Gifts",
+      "id": "gifts",
+      "thumbnail": 0,
+      "image": "sg.png",
+      "desc": "Interface Design",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "T",
+      "leader": "he BYU Museum of Art",
+      "text": " wanted an iPad app to supplement and enhance the experience of their <i>Sacred Gifts</i> exhibition. The interface was meant to be easy to use (by even the least savvy patrons) and to maintain focus, both visually and conceptually, on the artwork.",
+      "slides": [
+        {
+          "image": "sg_home",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Home screen",
+              "list": [
+                "Christ and the Rich Young Ruler",
+                "By Heinrich Hofmann"
+              ]
+            },
+            {
+              "title": "Painting Screen",
+              "list": [
+                "The Resurrection",
+                "By Carl Bloch"
+              ]
+            },
+            {
+              "title": "Specs",
+              "list": [
+                "iPad app",
+                "SD and Retina resolution",
+                2013
+              ]
+            }
+          ]
+        },
+        {
+          "image": "sg_tombstone",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Painting Screens",
+              "list": [
+                "<em>Sermon on the Mount</em>",
+                "and <em>The Burial</em>",
+                "By Carl Bloch"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "sg_media",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Music",
+              "list": [
+                "Alleluia",
+                "Performed by the Mormon Tabernacle Choir"
+              ]
+            },
+            {
+              "title": "Video",
+              "list": [
+                "A Tour of a Danish Lutheran Church"
+              ]
+            },
+            {
+              "title": "Media in the app",
+              "list": [
+                "Interviews",
+                "Talks",
+                "Informational videos",
+                "Interactive panoramas",
+                "Social sharing",
+                "Children’s coloring",
+                "Augmented reality"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BYU Web",
+      "id": "byu",
+      "thumbnail": 0,
+      "image": "byu.png",
+      "desc": "Web Design",
+      "capoffset": "-0.1em",
+      "leaderoffset": "-0.3em",
+      "cap": "O",
+      "leader": "ur top priority",
+      "text": " for the BYU home page was achieving the right mood. We searched for inspiration in some of the most beautiful places around campus and worked to create the same dignified, inviting feeling on the web site. The BYU web templates make it easy for anyone on campus to build sites that fit within the brand.",
+      "slides": [
+        {
+          "image": "byu-home",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Type",
+              "list": [
+                "Whitney ScreenSmart",
+                "Sentinel",
+                "(From H&FJ)"
+              ]
+            },
+            {
+              "title": "Frameworks",
+              "list": [
+                "HTML5 Boilerplate",
+                "Bootstrap",
+                "FontAwesome",
+                "jQuery"
+              ]
+            },
+            {
+              "title": "Development Environment",
+              "list": [
+                "Grunt",
+                "Jade",
+                "Sass"
+              ]
+            },
+            {
+              "title": "Source code",
+              "list": [
+                "<a href=\"https://github.com/byuweb/HTML-Templates\">GitHub Repo</a>"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "byu_home-sizes",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Home Page",
+              "list": [
+                "Responsive design",
+                "75 Requests",
+                "Under 1MB",
+                "Under 2s load time"
+              ]
+            },
+            {
+              "title": "Latest release",
+              "list": [
+                2013
+              ]
+            },
+            {
+              "title": "Link",
+              "list": [
+                "<a href=\"http://byu.edu\">http://byu.edu</a>"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "byu_style",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "BYU template",
+              "list": [
+                "42 Requests",
+                "715K",
+                "Under 1s load time"
+              ]
+            },
+            {
+              "title": "Links",
+              "list": [
+                "<a href=\"http://byuweb.github.io/HTML-Templates/elements.html\">Style Guide</a>",
+                "<a href=\"http://byuweb.github.io/HTML-Templates/pagetype2-update.html\">Demo Page</a>"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BYU Tickets",
+      "id": "byutickets",
+      "thumbnail": 0,
+      "image": "speed.jpg",
+      "desc": "Web Design",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "T",
+      "leader": "he main purpose",
+      "text": " for redesigning the BYU Tickets web site was to make it easier for people to buy tickets. We removed almost everything that didn’t directly contribute to that, and converted the site to be fully responsive to meet the increasing mobile traffic.",
+      "slides": [
+        {
+          "image": "byutickets_full",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Type",
+              "list": [
+                "Verlag",
+                "Whitney ScreenSmart",
+                "Sentinel",
+                "(From H&FJ)"
+              ]
+            },
+            {
+              "title": "Latest release",
+              "list": [
+                2014
+              ]
+            },
+            {
+              "title": "Frameworks",
+              "list": [
+                "Drupal",
+                "Bootstrap",
+                "jQuery"
+              ]
+            },
+            {
+              "title": "Link",
+              "list": [
+                "<a href=\"http://byutickets-dev.byu.edu\">byutickets-dev.byu.edu</a>"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "byutickets-sizes2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "BYU Tickets",
+              "list": [
+                "Responsive design",
+                "60 Requests",
+                "1.1 MB",
+                "1.2s load time"
+              ]
+            },
+            {
+              "title": "Link",
+              "list": [
+                "<a href=\"http://byutickets-dev.byu.edu\">byutickets-dev.byu.edu</a>"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BYU Learning Suite",
+      "id": "ls",
+      "thumbnail": 0,
+      "image": "speed.jpg",
+      "desc": "Interface Design",
+      "capoffset": "-0.19em",
+      "leaderoffset": 0,
+      "cap": "I",
+      "leader": " worked extensively",
+      "text": " with instructional designers and progammers to help create the BYU Learning Suite. I wrote a style guide and created hundreds of page mockups. I also had a big part in writing the CSS for the site, and part of my ongoing work is to train new designers and programmers on best practices in web design and web application programming.",
+      "slides": [
+        {
+          "image": "ls-scores",
+          "ext": ".png",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Scores Page",
+              "list": [
+                "Allows instructors to enters scores for any student on any assignment."
+              ]
+            },
+            {
+              "title": "Design",
+              "list": [
+                "Everything on the page is aimed at making it easy for instructors to enter scores. We concentrated on things like fast interface and keyboard navigation."
+              ]
+            },
+            {
+              "title": "Technical",
+              "list": [
+                "Backbone JS",
+                "Twitter Bootstrap",
+                "jQuery",
+                "PHP",
+                "Scss"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "ls-grader-exam",
+          "ext": ".png",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Exam Scoring",
+              "list": [
+                "Allows instructor to efficiently score all students' exams."
+              ]
+            },
+            {
+              "title": "Design",
+              "list": [
+                "Again, efficiency was the aim of the page—to save instructors time and allow them to concentrate on teaching instead of technology."
+              ]
+            },
+            {
+              "title": "Technical",
+              "list": [
+                "Twitter Bootstrap",
+                "jQuery",
+                "PHP",
+                "Scss"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "ls-grader",
+          "ext": ".png",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Assignment grader",
+              "list": [
+                "Allows instructors to view, score, and give feedback on submitted assignments."
+              ]
+            },
+            {
+              "title": "Design",
+              "list": [
+                "Instructors can not only view, but also annotate uploaded documents. The goal of this page was to make it as easy as possible for instructors to give students feedback on their work."
+              ]
+            },
+            {
+              "title": "Technical",
+              "list": [
+                "Twitter Bootstrap",
+                "jQuery",
+                "PHP",
+                "Scss"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Connections",
+      "id": "thesis",
+      "thumbnail": 0,
+      "image": "fraluca.png",
+      "desc": "Exhibition Design",
+      "capoffset": "-0.25em",
+      "leaderoffset": "-0.05em",
+      "cap": "F",
+      "leader": "or my MFA thesis",
+      "text": " I spent a semester in the IU Lilly Special Collections Library soaking in some of the most beautiful books in the world. I designed a library exhibition highlighting many of them, including the <i>Bruce Rogers World Bible</i>, Eric Gill’s <i>Four Gospels</i>, Kelmscott and Doves press masterpieces, Limited Editions and Grolier Club releases, Philip Smith bindings, Picasso and Braque illustrations, and other breathtaking works.",
+      "slides": [
+        {
+          "image": "thesis_cards",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Exhibition Postcards",
+              "list": [
+                "Highlighting the writers, artists, and designers involved in creating the books featured in the show."
+              ]
+            },
+            {
+              "title": "specs",
+              "list": [
+                "4-color",
+                "4 x 6 inches"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "thesis_brochure",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Exhibition Brochure",
+              "list": [
+                "As I researched these books, I was impressed at the collaborative nature of each of these works. My priorities for the exhibition were to show the most beautiful works, and to highlight the collaborations that led to their creation."
+              ]
+            },
+            {
+              "title": "specs",
+              "list": [
+                "3 Panels",
+                "2 colors (overlaid for 3 colors)"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "thesis-all",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Brochure and Postcards",
+              "list": []
+            }
+          ]
+        },
+        {
+          "image": "thesis_bible",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "The Making of the Bruce Rogers World Bible",
+              "list": [
+                "World Publishing Co., 1949"
+              ]
+            },
+            {
+              "title": "The Bruce Rogers World Bible",
+              "list": [
+                "World Publishing Co., 1949",
+                "Designed by Bruce Rogers",
+                "Printed by A. Colish"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "thesis_bible1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Prospectus",
+              "list": [
+                "The Bruce Rogers World Bible",
+                "World Publishing Co., 1949"
+              ]
+            },
+            {
+              "title": "Facsimiles",
+              "list": [
+                "Typographic sample",
+                "Galley Sheet",
+                "Letter from  Rogers to Colish",
+                "Composite of translator page",
+                "(From the Press of A. Colish Archives, University of Delaware)"
+              ]
+            },
+            {
+              "title": "Other items",
+              "list": [
+                "Metal chase with type",
+                "Composing stick with type",
+                "Monotype matrix case",
+                "Picture of Monotype machine",
+                "Printers’ ornaments"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "thesis_society",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Music, Deep Rivers In My Soul",
+              "list": [
+                "Limited Editions Club, 2003",
+                "Poem by Maya Angelou",
+                "Etchings by Dean Mitchell",
+                "Music by Wynton Marsalis"
+              ]
+            },
+            {
+              "title": "Fra Luca de Pacioli of Borgo S. Sepulcro",
+              "list": [
+                "Grolier Club, 1931",
+                "Written by Stanley Morison",
+                "Design by Bruce Rogers"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "thesis_doves",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "The Doves Press Bible",
+              "list": [
+                "Doves Press, 1904",
+                "Designed and printed by Emery Walker and T. J. Cobden-anderson"
+              ]
+            },
+            {
+              "title": "The Four Gospels of the Lord Jesus Christ",
+              "list": [
+                "Golden Cockerel Press, 1931",
+                "Designed and printed by Robert Gibbings and Eric Gill"
+              ]
+            },
+            {
+              "title": "Special binding for The Four Gospels",
+              "list": [
+                "Lilly Library Collection",
+                "Bound by William Matthews"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "thesis_cases",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Exhibition view",
+              "list": [
+                "Contained 11 cases, each highlighting a particular aspect of collaboration, and several interactive stands that included music, narration, books, and even a printed advertisement from the Doves Press for patrons to view up&nbsp;close."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Specimens",
+      "id": "bugs",
+      "thumbnail": 1,
+      "image": "cicada.png",
+      "desc": "Poster / Self-promotion",
+      "capoffset": "-0.19em",
+      "leaderoffset": "-0.2em",
+      "cap": "I",
+      "leader": "nsects have fascinated me",
+      "text": " ever since my freshman biology class. So when the idea struck me that both <i>type</i> and <i>bug</i> collections contain specimens, I went to work on some typographic insects. The result is one of my favorite projects to date.",
+      "slides": [
+        {
+          "image": "bugs-zoom1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "bugs_typographic",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "bugs-all",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        }
+      ]
+    },
+    {
+      "title": "Love",
+      "id": "love",
+      "thumbnail": 0,
+      "image": "ornament.png",
+      "desc": "Letterpress",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "T",
+      "leader": "his broadside",
+      "text": " was created to celebrate marriage, with text taken from CS Lewis’ <i>Mere Christianity</i>. It was the first thing printed from some gorgeous new 24pt Centaur type that we acquired, and it’s accented by a light woodcut illustration.",
+      "slides": [
+        {
+          "image": "love1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "love2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "love",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Fully Justified",
+              "list": [
+                "If you’ve ever done letterpress, you know what it takes to get justified type. I cut a bunch of tiny paper spacers to get it just right."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jonah",
+      "id": "jonah",
+      "thumbnail": 3,
+      "image": "jonah.png",
+      "desc": "Letterpress / Linocut / Bookbinding",
+      "capoffset": "-0.25em",
+      "leaderoffset": "-0.6em",
+      "cap": "R",
+      "leader": " elief printing",
+      "text": " is one of my favorite artforms, probably because it works so well with letterpress. This book has 20 linocut illustrations of events in the Book of Jonah, with images and type printed on a Vandercook SP-15 proof press.",
+      "slides": [
+        {
+          "image": "jonah_cover2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Process",
+              "list": [
+                "Silk-screened slipcase wrapper",
+                "Silk-screened endpapers",
+                "Cloth-bound book case",
+                "Foil stamped spine"
+              ]
+            },
+            {
+              "title": "Media",
+              "list": [
+                "Fortune Roman type"
+              ]
+            },
+            {
+              "title": "Specs",
+              "list": [
+                "4 ¾\" × 6 ¾\" × ¾\"",
+                2005
+              ]
+            }
+          ]
+        },
+        {
+          "image": "jonah_case2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "jonah_pray",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "jonah_storm2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "jonah_beach3",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
+        },
+        {
+          "image": "jonah_colophon",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Process",
+              "list": [
+                "Linoleum cut & letterpress",
+                "Printed on a Vandercook SP-15",
+                "Bound in hard case"
+              ]
+            },
+            {
+              "title": "Media",
+              "list": [
+                "Univers & Fortune Roman type",
+                "Somerset paper"
+              ]
+            },
+            {
+              "title": "Specs",
+              "list": [
+                "4 ¾\" × 6 ¾\" × ¾\"",
+                "24 pages",
+                2005
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Experimental",
+      "id": "experimental",
+      "thumbnail": 0,
+      "image": "experimental.png",
+      "desc": "History, theory, and inspiration",
+      "capoffset": "-0.2em",
+      "leaderoffset": "-0.2em",
+      "cap": "D",
+      "leader": " esign has always been",
+      "text": " more than just visual layout for me. I love the play between different theories and ideologies, like modernism vs postmodernism, elitism vs populism, or abstraction vs representation. I also enjoy finding ways to let historical work influence me where, for example, a classical layout might give just the right feel to a modern design.",
+      "slides": [
+        {
+          "image": "hardwork",
+          "ext": ".png",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Digital Design",
+              "list": [
+                "I often like to make layouts based on inspirational thoughts."
+              ]
+            }
+          ]
+        },
+        {
+          "image": "modernism",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Letterpress Poster",
+              "list": [
+                "18.5 x 25 inches",
+                "Wood and metal type",
+                "Photopolymer plates"
+              ]
+            },
+            {
+              "title": "\"Modernism Has Failed Us\"",
+              "list": [
+                "Phil Baines",
+                "\"Clear Enough To Read\"",
+                "<em>Emigre</em> 18:83–87"
+              ]
+            },
+            {
+              "title": "\"Form Follows Function\"",
+              "list": [
+                "Louis Sullivan",
+                "\"The Tall Office Building<br>Artistically Considered\"",
+                "In <em>Kindergarten Chats<br>and Other Writings</em>"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "suu-poster",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Poster",
+              "list": [
+                "Designed for a talk I gave at Southern Utah University"
+              ]
+            },
+            {
+              "title": "Inspiration",
+              "list": [
+                "Composition mirrors a painting by Carl Bloch that I admire."
+              ]
+            },
+            {
+              "title": "Specs",
+              "list": [
+                "4-color",
+                "11 x 17 inches",
+                "2011"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "ornate_abuse_close",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Ornate",
+              "list": [
+                "Magazine",
+                "1 color",
+                "24 pages"
+              ]
+            },
+            {
+              "title": "Design",
+              "list": [
+                "Layout experiments",
+                "Vienna Secession theories"
+              ]
+            },
+            {
+              "title": "Writing",
+              "list": [
+                "Articles about ornament"
+              ]
+            },
+            {
+              "title": "Translation",
+              "list": [
+                "Translated several articles",
+                "from German",
+                "From <em>Ver Sacrum</em> and",
+                "other early 20th Century publications"
+              ]
+            },
+            {
+              "title": "Research",
+              "list": [
+                "Arts & Crafts",
+                "Vienna Secession",
+                "Modernism",
+                "Neue Typographie"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "hatch",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Hatch Show Print",
+              "list": [
+                "From a Hatch Show Print letterpress workshop at Indiana University"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

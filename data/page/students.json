@@ -1,0 +1,428 @@
+{
+  "page": {
+    "title": "Student Work",
+    "menu": "teaching"
+  },
+  "projects": [
+    {
+      "title": "Poster",
+      "id": "poster",
+      "thumbnail": 0,
+      "image": "speed.jpg",
+      "desc": "VAGD 210",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "I",
+      "leader": "tried several variations",
+      "text": " on the poster project, and often allowed the students to help determine the subject for their poster project. Music often worked out well, and travel posters tended to be successful as well. One semester we decided to do quotations. We also scheduled space in the HFAC to show the posters each semester.",
+      "slides": [
+        {
+          "image": "student/poster1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Music Poster",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/poster2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Music Poster",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/poster3",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Music Poster",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/poster4",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Music Poster",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/poster5",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Quote Poster",
+              "list": [
+                "Winter 2013"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/poster7",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Quote Poster",
+              "list": [
+                "Winter 2013"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/poster6",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Travel Poster",
+              "list": [
+                "Fall 2008"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/poster8",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Travel Poster",
+              "list": [
+                "Fall 2008"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/poster9",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Travel Poster",
+              "list": [
+                "Fall 2008"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CD Packaging",
+      "id": "cd",
+      "thumbnail": 7,
+      "image": "speed.jpg",
+      "desc": "VAGD 210",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "T",
+      "leader": "he CD package",
+      "text": " was the final project for the computer applications course. Students dealt with visual systems, layout, typography, printing, and production. I tried to give them experience in all of these areas throughout the course so they would be prepared to be successful in this project.",
+      "slides": [
+        {
+          "image": "student/cd1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/cd2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/cd3",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/cd4",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/cd5",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/cd6",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/cd7",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/cd8",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/cd9",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "CD package",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Music Promotion",
+      "id": "album",
+      "thumbnail": 0,
+      "image": "speed.jpg",
+      "desc": "VAGD 210",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "S",
+      "leader": "tudents were asked",
+      "text": " to create a promotion for a music album of their choice. They needed to design their promotions for a specific context and show their design in context.",
+      "slides": [
+        {
+          "image": "student/album1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Grooveshark Spash Screen",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/album2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Grooveshark Spash Screen",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/album3",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "iTunes Feature",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/album4",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "iTunes Feature",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/album5",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Digital Album Cover",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/album6",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Digital Album Cover",
+              "list": [
+                "Winter 2012"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Photoshop",
+      "id": "photoshop",
+      "thumbnail": 3,
+      "image": "speed.jpg",
+      "desc": "VAGD 210, VA 112",
+      "capoffset": "-0.24em",
+      "leaderoffset": "-0.1em",
+      "cap": "P",
+      "leader": "hotoshop was an important part",
+      "text": " of the beginning computer applications design course, as well as the introduction to digital art. I tried to help students not only learn the software, but create interesting art in the process.",
+      "slides": [
+        {
+          "image": "student/photoshop1",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Open Project",
+              "list": [
+                "Fall 2008"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/photoshop2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Open Project",
+              "list": [
+                "Fall 2008"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/photoshop4",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Self Portrait Project",
+              "list": [
+                "Winter 2010"
+              ]
+            }
+          ]
+        },
+        {
+          "image": "student/photoshop3",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": [
+            {
+              "title": "Found Image Project",
+              "list": [
+                "Summer 2009"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

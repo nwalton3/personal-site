@@ -1,4 +1,5 @@
 {
   "env": "stage",
-  "assets": "http://nkwalton-stage.brighamyounguniv.netdna-cdn.com"
+  "assets": "http://nkwalton-stage.brighamyounguniv.netdna-cdn.com/",
+  "iteration": 1
 }

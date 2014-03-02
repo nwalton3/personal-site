@@ -1,4 +1,5 @@
 {
   "env": "production",
-  "assets": "http://nkwalton.brighamyounguniv.netdna-cdn.com"
+  "assets": "http://nkwalton.brighamyounguniv.netdna-cdn.com/",
+  "iteration": 1
 }

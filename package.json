@@ -12,6 +12,8 @@
     "grunt-contrib-uglify": "*",
     "grunt-autoprefixer": "0.6.4",
     "grunt-contrib-connect": "*",
-    "coffee-script": "*"
+    "coffee-script": "*",
+    "load-grunt-tasks": "*",
+    "grunt-merge-json": "^0.9.4"
   }
 }
