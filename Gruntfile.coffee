@@ -61,9 +61,9 @@ module.exports = (grunt) ->
 		sass:
 			local:
 				options:
-					style: 'compressed'
+					style: 'compact'
 					compass: 'config.rb'
-					#debugInfo: true
+					debugInfo: true
 					trace: true
 					loadPath: ['sass/','sass-extensions/**/*']
 					sourcemap: true
@@ -155,7 +155,7 @@ module.exports = (grunt) ->
 		watch:
 			sass:
 				files: ['sass/**/*.sass', 'sass/**/*.scss']
-				tasks: ['sass', 'autoprefixer:local']
+				tasks: ['sass:local', 'autoprefixer:local']
 
 			jade:
 				files: ['jade/**/*.jade', 'data/*.json']

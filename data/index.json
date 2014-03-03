@@ -1,4 +1,7 @@
 {
+	"env": "local",
+	"assets": "",
+	"iteration": 1,
 	"page": {
 		"title": "Home",
 		"menu": "home"
@@ -52,8 +55,5 @@
 				}
 			]
 		}
-	],
-	"env": "stage",
-	"assets": "http://nkwalton-stage.brighamyounguniv.netdna-cdn.com/",
-	"iteration": 1
+	]
 }

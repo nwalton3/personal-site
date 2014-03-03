@@ -32,6 +32,7 @@ $(document).ready(function(){
 		loadImages( $('img.lazy'), 0 );
 	}
 
+	$('body').addClass('load');
 	//var arrowRight = Snap();
 
 });
