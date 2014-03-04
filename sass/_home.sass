@@ -14,14 +14,20 @@ $picture-height: $picture-width * 0.75
 
 // Fade on load
 body.home
-	.quote, .byline
+	.quote, .byline, header.main, .wrapper
 		opacity: 0
-		//transition: opacity 0.5s 0.5s ease
+		transition: opacity 0.75s ease
+	.quote
+		transition-delay: 0.75s
+	.byline
+		transition-delay: 1s
+	.wrapper
+		transition-delay: 1.5s
 
 
 body.home.load
-	.quote, .byline
-		//opacity: 1
+	.quote, .byline, header.main, .wrapper
+		opacity: 1
 
 
 

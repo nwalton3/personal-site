@@ -62,40 +62,36 @@ module.exports = (grunt) ->
 			options:
 				compass: 'config.rb'
 				style: 'compressed'
-				debugInfo: true
-				trace: true
-				sourcemap: true
+				debugInfo: grunt.option('local')
+				trace: grunt.option('local')
+				sourcemap: grunt.option('local')
 			compile:
 				files:
 					"css/style.css" : "sass/style.sass"
 
+
 		autoprefixer:
-			local:
-				options:
-					map: true
-				src: 'css/*.css'
-			prod:
-				options:
-					map: false
-				src: 'css/*.css'
+			options:
+				map: grunt.option('local')
+			src: 'css/*.css'
 
 
 		"merge-json":
 			local:
 				files:
-					'data/index.json' : ['data/env/local.json', 'data/page/index.json']
+					'data/index.json' :     ['data/env/local.json', 'data/page/index.json']
 					'data/portfolio.json' : ['data/env/local.json', 'data/page/portfolio.json']
-					'data/students.json' : ['data/env/local.json', 'data/page/students.json']
+					'data/students.json' :  ['data/env/local.json', 'data/page/students.json']
 			stage:
 				files:
-					'data/index.json' : ['data/page/index.json', 'data/env/stage.json']
-					'data/portfolio.json' : ['data/page/portfolio.json', 'data/env/stage.json']
-					'data/students.json' : ['data/page/students.json', 'data/env/stage.json']
+					'data/index.json' :     ['data/env/stage.json', 'data/page/index.json']
+					'data/portfolio.json' : ['data/env/stage.json', 'data/page/portfolio.json']
+					'data/students.json' :  ['data/env/stage.json', 'data/page/students.json']
 			prod:
 				files:
-					'data/index.json' : ['data/page/index.json', 'data/env/prod.json']
-					'data/portfolio.json' : ['data/page/portfolio.json', 'data/env/prod.json']
-					'data/students.json' : ['data/page/students.json', 'data/env/prod.json']
+					'data/index.json' :     ['data/env/prod.json', 'data/page/index.json']
+					'data/portfolio.json' : ['data/env/prod.json', 'data/page/portfolio.json']
+					'data/students.json' :  ['data/env/prod.json', 'data/page/students.json']
 
 
 		jade:
@@ -134,8 +130,10 @@ module.exports = (grunt) ->
 
 		watch:
 			sass:
+				options:
+					livereload: true
 				files: ['sass/**/*.sass', 'sass/**/*.scss']
-				tasks: ['sass:local', 'autoprefixer:local']
+				tasks: ['sass', 'autoprefixer']
 
 			jade:
 				files: ['jade/**/*.jade', 'data/*.json']
@@ -169,13 +167,13 @@ module.exports = (grunt) ->
 
 			local:
 				files: ['data/env/local.yml']
-				tasks: ['yaml:environments', 'merge-json:local', 'jade', 'local']
+				tasks: ['local']
 			stage:
 				files: ['data/env/stage.yml']
-				tasks: ['yaml:environments', 'merge-json:stage', 'jade', 'prod']
+				tasks: ['prod']
 			prod:
 				files: ['data/env/production.yml']
-				tasks: ['yaml:environments', 'merge-json:prod', 'jade', 'prod']
+				tasks: ['prod']
 
 
 		connect:
@@ -187,9 +185,15 @@ module.exports = (grunt) ->
 
 	require('load-grunt-tasks')(grunt);
 
-	grunt.registerTask('local', ['sass:local', 'autoprefixer:local'])
-	grunt.registerTask('prod', ['sass:prod', 'autoprefixer:prod'])
+	# Set options for environments
+	grunt.task.registerTask('setLocal', 'Local option', () -> grunt.option('local', true) )
+	grunt.task.registerTask('setProd', 'Production option', () -> grunt.option('local', true) )
+
+	# Environments
+	grunt.registerTask('local', ['setLocal', 'sass', 'autoprefixer', 'yaml:environments', 'merge-json:local', 'jade'])
+	grunt.registerTask('stage', ['setProd',  'sass', 'autoprefixer', 'yaml:environments', 'merge-json:stage', 'jade'])
+	grunt.registerTask('prod',  ['setProd',  'sass', 'autoprefixer', 'yaml:environments', 'merge-json:prod',  'jade'])
 
 	# Default task(s).
-	grunt.registerTask('compile', ['sass:local', 'autoprefixer:local', "merge-json:local", 'jade'])
+	grunt.registerTask('compile', ['setLocal', 'sass', 'autoprefixer', "merge-json:local", 'jade'])
 	grunt.registerTask('default', ['compile', 'connect', 'watch'])
