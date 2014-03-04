@@ -62,19 +62,28 @@ module.exports = (grunt) ->
 			options:
 				compass: 'config.rb'
 				style: 'compressed'
-				debugInfo: grunt.option('local')
-				trace: grunt.option('local')
-				sourcemap: grunt.option('local')
-			compile:
+				debugInfo: true
+				trace:     true
+				sourcemap: true
+			local:
+				files:
+					"css/style.css" : "sass/style.sass"
+			prod:
+				options:
+					sourcemap: false
 				files:
 					"css/style.css" : "sass/style.sass"
 
 
 		autoprefixer:
-			options:
-				map: grunt.option('local')
-			src: 'css/*.css'
-
+			local:
+				options:
+					map: true
+				src: 'css/*.css'
+			prod:
+				options:
+					map: false
+				src: 'css/*.css'
 
 		"merge-json":
 			local:
@@ -133,7 +142,7 @@ module.exports = (grunt) ->
 				options:
 					livereload: true
 				files: ['sass/**/*.sass', 'sass/**/*.scss']
-				tasks: ['sass', 'autoprefixer']
+				tasks: ['sass:local', 'autoprefixer:local']
 
 			jade:
 				files: ['jade/**/*.jade', 'data/**/*.json']
@@ -185,15 +194,12 @@ module.exports = (grunt) ->
 
 	require('load-grunt-tasks')(grunt);
 
-	# Set options for environments
-	grunt.task.registerTask('setLocal', 'Local option', () -> grunt.option('local', true) )
-	grunt.task.registerTask('setProd', 'Production option', () -> grunt.option('local', true) )
 
 	# Environments
-	grunt.registerTask('local', ['setLocal', 'sass', 'autoprefixer', 'yaml:environments', 'merge-json:local', 'jade'])
-	grunt.registerTask('stage', ['setProd',  'sass', 'autoprefixer', 'yaml:environments', 'merge-json:stage', 'jade'])
-	grunt.registerTask('prod',  ['setProd',  'sass', 'autoprefixer', 'yaml:environments', 'merge-json:prod',  'jade'])
+	grunt.registerTask('local', ['sass:local', 'autoprefixer:local', 'yaml:environments', 'merge-json:local', 'jade'])
+	grunt.registerTask('stage', ['sass:prod',  'autoprefixer:prod',  'yaml:environments', 'merge-json:stage', 'jade'])
+	grunt.registerTask('prod',  ['sass:prod',  'autoprefixer:prod',  'yaml:environments', 'merge-json:prod',  'jade'])
 
 	# Default task(s).
-	grunt.registerTask('compile', ['setLocal', 'sass', 'autoprefixer', "merge-json:local", 'jade'])
+	grunt.registerTask('compile', ['setLocal', 'sass:local', 'autoprefixer:local', "merge-json:local", 'jade'])
 	grunt.registerTask('default', ['compile', 'connect', 'watch'])
