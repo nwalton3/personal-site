@@ -1,2 +1,1779 @@
-/* normalize.css v2.1.1 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{background:#fff;color:#000;font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}html,button,input,select,textarea{color:#222}body{font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:0.2em 0;background:#ccc;color:#000;padding:0.2em 0}.ir{background-color:transparent;border:0;overflow:hidden;*text-indent:-9999px}.ir:before{content:"";display:block;width:0;height:150%}.hidden{display:none !important;visibility:hidden}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.invisible{visibility:hidden}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}html,body{width:100%;overflow-x:hidden}body em{font-style:italic}body strong{font-weight:bold}body,select,input,textarea{color:#444}p a{text-decoration:underline}blockquote{margin:1.5em 10px;padding:.5em 10px;color:#333;margin:25px 20px 25px 0;padding:3px 25px;position:relative}blockquote:before{color:#bbb;content:"\201C";font-size:3em;line-height:.1em;vertical-align:-.4em;display:block;position:absolute;top:15px;left:1px}blockquote:after{color:#bbb;content:"\201D";font-size:3em;line-height:.1em;vertical-align:-.45em}blockquote :first-child{display:inline}a,a:link{color:#369;text-decoration:none}a:hover{color:#025;text-decoration:underline}a:active{color:#c00}a:visited{color:#539}img{max-width:100%}table{border-collapse:collapse;border-spacing:0;margin:0 0 9px}table,td,th{border:1px solid #ddd}td,th{padding:.125em .5em;text-align:left;vertical-align:top}td{border-left:1px dotted #eee;border-right:1px dotted #eee}th{background:#f9f9f9;border-right:1px solid #e9e9e9;border-left:1px solid #e9e9e9}table caption{color:#888;text-align:left;margin:.15em .25em;font-style:italic}tfoot{font-weight:bold}tfoot td{color:#666;border-top-color:#666}td,td img{vertical-align:top}ol{list-style-type:decimal;margin-left:2em}ol ol{list-style-type:lower-alpha}ol ol ol{list-style-type:lower-roman}ol ol ol ol{list-style-type:decimal}ol ol ol ol ol{list-style-type:lower-alpha}ol ol ol ol ol ol{list-style-type:lower-roman}ul{list-style-type:disc;margin-left:2em}ul ul{list-style-type:circle}ul ul ul{list-style-type:disc}ul ul ul ul{list-style-type:circle}ul ul ul ul ul{list-style-type:disc}ul ul ul ul ul ul{list-style-type:circle}ul ul{margin-top:.25em;margin-bottom:.25em}nav ul,nav ul ul{list-style:none}nav ul,nav li{margin:0}dt{font-weight:bold}dd{padding:0 0 0.75em 1em}dl,menu,ol,ul{padding:0}.caps{font-size:0.9em}.dquo{margin-left:-0.5em}.abbr{white-space:nowrap}.number{white-space:nowrap}h1 .amp,h2 .amp,h3 .amp,h4 .amp,h5 .amp,h6 .amp{font-family:"Warnock Pro","Goudy Old Style","Palatino","Book Antiqua",serif;font-size:1em;font-style:italic}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:relative}html{font-family:"museo-sans",Helvetica,sans-serif;background-color:#000}body{height:100%}html,body,.portfolio{max-height:100%;overflow:visible}img{max-width:100%;max-height:100%}#intro .slide a.projectLink,body.home .content a.preview,body.home .content a.viewall{height:0;background-color:#ebe7dd}#intro .slide a.projectLink img,body.home .content a.preview img,body.home .content a.viewall img{position:absolute;top:0;left:0;opacity:1;-webkit-transition:all 0.3s ease 0.1s;transition:all 0.3s ease 0.1s}#intro .slide a.loading.projectLink img,body.home .content a.loading.preview img,body.home .content a.loading.viewall img{opacity:0}#intro .slide a.loading.projectLink:before,body.home .content a.loading.preview:before,body.home .content a.loading.viewall:before{content:"\21BB";color:#d2cab1;opacity:0.25;display:block;position:absolute;padding:4px 10px;-webkit-animation:spin 1.5s infinite linear;-ms-animation:spin 1.5s infinite linear;animation:spin 1.5s infinite linear}#intro .slide a.loading.projectLink:hover:before,body.home .content a.loading.preview:hover:before,body.home .content a.loading.viewall:hover:before{text-decoration:none}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)}100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}}header.main{height:40px;background-color:#1f1c13;border-bottom:1px solid #373121}header.main a{background-color:transparent;text-transform:uppercase;font-size:0.9em;letter-spacing:1px;font-weight:500;-webkit-transition:all 0.2s ease;transition:all 0.2s ease;height:38px;padding-top:9px}header.main a:link,header.main a:visited{color:#c4b898;opacity:0.8}header.main a:focus,header.main a:hover{color:#c4b898;opacity:1;text-decoration:none}header.main a:active{color:#e1dccb}header.main h1{margin:0;font-size:1em;position:absolute;top:0;left:5%}header.main h1 a{display:block;position:absolute;padding-left:80px;background:transparent url(../img/logo.png) top left no-repeat;-webkit-background-size:75px 38px;background-size:75px 38px;white-space:nowrap;top:1px;left:0;margin-left:-2px}header.main nav{position:absolute;top:1px;right:5%;margin-right:5px}header.main nav a{display:inline-block;margin-left:10px}header.main nav a:after{content:"//";color:#766a47;padding-left:10px;letter-spacing:0}header.main nav a:last-child:after{content:none}.portfolio{background-color:#000}.portfolio,.portfolio .project{overflow:visible}.portfolio nav{position:absolute;top:16px;right:5%;z-index:10;width:100px;height:40px;margin-right:-9px;z-index:200}.portfolio nav a.ir{-webkit-transition:all 0.2s ease;transition:all 0.2s ease;display:block;height:40px;width:40px;background:url("../img/arrow.svg");position:absolute;opacity:0.75}.portfolio nav a.ir.next{right:0px;background-position:-40px 0}.portfolio nav a.ir.prev{left:0px}.portfolio nav a.ir:hover{opacity:1}.title{height:67px;position:absolute;width:100%;top:0;left:-3%;border-bottom:1px solid #272318;opacity:0;-webkit-transition:all 0.3s ease;transition:all 0.3s ease}.current .title{opacity:1;left:0;z-index:100}.title h2{margin:0 5%;height:67px;padding-top:15px;font-family:"museo-slab",Helvetica,sans-serif;font-weight:500;font-size:1.6875em;color:#a59463}.title h2 a{color:#a59463;-webkit-transition:all 0.2s ease;transition:all 0.2s ease}.title h2 a:hover{color:#bbaf8a;text-decoration:none}.introimage img.lazy,.projectLink img.lazy{opacity:1;-webkit-transition:opacity 0.3s ease;transition:opacity 0.3s ease}.loading .introimage img.lazy,.loading .projectLink img.lazy{opacity:0}.slide{top:68px;max-width:90%;margin:0 auto;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;opacity:0}.slide.visible{z-index:100;opacity:1}.slide .wrapper{position:absolute;top:0;left:0;width:100%;min-height:40px}.slide .sizable{-webkit-transition:all 0.3s ease;transition:all 0.3s ease;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;margin:0 auto;min-height:40px}.slide .image{z-index:9;opacity:1;pointer-events:none}.slide .info{z-index:8}.slide .info a{color:#d2cab1}.slide .infoinner{color:#bbaf8a;font-weight:100;width:235px;position:absolute;top:40px;left:0;padding-left:10px;opacity:0;-webkit-transition:all 0.3s ease;transition:all 0.3s ease;text-align:right;font-size:14px}.slide .infoinner h3{color:#a69564;font-weight:700;text-transform:uppercase;font-size:0.75em;margin:1.25em 0 0.25em;letter-spacing:1px}.slide .infoinner ul{list-style:none;margin:0}.slide .infoinner ul li{margin:0}.show-info .slide{max-width:100%}.show-info .slide.intro{max-width:90%}.show-info .slide .infoinner{opacity:1}.show-info .slide .image,.show-info .slide .button{padding-left:250px}.show-info .slide .info{padding-right:250px}.slide#jonah-0 .dropcap{margin:0.1em 0.2em 0 0}a.infobutton{display:block;z-index:20;position:absolute;top:10px;left:0;margin-left:-45px;background:url("../img/arrow.svg") -80px 0;width:40px;height:40px;-webkit-transition:all 0.3s ease;transition:all 0.3s ease;opacity:0.75}a.infobutton:hover{opacity:1}.show-info a.infobutton{left:240px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}.intro{background-color:#000;font-size:0.7em}.intro .introimage{width:32em;opacity:0.15;margin:0;min-width:250px;max-width:600px;margin-left:-10em;-webkit-transition:margin-left 0.5s ease;transition:margin-left 0.5s ease}.intro .introtext{font-family:"museo-slab",Helvetica,sans-serif;margin:0 auto;max-width:35em;margin:0 auto 0}.intro .introtext h3{font-size:0.95em;font-weight:100;color:#63583b;font-weight:700;letter-spacing:2px;margin:2em 0 1.5em;font-family:"museo-sans",Helvetica,sans-serif;text-transform:uppercase}.intro .introtext p{font-weight:100;font-size:1.5em;line-height:1.5;color:#b7a982}.intro .introtext p .dropcap{font-family:"coquette","museo-slab",Helvetica,sans-serif;color:#a59463;font-size:3.05em;float:left;margin:0.14em 0.08em 0 0;line-height:0.8;font-weight:100;opacity:0.9}.intro .introtext p .leader{text-transform:uppercase;font-size:0.8em;letter-spacing:1px;font-weight:300;font-family:"ff-ernestine-web-pro","museo-slab",Helvetica,sans-serif;margin-left:-0.1em;line-height:1.875}.intro .introtext p .leader .caps{font-size:1em}@media (min-width: 360px){.intro{font-size:0.75em}}@media (min-width: 400px){.intro{font-size:0.8em}}@media (min-width: 450px){.intro{font-size:0.85em}}@media (min-width: 600px){.intro{font-size:0.9em}.intro .introimage{opacity:0.2}.intro .introtext{text-shadow:0 0 10px #000}}@media (min-width: 750px){.intro{font-size:0.95em}}@media (min-width: 800px){.intro{font-size:1em}.intro .introimage{margin:0 auto;opacity:0.25}.intro .introimage img{margin-left:-19em}.intro .introtext{text-shadow:0 0 10px #000,0 0 20px #000}}@media (min-width: 1200px){.intro{font-size:1.1em}}#intro .slide a.projectLink{height:100%;background-color:#15130d}#intro .slide a,.home .content a.preview{max-width:400px;display:inline-block;overflow:hidden}#intro .slide a .projectDesc,.home .content a.preview .projectDesc{z-index:101;display:block;position:absolute;bottom:-1em;left:0;width:100%;background-color:rgba(0,0,0,0.65);-webkit-transition:all 0.3s ease;transition:all 0.3s ease;padding:0.5em;line-height:1.1;opacity:0}#intro .slide a:hover .projectDesc,.home .content a.preview:hover .projectDesc{bottom:0;opacity:1}#intro .slide a .projectTitle,.home .content a.preview .projectTitle{display:block;font-size:1.5em;font-weight:100;color:#d2cab1;font-family:"museo-slab",Helvetica,sans-serif}#intro .slide a .projectType,.home .content a.preview .projectType{display:block;font-size:0.75em;letter-spacing:1px;margin-bottom:0.2em;color:#bbaf8a;text-transform:uppercase}.home .content a.preview .projectTitle{font-size:1.3em}@media (max-width: 900px){.home .content a.preview .projectTitle{font-size:1.2em}}@media (max-width: 600px){.home .content a.preview .projectTitle{font-size:1.1em}}.projectlinks{width:31%;margin-left:1%;height:0;padding-bottom:23.25%;background-color:#fff;display:inline-block}.projectlinks a.projectLink{position:absolute;top:0;left:0;display:block;width:100%}.slidelinks{position:absolute;top:0;left:0;display:none}.slidelinks a{width:20px;height:20px;display:inline-block;background-color:#a59463;margin-right:3px}body.home{background-color:#fff;height:auto;max-height:initial;padding-top:0}body.home header{position:fixed;top:0;left:0;width:100%;z-index:200;-webkit-box-shadow:0 0 2em 10px #000;box-shadow:0 0 2em 10px #000}body.home .feature{margin-top:40px;background-color:#000;font-family:"ff-ernestine-web-pro","museo-slab",Helvetica,sans-serif;color:#d7d0ba;padding:4.75em 5% 4.5em}body.home .feature .quote{font-size:2.5em;line-height:1.1;max-width:15em}body.home .feature .byline{margin-top:0.4em;font-size:1.25em;color:#c4b898;margin-left:-0.25em}body.home .feature .byline:before{content:"-";display:inline-block;margin-right:0.25em}body.home .wrapper{padding:4em 0 2.5em;border-bottom:1px solid #eee;padding-left:10%;overflow:visible}body.home .content{padding-bottom:2em}body.home .content a{display:inline-block;width:25.26144%;margin-right:1%}body.home .content a.preview,body.home .content a.viewall{padding-bottom:18.94608%}@media all and (min-width: 1553px){body.home .content a.preview,body.home .content a.viewall{padding-bottom:300px}}body.home .content a.viewall{width:10.10458%;height:0;background-color:#ebe7dd;opacity:0.5;-webkit-transition:opacity 0.3s ease;transition:opacity 0.3s ease}body.home .content a.viewall .link{position:absolute;display:block}body.home .content a.viewall:hover{opacity:1}body.home .content a.viewall:hover:after{margin-left:-36px}body.home .content a.viewall:after{content:" ";display:block;background:url("../img/arrow.svg") -40px 0 no-repeat;-webkit-background-size:160px 80px;background-size:160px 80px;width:80px;height:80px;position:absolute;top:50%;left:50%;margin-top:-41px;margin-left:-40px;-webkit-transition:all 0.3s ease;transition:all 0.3s ease}body.home .content a.heading{position:absolute;top:2.75em;left:5%;width:80%;font-size:12px;line-height:1.1;color:#a69564;text-transform:uppercase;letter-spacing:1px;-webkit-transition:all 0.2s ease;transition:all 0.2s ease}body.home .content a.heading:hover{text-decoration:none;color:#5f5539}body.home footer{height:2em}@media all and (max-width: 900px){body.home .wrapper{padding-left:5%}body.home .content a{width:26.21053%}body.home .content a.preview,body.home .content a.viewall{padding-bottom:19.65789%}body.home .content a.viewall{width:13.10526%}}@media all and (max-width: 600px){body.home .wrapper{padding-left:5%}body.home .content a{width:37.09474%}body.home .content a.preview,body.home .content a.viewall{padding-bottom:27.82105%}body.home .content a.viewall{width:18.54737%}body.home .content a.image-2{display:none}}@media all and (max-width: 400px){body.home .wrapper{padding-left:5%}body.home .content a{width:61.82456%;padding-left:2%}body.home .content a.preview,body.home .content a.viewall{padding-bottom:46.36842%}body.home .content a.viewall{width:30.91228%}body.home .content a.image-2,body.home .content a.image-1{display:none}}@media all and (max-width: 768px){.slide{position:absolute;width:100%;max-width:100%}.slide .wrapper.imagewrapper,.slide .wrapper.textwrapper{position:relative}.slide .wrapper.buttonwrapper{display:none}.slide.intro .wrapper{margin-left:5%;width:90%}.slide .infoinner{text-align:left;top:15px;width:auto;padding-left:5%;padding-right:5%}.show-info .slide .image{padding-left:0}#intro .projectlinks{width:48%;margin-bottom:0.5em;padding-bottom:36%}}@media all and (max-width: 550px){header.main h1 a{width:80px;overflow:hidden}}@media all and (max-width: 480px){#intro .projectlinks{width:90%;margin-left:5%;margin-bottom:0.75em;padding-bottom:67.5%}}@media all and (max-width: 375px){header nav a.home{display:none}}
-/*@ sourceMappingURL=style.css.map */
+/* style.sass */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\000033}}
+body {
+  opacity: 1;
+}
+
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\0000311}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\0000330}}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\0000341}}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\0000350}}
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Set default font family to sans-serif.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\0000368}}
+html {
+  background: #fff;
+  /* 1 */
+  color: #000;
+  /* 2 */
+  font-family: sans-serif;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+}
+
+/**
+ * Remove default margin.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\0000380}}
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\0000392}}
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003100}}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003114}}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003123}}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003131}}
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003140}}
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003148}}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003158}}
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003167}}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003179}}
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003187}}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003195}}
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003203}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003211}}
+sup {
+  top: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003215}}
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003227}}
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003235}}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003247}}
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003259}}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003270}}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003281}}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003295}}
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003307}}
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003320}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003332}}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003342}}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003354}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003366}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003375}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003386}}
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_normalize\.scss}line{font-family:\00003399}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000313}}
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000321}}
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000332}}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000337}}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000346}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000359}}
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000367}}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000377}}
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\0000385}}
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003120}}
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003128}}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003139}}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003148}}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003164}}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003178}}
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003194}}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003200}}
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_h5bp\.scss}line{font-family:\00003209}}
+.clearfix {
+  *zoom: 1;
+}
+
+/*** Base tags ***/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\000036}}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\000037}}
+body em {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\000038}}
+body strong {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\000039}}
+body, select, input, textarea {
+  color: #444444;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000310}}
+p a {
+  text-decoration: underline;
+}
+
+/* Blockquotes */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000312}}
+blockquote {
+  margin: 1.5em 10px;
+  padding: .5em 10px;
+  color: #333;
+  margin: 25px 20px 25px 0;
+  padding: 3px 25px;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000320}}
+blockquote:before {
+  color: #bbb;
+  content: "\201C";
+  font-size: 3em;
+  line-height: .1em;
+  vertical-align: -.4em;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000331}}
+blockquote:after {
+  color: #bbb;
+  content: "\201D";
+  font-size: 3em;
+  line-height: .1em;
+  vertical-align: -.45em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000332}}
+blockquote :first-child {
+  display: inline;
+}
+
+/* Links */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000336}}
+a, a:link {
+  color: #336699;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000337}}
+a:hover {
+  color: #002255;
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000338}}
+a:active {
+  color: #c00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000339}}
+a:visited {
+  color: #539;
+}
+
+/* Images */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000342}}
+img {
+  max-width: 100%;
+}
+
+/* Tables */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000345}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 9px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000346}}
+table, td, th {
+  border: 1px solid #ddd;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000347}}
+td, th {
+  padding: .125em .5em;
+  text-align: left;
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000348}}
+td {
+  border-left: 1px dotted #eee;
+  border-right: 1px dotted #eee;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000349}}
+th {
+  background: #f9f9f9;
+  border-right: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000350}}
+table caption {
+  color: #888;
+  text-align: left;
+  margin: .15em .25em;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000351}}
+tfoot {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000352}}
+tfoot td {
+  color: #666;
+  border-top-color: #666;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000353}}
+td, td img {
+  vertical-align: top;
+}
+
+/* Lists */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000357}}
+ol {
+  list-style-type: decimal;
+  margin-left: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000358}}
+ol ol {
+  list-style-type: lower-alpha;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000359}}
+ol ol ol {
+  list-style-type: lower-roman;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000360}}
+ol ol ol ol {
+  list-style-type: decimal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000361}}
+ol ol ol ol ol {
+  list-style-type: lower-alpha;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000362}}
+ol ol ol ol ol ol {
+  list-style-type: lower-roman;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000363}}
+ul {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000364}}
+ul ul {
+  list-style-type: circle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000365}}
+ul ul ul {
+  list-style-type: disc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000366}}
+ul ul ul ul {
+  list-style-type: circle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000367}}
+ul ul ul ul ul {
+  list-style-type: disc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000368}}
+ul ul ul ul ul ul {
+  list-style-type: circle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000369}}
+ul ul {
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000370}}
+nav ul, nav ul ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000371}}
+nav ul, nav li {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000372}}
+dt {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000373}}
+dd {
+  padding: 0 0 0.75em 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/base\/_basics\.scss}line{font-family:\0000374}}
+dl, menu, ol, ul {
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_typogrify\.sass}line{font-family:\000031}}
+.caps {
+  font-size: 0.9em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_typogrify\.sass}line{font-family:\000035}}
+.dquo {
+  margin-left: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_typogrify\.sass}line{font-family:\000039}}
+.abbr {
+  white-space: nowrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_typogrify\.sass}line{font-family:\0000313}}
+.number {
+  white-space: nowrap;
+}
+
+/* Only use the fancy ampersand in <h#> tags */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_typogrify\.sass}line{font-family:\0000318}}
+h1 .amp,
+h2 .amp,
+h3 .amp,
+h4 .amp,
+h5 .amp,
+h6 .amp {
+  font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+  font-size: 1em;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000316}}
+*, *:before, *:after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000320}}
+html {
+  font-family: "museo-sans", Helvetica, sans-serif;
+  background-color: green;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000324}}
+body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000328}}
+html, body, .portfolio {
+  max-height: 100%;
+  overflow: visible;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000332}}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000340}}
+#intro .slide a.projectLink, body.home .content a.preview, body.home .content a.viewall {
+  height: 0;
+  background-color: #ebe7dd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000343}}
+#intro .slide a.projectLink img, body.home .content a.preview img, body.home .content a.viewall img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 0.3s ease 0.1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000350}}
+#intro .slide a.loading.projectLink img, body.home .content a.loading.preview img, body.home .content a.loading.viewall img {
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000352}}
+#intro .slide a.loading.projectLink:before, body.home .content a.loading.preview:before, body.home .content a.loading.viewall:before {
+  content: "\21BB";
+  color: #d2cab1;
+  opacity: 0.25;
+  display: block;
+  position: absolute;
+  padding: 4px 10px;
+  -webkit-animation: spin 1.5s infinite linear;
+  -moz-animation: spin 1.5s infinite linear;
+  -ms-animation: spin 1.5s infinite linear;
+  animation: spin 1.5s infinite linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000363}}
+#intro .slide a.loading.projectLink:hover:before, body.home .content a.loading.preview:hover:before, body.home .content a.loading.viewall:hover:before {
+  text-decoration: none;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\000034}}
+header.main {
+  height: 40px;
+  background-color: #1f1c13;
+  border-bottom: 1px solid #373121;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\000038}}
+header.main a {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  height: 38px;
+  padding-top: 9px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000317}}
+header.main a:link, header.main a:visited {
+  color: #c4b898;
+  opacity: 0.8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000320}}
+header.main a:focus, header.main a:hover {
+  color: #c4b898;
+  opacity: 1;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000324}}
+header.main a:active {
+  color: #e1dccb;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000326}}
+header.main h1 {
+  margin: 0;
+  font-size: 1em;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000332}}
+header.main h1 a {
+  display: block;
+  position: absolute;
+  padding-left: 80px;
+  background: transparent url(../img/logo.png) top left no-repeat;
+  background-size: 75px 38px;
+  white-space: nowrap;
+  top: 1px;
+  left: 0;
+  margin-left: -2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000342}}
+header.main nav {
+  position: absolute;
+  top: 1px;
+  right: 5%;
+  margin-right: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000347}}
+header.main nav a {
+  display: inline-block;
+  margin-left: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000350}}
+header.main nav a:after {
+  content: "//";
+  color: #766a47;
+  padding-left: 10px;
+  letter-spacing: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_header\.sass}line{font-family:\0000355}}
+header.main nav a:last-child:after {
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\000035}}
+.portfolio {
+  background-color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\000037}}
+.portfolio, .portfolio .project {
+  overflow: visible;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\000039}}
+.portfolio nav {
+  position: absolute;
+  top: 16px;
+  right: 5%;
+  z-index: 10;
+  width: 100px;
+  height: 40px;
+  margin-right: -9px;
+  z-index: 200;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000318}}
+.portfolio nav a.ir {
+  transition: all 0.2s ease;
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: url("../img/arrow.svg");
+  position: absolute;
+  opacity: 0.75;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000326}}
+.portfolio nav a.ir.next {
+  right: 0px;
+  background-position: -40px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000329}}
+.portfolio nav a.ir.prev {
+  left: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000331}}
+.portfolio nav a.ir:hover {
+  opacity: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000335}}
+.title {
+  height: 67px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -3%;
+  border-bottom: 1px solid #272318;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000344}}
+.current .title {
+  opacity: 1;
+  left: 0;
+  z-index: 100;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000348}}
+.title h2 {
+  margin: 0 5%;
+  height: 67px;
+  padding-top: 15px;
+  font-family: "museo-slab", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.6875em;
+  color: #a59463;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000356}}
+.title h2 a {
+  color: #a59463;
+  transition: all 0.2s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000359}}
+.title h2 a:hover {
+  color: #bbaf8a;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000365}}
+.introimage img.lazy, .projectLink img.lazy {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000368}}
+.loading .introimage img.lazy, .loading .projectLink img.lazy {
+  opacity: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000376}}
+.slide {
+  top: 68px;
+  max-width: 90%;
+  margin: 0 auto;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000382}}
+.slide.visible {
+  z-index: 100;
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000385}}
+.slide .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000391}}
+.slide .sizable {
+  transition: all 0.3s ease;
+  box-sizing: content-box;
+  margin: 0 auto;
+  min-height: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\0000396}}
+.slide .image {
+  z-index: 9;
+  opacity: 1;
+  pointer-events: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003100}}
+.slide .info {
+  z-index: 8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003102}}
+.slide .info a {
+  color: #d2cab1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003104}}
+.slide .infoinner {
+  color: #bbaf8a;
+  font-weight: 100;
+  width: 235px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding-left: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  text-align: right;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003116}}
+.slide .infoinner h3 {
+  color: #a69564;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  margin: 1.25em 0 0.25em;
+  letter-spacing: 1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003123}}
+.slide .infoinner ul {
+  list-style: none;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003126}}
+.slide .infoinner ul li {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003128}}
+.show-info .slide {
+  max-width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003130}}
+.show-info .slide.intro {
+  max-width: 90%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003132}}
+.show-info .slide .infoinner {
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003134}}
+.show-info .slide .image, .show-info .slide .button {
+  padding-left: 250px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003136}}
+.show-info .slide .info {
+  padding-right: 250px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003139}}
+.slide#jonah-0 .dropcap {
+  margin: 0.1em 0.2em 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003144}}
+a.infobutton {
+  display: block;
+  z-index: 20;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  margin-left: -45px;
+  background: url("../img/arrow.svg") -80px 0;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  opacity: 0.75;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003156}}
+a.infobutton:hover {
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio\.sass}line{font-family:\00003158}}
+.show-info a.infobutton {
+  left: 240px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000035}}
+.intro {
+  background-color: black;
+  font-size: 0.7em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000039}}
+.intro .introimage {
+  width: 32em;
+  opacity: 0.15;
+  margin: 0;
+  min-width: 250px;
+  max-width: 600px;
+  margin-left: -10em;
+  transition: margin-left 0.5s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000318}}
+.intro .introtext {
+  font-family: "museo-slab", Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 35em;
+  margin: 0 auto 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000323}}
+.intro .introtext h3 {
+  font-size: 0.95em;
+  font-weight: 100;
+  color: #63583b;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 2em 0 1.5em;
+  font-family: "museo-sans", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000332}}
+.intro .introtext p {
+  font-weight: 100;
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #b7a982;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000337}}
+.intro .introtext p .dropcap {
+  font-family: "coquette", "museo-slab", Helvetica, sans-serif;
+  color: #a59463;
+  font-size: 3.05em;
+  float: left;
+  margin: 0.14em 0.08em 0 0;
+  line-height: 0.8;
+  font-weight: 100;
+  opacity: 0.9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000346}}
+.intro .introtext p .leader {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-family: "ff-ernestine-web-pro", "museo-slab", Helvetica, sans-serif;
+  margin-left: -0.1em;
+  line-height: 1.875;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000354}}
+.intro .introtext p .leader .caps {
+  font-size: 1em;
+}
+@media (min-width: 360px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000035}}
+  .intro {
+    font-size: 0.75em;
+  }
+}
+@media (min-width: 400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000035}}
+  .intro {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000035}}
+  .intro {
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000035}}
+  .intro {
+    font-size: 0.9em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000364}}
+  .intro .introimage {
+    opacity: 0.2;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000366}}
+  .intro .introtext {
+    text-shadow: 0 0 10px black;
+  }
+}
+@media (min-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000035}}
+  .intro {
+    font-size: 0.95em;
+  }
+}
+@media (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000035}}
+  .intro {
+    font-size: 1em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000372}}
+  .intro .introimage {
+    margin: 0 auto;
+    opacity: 0.25;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000375}}
+  .intro .introimage img {
+    margin-left: -19em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\0000377}}
+  .intro .introtext {
+    text-shadow: 0 0 10px black, 0 0 20px black;
+  }
+}
+@media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-intro\.sass}line{font-family:\000035}}
+  .intro {
+    font-size: 1.1em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\000035}}
+#intro .slide a.projectLink {
+  height: 100%;
+  background-color: #15130d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000312}}
+#intro .slide a, .home .content a.preview {
+  max-width: 400px;
+  display: inline-block;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000316}}
+#intro .slide a .projectDesc, .home .content a.preview .projectDesc {
+  z-index: 101;
+  display: block;
+  position: absolute;
+  bottom: -1em;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  transition: all 0.3s ease;
+  padding: 0.5em;
+  line-height: 1.1;
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000328}}
+#intro .slide a:hover .projectDesc, .home .content a.preview:hover .projectDesc {
+  bottom: 0;
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000331}}
+#intro .slide a .projectTitle, .home .content a.preview .projectTitle {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #d2cab1;
+  font-family: "museo-slab", Helvetica, sans-serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000337}}
+#intro .slide a .projectType, .home .content a.preview .projectType {
+  display: block;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  margin-bottom: 0.2em;
+  color: #bbaf8a;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000346}}
+.home .content a.preview .projectTitle {
+  font-size: 1.3em;
+}
+@media (max-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000346}}
+  .home .content a.preview .projectTitle {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000346}}
+  .home .content a.preview .projectTitle {
+    font-size: 1.1em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000353}}
+.projectlinks {
+  width: 31%;
+  margin-left: 1%;
+  height: 0;
+  padding-bottom: 23.25%;
+  background-color: white;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000360}}
+.projectlinks a.projectLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000367}}
+.slidelinks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_portfolio-contents\.sass}line{font-family:\0000372}}
+.slidelinks a {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #a59463;
+  margin-right: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000317}}
+body.home .quote, body.home .byline {
+  opacity: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000329}}
+body.home {
+  background-color: white;
+  height: auto;
+  max-height: initial;
+  padding-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000336}}
+body.home header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  box-shadow: 0 0 2em 10px black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000343}}
+body.home .feature {
+  margin-top: 40px;
+  background-color: black;
+  font-family: "ff-ernestine-web-pro", "museo-slab", Helvetica, sans-serif;
+  color: #d7d0ba;
+  padding: 4.75em 5% 4.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000349}}
+body.home .feature .quote {
+  font-size: 2.5em;
+  line-height: 1.1;
+  max-width: 15em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000353}}
+body.home .feature .byline {
+  margin-top: 0.4em;
+  font-size: 1.25em;
+  color: #c4b898;
+  margin-left: -0.25em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000358}}
+body.home .feature .byline:before {
+  content: "-";
+  display: inline-block;
+  margin-right: 0.25em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000362}}
+body.home .wrapper {
+  padding: 4em 0 2.5em;
+  border-bottom: 1px solid #eeeeee;
+  padding-left: 10%;
+  overflow: visible;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000367}}
+body.home .content {
+  padding-bottom: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000369}}
+body.home .content a {
+  display: inline-block;
+  width: 25.26144%;
+  margin-right: 1%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000374}}
+body.home .content a.preview, body.home .content a.viewall {
+  padding-bottom: 18.94608%;
+}
+@media all and (min-width: 1553px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000374}}
+  body.home .content a.preview, body.home .content a.viewall {
+    padding-bottom: 300px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000379}}
+body.home .content a.viewall {
+  width: 10.10458%;
+  height: 0;
+  background-color: #ebe7dd;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000385}}
+body.home .content a.viewall .link {
+  position: absolute;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000388}}
+body.home .content a.viewall:hover {
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000390}}
+body.home .content a.viewall:hover:after {
+  margin-left: -36px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\0000392}}
+body.home .content a.viewall:after {
+  content: " ";
+  display: block;
+  background: url("../img/arrow.svg") -40px 0 no-repeat;
+  background-size: 160px 80px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -41px;
+  margin-left: -40px;
+  transition: all 0.3s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003105}}
+body.home .content a.heading {
+  position: absolute;
+  top: 2.75em;
+  left: 5%;
+  width: 80%;
+  font-size: 12px;
+  line-height: 1.1;
+  color: #a69564;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003116}}
+body.home .content a.heading:hover {
+  text-decoration: none;
+  color: #5f5539;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003119}}
+body.home footer {
+  height: 2em;
+}
+
+@media all and (max-width: 900px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003142}}
+  body.home .wrapper {
+    padding-left: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003144}}
+  body.home .content a {
+    width: 26.21053%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003146}}
+  body.home .content a.preview, body.home .content a.viewall {
+    padding-bottom: 19.65789%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003148}}
+  body.home .content a.viewall {
+    width: 13.10526%;
+  }
+}
+@media all and (max-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003168}}
+  body.home .wrapper {
+    padding-left: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003170}}
+  body.home .content a {
+    width: 37.09474%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003172}}
+  body.home .content a.preview, body.home .content a.viewall {
+    padding-bottom: 27.82105%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003174}}
+  body.home .content a.viewall {
+    width: 18.54737%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003176}}
+  body.home .content a.image-2 {
+    display: none;
+  }
+}
+@media all and (max-width: 400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003196}}
+  body.home .wrapper {
+    padding-left: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003198}}
+  body.home .content a {
+    width: 61.82456%;
+    padding-left: 2%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003201}}
+  body.home .content a.preview, body.home .content a.viewall {
+    padding-bottom: 46.36842%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003203}}
+  body.home .content a.viewall {
+    width: 30.91228%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/_home\.sass}line{font-family:\00003205}}
+  body.home .content a.image-2, body.home .content a.image-1 {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000377}}
+  .slide {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000382}}
+  .slide .wrapper.imagewrapper, .slide .wrapper.textwrapper {
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000384}}
+  .slide .wrapper.buttonwrapper {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000386}}
+  .slide.intro .wrapper {
+    margin-left: 5%;
+    width: 90%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000389}}
+  .slide .infoinner {
+    text-align: left;
+    top: 15px;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000395}}
+  .show-info .slide .image {
+    padding-left: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\0000397}}
+  #intro .projectlinks {
+    width: 48%;
+    margin-bottom: 0.5em;
+    padding-bottom: 36%;
+  }
+}
+@media all and (max-width: 550px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\00003103}}
+  header.main h1 a {
+    width: 80px;
+    overflow: hidden;
+  }
+}
+@media all and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\00003109}}
+  #intro .projectlinks {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 0.75em;
+    padding-bottom: 67.5%;
+  }
+}
+@media all and (max-width: 375px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/portfolio\/sass\/style\.sass}line{font-family:\00003116}}
+  header nav a.home {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

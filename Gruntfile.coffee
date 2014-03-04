@@ -59,35 +59,15 @@ module.exports = (grunt) ->
 
 
 		sass:
-			local:
-				options:
-					style: 'compact'
-					compass: 'config.rb'
-					debugInfo: true
-					trace: true
-					loadPath: ['sass/','sass-extensions/**/*']
-					sourcemap: true
-				compile:
-					files:[
-						expand: true
-						cwd: 'sass/'
-						src: 'style.sass'
-						dest: 'css/'
-						ext: '.css'
-					]
-			prod:
-				options:
-					style: 'compressed'
-					compass: 'config.rb'
-					loadPath: ['sass/','sass-extensions/**/*']
-				compile:
-					files:[
-						expand: true
-						cwd: 'sass/'
-						src: 'style.sass'
-						dest: 'css/'
-						ext: '.css'
-					]
+			options:
+				compass: 'config.rb'
+				style: 'compressed'
+				debugInfo: true
+				trace: true
+				sourcemap: true
+			compile:
+				files:
+					"css/style.css" : "sass/style.sass"
 
 		autoprefixer:
 			local:
@@ -211,5 +191,5 @@ module.exports = (grunt) ->
 	grunt.registerTask('prod', ['sass:prod', 'autoprefixer:prod'])
 
 	# Default task(s).
-	grunt.registerTask('compile', ['sass:local', 'autoprefixer:local', 'yaml', "merge-json:local", 'jade', 'jshint', 'uglify'])
+	grunt.registerTask('compile', ['sass:local', 'autoprefixer:local', "merge-json:local", 'jade'])
 	grunt.registerTask('default', ['compile', 'connect', 'watch'])
