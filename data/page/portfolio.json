@@ -282,7 +282,7 @@
       "slides": [
         {
           "image": "ls-scores",
-          "ext": ".png",
+          "ext": ".jpg",
           "alt": "",
           "specs": [
             {
@@ -431,61 +431,6 @@
           ]
         },
         {
-          "image": "thesis_bible",
-          "ext": ".jpg",
-          "alt": "",
-          "specs": [
-            {
-              "title": "The Making of the Bruce Rogers World Bible",
-              "list": [
-                "World Publishing Co., 1949"
-              ]
-            },
-            {
-              "title": "The Bruce Rogers World Bible",
-              "list": [
-                "World Publishing Co., 1949",
-                "Designed by Bruce Rogers",
-                "Printed by A. Colish"
-              ]
-            }
-          ]
-        },
-        {
-          "image": "thesis_bible1",
-          "ext": ".jpg",
-          "alt": "",
-          "specs": [
-            {
-              "title": "Prospectus",
-              "list": [
-                "The Bruce Rogers World Bible",
-                "World Publishing Co., 1949"
-              ]
-            },
-            {
-              "title": "Facsimiles",
-              "list": [
-                "Typographic sample",
-                "Galley Sheet",
-                "Letter from  Rogers to Colish",
-                "Composite of translator page",
-                "(From the Press of A. Colish Archives, University of Delaware)"
-              ]
-            },
-            {
-              "title": "Other items",
-              "list": [
-                "Metal chase with type",
-                "Composing stick with type",
-                "Monotype matrix case",
-                "Picture of Monotype machine",
-                "Printers’ ornaments"
-              ]
-            }
-          ]
-        },
-        {
           "image": "thesis_society",
           "ext": ".jpg",
           "alt": "",
@@ -626,7 +571,7 @@
     {
       "title": "Jonah",
       "id": "jonah",
-      "thumbnail": 3,
+      "thumbnail": 1,
       "image": "jonah.png",
       "desc": "Letterpress / Linocut / Bookbinding",
       "capoffset": "-0.25em",
@@ -636,48 +581,7 @@
       "text": " is one of my favorite artforms, probably because it works so well with letterpress. This book has 20 linocut illustrations of events in the Book of Jonah, with images and type printed on a Vandercook SP-15 proof press.",
       "slides": [
         {
-          "image": "jonah_cover2",
-          "ext": ".jpg",
-          "alt": "",
-          "specs": [
-            {
-              "title": "Process",
-              "list": [
-                "Silk-screened slipcase wrapper",
-                "Silk-screened endpapers",
-                "Cloth-bound book case",
-                "Foil stamped spine"
-              ]
-            },
-            {
-              "title": "Media",
-              "list": [
-                "Fortune Roman type"
-              ]
-            },
-            {
-              "title": "Specs",
-              "list": [
-                "4 ¾\" × 6 ¾\" × ¾\"",
-                2005
-              ]
-            }
-          ]
-        },
-        {
-          "image": "jonah_case2",
-          "ext": ".jpg",
-          "alt": "",
-          "specs": []
-        },
-        {
           "image": "jonah_pray",
-          "ext": ".jpg",
-          "alt": "",
-          "specs": []
-        },
-        {
-          "image": "jonah_storm2",
           "ext": ".jpg",
           "alt": "",
           "specs": []
@@ -717,6 +621,12 @@
               ]
             }
           ]
+        },
+        {
+          "image": "jonah_case2",
+          "ext": ".jpg",
+          "alt": "",
+          "specs": []
         }
       ]
     },

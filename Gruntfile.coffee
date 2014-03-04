@@ -119,9 +119,9 @@ module.exports = (grunt) ->
 				space: 2
 			pages: 
 				files:
-					'data/portfolio.json': ['data/portfolio.yml'],
-					'data/students.json': ['data/students.yml'],
-					'data/index.json': ['data/index.yml']
+					'data/page/portfolio.json': ['data/page/portfolio.yml'],
+					'data/page/students.json': ['data/page/students.yml'],
+					'data/page/index.json': ['data/page/index.yml']
 			environments:
 				files:
 					'data/env/local.json': ['data/env/local.yml'],
@@ -136,7 +136,7 @@ module.exports = (grunt) ->
 				tasks: ['sass', 'autoprefixer']
 
 			jade:
-				files: ['jade/**/*.jade', 'data/*.json']
+				files: ['jade/**/*.jade', 'data/**/*.json']
 				tasks: ['jade']
 
 			image:
@@ -162,7 +162,7 @@ module.exports = (grunt) ->
 				options:
 					livereload: true
 			yaml:
-				files: ['data/*.yml']
+				files: ['data/**/*.yml']
 				tasks: ['yaml']
 
 			local:
