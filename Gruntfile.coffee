@@ -201,5 +201,5 @@ module.exports = (grunt) ->
 	grunt.registerTask('prod',  ['sass:prod',  'autoprefixer:prod',  'yaml:environments', 'merge-json:prod',  'jade'])
 
 	# Default task(s).
-	grunt.registerTask('compile', ['setLocal', 'sass:local', 'autoprefixer:local', "merge-json:local", 'jade'])
+	grunt.registerTask('compile', ['sass:local', 'autoprefixer:local', "merge-json:local", 'jade'])
 	grunt.registerTask('default', ['compile', 'connect', 'watch'])
