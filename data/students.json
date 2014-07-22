@@ -1,7 +1,7 @@
 {
-	"env": "production",
-	"assets": "http://nkwalton.brighamyounguniv.netdna-cdn.com/",
-	"iteration": 2,
+	"env": "local",
+	"assets": "",
+	"iteration": 1,
 	"page": {
 		"title": "Student Work",
 		"menu": "teaching"

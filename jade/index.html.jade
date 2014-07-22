@@ -18,6 +18,11 @@ block content
 					a(class="preview toLoad image-" + i, href=block.url + extension + image.hash)
 						span.projectDesc
 							span.projectTitle #{image.title}
-						img.lazy.front(data-src=image.url, alt='')
+						picture
+							- var img = image.url
+							img(src="img/400w/" + img,
+								sizes="(min-width:600px) 25vw, (min-width:400px) 36vw, 57vw",
+								srcset="img/400w/" + img + " 400w, img/800w/" + img + " 800w, img/1600w/" + img + " 1600w",
+								alt=image.title )
 				a.viewall.next(href=block.url + extension)
 					span.link.visuallyhidden View all

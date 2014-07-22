@@ -21,7 +21,12 @@ block content
 										span.projectTitle!= project.title
 									each slide, i in project.slides
 										if i === project.thumbnail
-											img.lazy.front(data-src=slide.image, data-ext=slide.ext, alt='')
+											picture
+												- var img = slide.image + slide.ext
+												img(src="img/400w/" + img,
+													sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw",
+													srcset="img/400w/" + img + " 400w, img/800w/" + img + " 800w, img/1600w/" + img + " 1600w",
+													alt=project.title )
 								span.slidelinks
 									each slide, i in project.slides
 										- var extension = '-' + i;

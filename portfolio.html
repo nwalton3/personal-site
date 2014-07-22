@@ -8,22 +8,22 @@
     <meta name="keywords" content="design, responsive, web, web design, typography, portfolio, education, design education"/>
     <meta name="viewport" content="width=device-width, , initial-scale=1"/>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
-    <link rel="shortcut icon" href="http://nkwalton.brighamyounguniv.netdna-cdn.com/favicon.ico?v=3"/>
+    <link rel="shortcut icon" href="favicon.ico?v=3"/>
     <!-- Styles-->
-    <link rel="stylesheet" href="http://nkwalton.brighamyounguniv.netdna-cdn.com/css/style.css?v=3.11"/>
+    <link rel="stylesheet" href="css/style.css?v=3.11"/>
     <!-- Scripts loaded via script loader. See notes in init.js file.-->
     <script type="text/javascript" src="//use.typekit.net/nyn3skg.js"></script>
     <script type="text/javascript">
       try{Typekit.load();}catch(e){};
-      window.jsVersion   = 2.2;
-      window.assets      = "http://nkwalton.brighamyounguniv.netdna-cdn.com/";
+      window.jsVersion   = 2.3;
+      window.assets      = "";
     </script>
-    <script src="http://nkwalton.brighamyounguniv.netdna-cdn.com/js/init.min.js?v=2.2"></script>
+    <script src="js/init.min.js?v=2.3"></script>
   </head>
   <body class="work">
     <header class="main">
       <h1><a href="/">Nate Walton</a></h1>
-      <nav><a href="/" class="home">Home</a><a href="/portfolio" class="work">Work</a><a href="/students" class="teaching">Teaching</a>
+      <nav><a href="/" class="home">Home</a><a href="/portfolio.html" class="work">Work</a><a href="/students.html" class="teaching">Teaching</a>
         <!-- a.contact(href="/contact" + extension) Find me-->
       </nav>
     </header>
@@ -37,23 +37,41 @@
           <div class="wrapper">
             <div class="sizable">
               <div class="projectlinks"><a href="#gifts" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Sacred Gifts</span></span><img data-src="sg_home" data-ext=".jpg" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#gifts" class="sublink"></a><a href="#gifts-1" class="sublink"></a><a href="#gifts-2" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Sacred Gifts</span></span>
+                  <picture><img src="img/400w/sg_home.jpg" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/sg_home.jpg 400w, img/800w/sg_home.jpg 800w, img/1600w/sg_home.jpg 1600w" alt="Sacred Gifts"/>
+                  </picture></a><span class="slidelinks"><a href="#gifts" class="sublink"></a><a href="#gifts-1" class="sublink"></a><a href="#gifts-2" class="sublink"></a></span></div>
               <div class="projectlinks"><a href="#byu" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Web</span></span><img data-src="byu-home" data-ext=".jpg" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#byu" class="sublink"></a><a href="#byu-1" class="sublink"></a><a href="#byu-2" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Web</span></span>
+                  <picture><img src="img/400w/byu-home.jpg" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/byu-home.jpg 400w, img/800w/byu-home.jpg 800w, img/1600w/byu-home.jpg 1600w" alt="BYU Web"/>
+                  </picture></a><span class="slidelinks"><a href="#byu" class="sublink"></a><a href="#byu-1" class="sublink"></a><a href="#byu-2" class="sublink"></a></span></div>
               <div class="projectlinks"><a href="#byutickets" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Tickets</span></span><img data-src="byutickets_full" data-ext=".jpg" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#byutickets" class="sublink"></a><a href="#byutickets-1" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Tickets</span></span>
+                  <picture><img src="img/400w/byutickets_full.jpg" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/byutickets_full.jpg 400w, img/800w/byutickets_full.jpg 800w, img/1600w/byutickets_full.jpg 1600w" alt="BYU Tickets"/>
+                  </picture></a><span class="slidelinks"><a href="#byutickets" class="sublink"></a><a href="#byutickets-1" class="sublink"></a></span></div>
               <div class="projectlinks"><a href="#ls" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Learning Suite</span></span><img data-src="ls-scores" data-ext=".jpg" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#ls" class="sublink"></a><a href="#ls-1" class="sublink"></a><a href="#ls-2" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">BYU Learning Suite</span></span>
+                  <picture><img src="img/400w/ls-scores.jpg" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/ls-scores.jpg 400w, img/800w/ls-scores.jpg 800w, img/1600w/ls-scores.jpg 1600w" alt="BYU Learning Suite"/>
+                  </picture></a><span class="slidelinks"><a href="#ls" class="sublink"></a><a href="#ls-1" class="sublink"></a><a href="#ls-2" class="sublink"></a></span></div>
               <div class="projectlinks"><a href="#thesis" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Connections</span></span><img data-src="thesis_cards" data-ext=".jpg" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#thesis" class="sublink"></a><a href="#thesis-1" class="sublink"></a><a href="#thesis-2" class="sublink"></a><a href="#thesis-3" class="sublink"></a><a href="#thesis-4" class="sublink"></a><a href="#thesis-5" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Connections</span></span>
+                  <picture><img src="img/400w/thesis_cards.jpg" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/thesis_cards.jpg 400w, img/800w/thesis_cards.jpg 800w, img/1600w/thesis_cards.jpg 1600w" alt="Connections"/>
+                  </picture></a><span class="slidelinks"><a href="#thesis" class="sublink"></a><a href="#thesis-1" class="sublink"></a><a href="#thesis-2" class="sublink"></a><a href="#thesis-3" class="sublink"></a><a href="#thesis-4" class="sublink"></a><a href="#thesis-5" class="sublink"></a></span></div>
               <div class="projectlinks"><a href="#bugs" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Specimens</span></span><img data-src="bugs_typographic" data-ext=".jpg" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#bugs" class="sublink"></a><a href="#bugs-1" class="sublink"></a><a href="#bugs-2" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Specimens</span></span>
+                  <picture><img src="img/400w/bugs_typographic.jpg" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/bugs_typographic.jpg 400w, img/800w/bugs_typographic.jpg 800w, img/1600w/bugs_typographic.jpg 1600w" alt="Specimens"/>
+                  </picture></a><span class="slidelinks"><a href="#bugs" class="sublink"></a><a href="#bugs-1" class="sublink"></a><a href="#bugs-2" class="sublink"></a></span></div>
               <div class="projectlinks"><a href="#love" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Love</span></span><img data-src="love1" data-ext=".jpg" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#love" class="sublink"></a><a href="#love-1" class="sublink"></a><a href="#love-2" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Love</span></span>
+                  <picture><img src="img/400w/love1.jpg" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/love1.jpg 400w, img/800w/love1.jpg 800w, img/1600w/love1.jpg 1600w" alt="Love"/>
+                  </picture></a><span class="slidelinks"><a href="#love" class="sublink"></a><a href="#love-1" class="sublink"></a><a href="#love-2" class="sublink"></a></span></div>
               <div class="projectlinks"><a href="#jonah" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Jonah</span></span><img data-src="jonah_beach3" data-ext=".jpg" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#jonah" class="sublink"></a><a href="#jonah-1" class="sublink"></a><a href="#jonah-2" class="sublink"></a><a href="#jonah-3" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Jonah</span></span>
+                  <picture><img src="img/400w/jonah_beach3.jpg" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/jonah_beach3.jpg 400w, img/800w/jonah_beach3.jpg 800w, img/1600w/jonah_beach3.jpg 1600w" alt="Jonah"/>
+                  </picture></a><span class="slidelinks"><a href="#jonah" class="sublink"></a><a href="#jonah-1" class="sublink"></a><a href="#jonah-2" class="sublink"></a><a href="#jonah-3" class="sublink"></a></span></div>
               <div class="projectlinks"><a href="#experimental" class="projectLink"><span class="projectDesc">
-                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Experimental</span></span><img data-src="hardwork" data-ext=".png" alt="" class="lazy front"/></a><span class="slidelinks"><a href="#experimental" class="sublink"></a><a href="#experimental-1" class="sublink"></a><a href="#experimental-2" class="sublink"></a><a href="#experimental-3" class="sublink"></a><a href="#experimental-4" class="sublink"></a></span></div>
+                    <!-- span.projectType #{project.desc}--><span class="projectTitle">Experimental</span></span>
+                  <picture><img src="img/400w/hardwork.png" sizes="(min-width:768px) 30vw,(min-width:480px) 43vw, 80vw" srcset="img/400w/hardwork.png 400w, img/800w/hardwork.png 800w, img/1600w/hardwork.png 1600w" alt="Experimental"/>
+                  </picture></a><span class="slidelinks"><a href="#experimental" class="sublink"></a><a href="#experimental-1" class="sublink"></a><a href="#experimental-2" class="sublink"></a><a href="#experimental-3" class="sublink"></a><a href="#experimental-4" class="sublink"></a></span></div>
             </div>
           </div>
         </div>
@@ -79,7 +97,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="sg_home" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/sg_home.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/sg_home.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -111,7 +129,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="sg_tombstone" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/sg_tombstone.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/sg_tombstone.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -133,7 +151,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="sg_media" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/sg_media.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/sg_media.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -184,7 +202,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="byu-home" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/byu-home.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/byu-home.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -223,7 +241,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="byu_home-sizes" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/byu_home-sizes.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/byu_home-sizes.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -254,7 +272,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="byu_style" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/byu_style.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/byu_style.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -297,7 +315,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="byutickets_full" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/byutickets_full.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/byutickets_full.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -334,7 +352,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="byutickets-sizes2" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/byutickets-sizes2.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/byutickets-sizes2.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -377,7 +395,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="ls-scores" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/ls-scores.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/ls-scores.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -409,7 +427,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="ls-grader-exam" data-ext=".png" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/ls-grader-exam.png"/></noscript>
+              <noscript><img alt="" src="img/400w/ls-grader-exam.png"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -440,7 +458,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="ls-grader" data-ext=".png" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/ls-grader.png"/></noscript>
+              <noscript><img alt="" src="img/400w/ls-grader.png"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -487,7 +505,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="thesis_cards" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/thesis_cards.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/thesis_cards.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -512,7 +530,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="thesis_brochure" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/thesis_brochure.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/thesis_brochure.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -537,7 +555,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="thesis-all" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/thesis-all.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/thesis-all.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -556,7 +574,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="thesis_society" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/thesis_society.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/thesis_society.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -585,7 +603,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="thesis_doves" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/thesis_doves.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/thesis_doves.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -616,7 +634,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="thesis_cases" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/thesis_cases.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/thesis_cases.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -652,7 +670,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="bugs-zoom1" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/bugs-zoom1.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/bugs-zoom1.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -668,7 +686,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="bugs_typographic" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/bugs_typographic.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/bugs_typographic.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -684,7 +702,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="bugs-all" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/bugs-all.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/bugs-all.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -716,7 +734,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="love1" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/love1.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/love1.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -732,7 +750,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="love2" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/love2.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/love2.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -748,7 +766,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="love" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/love.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/love.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -784,7 +802,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="jonah_pray" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/jonah_pray.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/jonah_pray.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -800,7 +818,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="jonah_beach3" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/jonah_beach3.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/jonah_beach3.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -816,7 +834,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="jonah_colophon" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/jonah_colophon.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/jonah_colophon.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -849,7 +867,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="jonah_case2" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/jonah_case2.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/jonah_case2.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -881,7 +899,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="hardwork" data-ext=".png" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/hardwork.png"/></noscript>
+              <noscript><img alt="" src="img/400w/hardwork.png"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -901,7 +919,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="modernism" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/modernism.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/modernism.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -935,7 +953,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="suu-poster" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/suu-poster.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/suu-poster.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -965,7 +983,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="ornate_abuse_close" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/ornate_abuse_close.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/ornate_abuse_close.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">
@@ -1010,7 +1028,7 @@
           </div>
           <div class="wrapper imagewrapper">
             <div class="image sizable"><img alt="" data-src="hatch" data-ext=".jpg" class="lazy responsive"/>
-              <noscript><img alt="" src="http://nkwalton.brighamyounguniv.netdna-cdn.com/img/400w/hatch.jpg"/></noscript>
+              <noscript><img alt="" src="img/400w/hatch.jpg"/></noscript>
             </div>
           </div>
           <div class="wrapper textwrapper">

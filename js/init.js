@@ -11,8 +11,13 @@
 
 	"use strict";
 
+	// Set defaults
 	if ( !window.assets ) { window.assets = '/'; }
 	if ( !window.jsVersion ) { window.jsVersion = 1; }
+
+	// Creat picture element for browsers that don't support it
+	document.createElement( "picture" );
+
 
 	// Load scripts
 	Modernizr.load([
