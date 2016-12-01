@@ -1,9 +1,0 @@
-Contact page
-Fix height on thesis cover page
-Specs for slides
-Cover images for BYU tickets, etc
-Update BYU home page images
-Update LS images
-Fullscreen
-Update home page images to look better
-More cool stuff with touch?
