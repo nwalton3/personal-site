@@ -1,11 +1,12 @@
 html.no-js(lang="en")
 	head
-		- var localEnv = env === 'local'
-		- var cssVersion = 3.11
-		- var jsVersion = 2.3
+		block vars
+			- var localEnv = true
+			- var cssVersion = 0.1
+			- var jsVersion = 0.1
+			- var assetBase = '';
 
-		- var assetBase = assets;
-		- var extension = localEnv ? '.html' : '';
+			- var extension = localEnv ? '.html' : '';
 
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
@@ -23,14 +24,19 @@ html.no-js(lang="en")
 		link(rel='stylesheet', href=assetBase + 'css/style.css?v=' + cssVersion)
 
 		// Scripts loaded via script loader. See notes in init.js file.
-		script(type="text/javascript", src="//use.typekit.net/nyn3skg.js")
-		script(type="text/javascript").
-			try{Typekit.load();}catch(e){};
-			window.jsVersion   = #{jsVersion};
-			window.assets      = "#{assetBase}";
-		script(src= assetBase + 'js/init.min.js?v=' + jsVersion)
+		//- script(type="text/javascript", src="//use.typekit.net/nyn3skg.js")
+		//- script(type="text/javascript").
+		//- 	try{Typekit.load();}catch(e){};
+		//- 	window.jsVersion   = #{jsVersion};
+		//- 	window.assets      = "#{assetBase}";
+		//- script(src= assetBase + 'js/init.min.js?v=' + jsVersion)
+		// Typekit
+		script(src="https://use.typekit.net/jni4suj.js")
+		script.
+			try { Typekit.load({ async: true }); } catch(e){}
 
-	body(class=page.menu)
+	//- body(class=page.menu)
+	body
 		header.main
 			h1 
 				a(href="/") Nate Walton
@@ -40,6 +46,7 @@ html.no-js(lang="en")
 				a.teaching(href="/students" + extension) Teaching
 				// a.contact(href="/contact" + extension) Find me
 
-		block content
+		main
+			block content
 
 		footer.main

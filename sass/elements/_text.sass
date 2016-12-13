@@ -1,0 +1,114 @@
+
+$family-3: "le-monde-courrier-std-2" // 400, 700, italic
+$family-4: "lemonde-courrier" // 400, 600, italic
+
+$family-5: "source-code-pro"
+$family-6: "t26-carbon"
+$family-7:  "inconsolata"
+
+// Base
+$font-base: $family-4
+$font-base-weight: 400
+
+// Italic
+$font-italic: $family-3
+$font-italic-weight: 400
+
+// Bold
+$font-bold: $family-4
+$font-bold-weight: 600
+
+// Small caps
+$font-sc: $family-3
+$font-sc-weight: 400
+$font-sc-transform: uppercase
+$font-sc-size: 0.85em
+
+$font-mono: $family-7
+
+article
+  max-width: 42em
+  margin: 0 5%
+  line-height: 1.5
+  padding-bottom: 3em
+
+/*** Base tags ***/
+html, body
+  width: 100%
+  overflow-x: hidden
+  font-size: 100%
+  font-family: $font-base
+  font-weight: $font-base-weight
+
+body, select, input, textarea
+  color: #444
+
+article
+  font-size: 1.1875em
+
+h1, h2, h3, h4, h5, h6
+  font-family: $font-bold
+  font-weight: $font-bold-weight
+  line-height: 1.1
+  em
+    font-weight: $font-bold-weight
+    font-family: $font-bold
+
+em, var
+  font-family: $font-italic
+  font-weight: $font-italic-weight
+
+strong
+  font-family: $font-bold
+  font-weight: $font-bold-weight
+
+code, pre
+  font-family: $font-mono
+
+.sc, .leader
+  text-transform: $font-sc-transform
+  font-family: $font-sc
+  font-weight: $font-sc-weight
+  font-size: $font-sc-size
+  letter-spacing: 0.025em
+
+p
+  .intro
+    font-size: 1.1875em
+    margin-bottom: 1.75em
+  code
+    font-size: 1.1em
+    color: magenta
+
+
+
+/* Blockquotes */
+blockquote  
+  margin: 1.5em 10px
+  padding: .5em 10px
+  color: #333
+  margin: 25px 20px 25px 0
+  padding: 3px 25px
+  position: relative
+
+blockquote:before  
+  color: #bbb
+  content: "\201C"
+  font-size: 3em
+  line-height: .1em
+  vertical-align: -.4em
+  display: block
+  position: absolute
+  top: 15px
+  left: 1px
+
+blockquote:after  
+  color: #bbb
+  content: "\201D"
+  font-size: 3em
+  line-height: .1em
+  vertical-align: -.45em
+
+blockquote:first-child  
+  display: inline
+

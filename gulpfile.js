@@ -20,38 +20,51 @@ var clean = require('gulp-clean');
 var rename = require("gulp-rename");
 
 
-// Compile Jade
-gulp.task('pug', ['page-index','page-portfolio','page-students']);
-
-gulp.task('page-index', function() {
-    return gulp.src('pug/index.html.jade')
+// Compile Pug
+gulp.task( 'pug', function(){
+    return gulp.src(['./pug/*.html.pug', './pug/*.html.jade'])
         .pipe(plumber())
-        .pipe(data( function(file){ return require('./data/page/index.json'); } ))
-        .pipe(pug({ pretty: true }))
-        .pipe(rename('index.html'))
+        .pipe(pug({
+            pretty: true,
+            env: "local",
+            assets: ""}))
+        .pipe(ext_replace('.html', '.html.html'))
         .pipe(gulp.dest('./dist/'))
         .pipe(livereload());
 });
 
-gulp.task('page-portfolio', function() {
-    return gulp.src('pug/portfolio.html.jade')
-        .pipe(plumber())
-        .pipe(data( function(file){ return require('./data/page/portfolio.json'); } ))
-        .pipe(pug({ pretty: true }))
-        .pipe(rename('portfolio.html'))
-        .pipe(gulp.dest('./dist/'))
-        .pipe(livereload());
-});
 
-gulp.task('page-students', function() {
-    return gulp.src('pug/portfolio.html.jade')
-        .pipe(plumber())
-        .pipe(data( function(file){ return require('./data/page/students.json'); } ))
-        .pipe(pug({ pretty: true }))
-        .pipe(rename('students.html'))
-        .pipe(gulp.dest('./dist/'))
-        .pipe(livereload());
-});
+// gulp.task('pug', ['page-index','page-portfolio','page-students']);
+
+// gulp.task('page-index', function() {
+//     return gulp.src('pug/portfolio/index.html.jade')
+//         .pipe(plumber())
+//         .pipe(data( function(file){ return require('./data/index.json'); } ))
+//         .pipe(pug({ pretty: true }))
+//         .pipe(rename('index.html'))
+//         .pipe(gulp.dest('./dist/'))
+//         .pipe(livereload());
+// });
+
+// gulp.task('page-portfolio', function() {
+//     return gulp.src('pug/portfolio/portfolio.html.jade')
+//         .pipe(plumber())
+//         .pipe(data( function(file){ return require('./data/portfolio.json'); } ))
+//         .pipe(pug({ pretty: true }))
+//         .pipe(rename('portfolio.html'))
+//         .pipe(gulp.dest('./dist/'))
+//         .pipe(livereload());
+// });
+
+// gulp.task('page-students', function() {
+//     return gulp.src('pug/portfolio/portfolio.html.jade')
+//         .pipe(plumber())
+//         .pipe(data( function(file){ return require('./data/students.json'); } ))
+//         .pipe(pug({ pretty: true }))
+//         .pipe(rename('students.html'))
+//         .pipe(gulp.dest('./dist/'))
+//         .pipe(livereload());
+// });
 
 
 // Compile Sass
@@ -74,20 +87,21 @@ gulp.task('lint', function() {
 gulp.task('uglify', function () {
     return gulp.src('js/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('./dist/js/'))
         .pipe(ext_replace('.min.js', '.js'))
+        .pipe(gulp.dest('./dist/js/'))
         .pipe(livereload());
 });
 
-// // Concatenate & Minify JS
-// gulp.task('scripts', function() {
+// Concatenate & Minify JS
+// gulp.task('scripts', ['uglify'] function() {
 //     return gulp.src('js/*.js')
-//         .pipe(concat('all.js'))
-//         .pipe(gulp.dest('dist'))
-//         .pipe(rename('all.min.js'))
-//         .pipe(uglify())
+//         .pipe(concat('script.min.js'))
 //         .pipe(gulp.dest('dist'));
 // });
+
+
+
+
 
 // Connect server
 gulp.task('connect', function() {
@@ -102,7 +116,7 @@ gulp.task('connect', function() {
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch(['**/*.sass'], ['sass']);
-    gulp.watch(['**/*.jade'], ['pug']);
+    gulp.watch(['**/*.jade', '**/*.pug'], ['pug']);
     gulp.watch(['js/*.js'], ['lint', 'uglify']);
 });
 
