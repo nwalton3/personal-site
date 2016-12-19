@@ -2,6 +2,8 @@
 
 @import "shared/colors"
 
+$colorScheme: $scheme15
+
 @import "base/normalize"
 @import "base/h5bp"
 @import "base/prettify"
@@ -13,7 +15,6 @@
 @import "elements/tables"
 
 
-$colorScheme: $scheme4
 
 // General
 *, *:before, *:after
@@ -22,9 +23,12 @@ $colorScheme: $scheme4
 
 body
 	color: nth($colorScheme, 1)
-	background-color: nth($colorScheme, 3)
+	background-color: #fff
 
 header.main
 	border-top: 1px solid #fff
-	border-bottom: 1px solid nth($colorScheme, 5)
 	background: #fff
+	padding: 1em 5%
+
+article header
+	padding-top: 5em

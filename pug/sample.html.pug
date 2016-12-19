@@ -9,7 +9,7 @@ block content
 		header
 			h1 Custom Animation Easing in CSS and JavaScript
 
-			p.intro #[span.leader Many have suggested] that a good #[span.sc UI] style guide should contain a section on motion. #[em I agree.] It should have information about where animation should appear, as well as technical specs on duration and easing. Rachel Nabors has suggested that each project could really use a custom easing function to give it a distinct personality.
+			p.intro #[span.leader Many have suggested] that a good #[span.sc UI] style guide should contain a section on motion. #[em I agree.] It should have information about where animation should appear, as well as technical specs on duration and easing. Rachel Nabors has suggested that each project could really use a custom easing function to give it a distinct #[a(href="#hello") personality].
 
 			h2 CSS Easing is Easy
 
@@ -25,7 +25,7 @@ block content
 
 			p If you look at the visual representation of the cubic-bezier function, it seems that there must be some good way of translating it into a mathematical function that could then be written directly into a #[span.sc JS] easing function.
 
-			p I’ll define a #[span.sc JS] easing function as an algorithm that takes a decimal between 0 and 1 (progress in time) and outputs another decimal, the animation progress that should have taken place at that particular point in time. For example, a linear easing function would simply output the same number as the input, since the animation progress exactly mirrors the timing progress. An easeInOut function might look something like this:
+			p I’ll define a #[span.sc JS] easing function as an algorithm that takes a decimal between 0 and 1 (progress in time) and outputs another decimal, the animation progress that should have taken place at that particular point in time. For example, a linear easing function would simply output the same number as was input, since the animation progress exactly mirrors the timing progress. An easeInOut function might look something like this:
 
 			pre
 				| function easeInOut ( progress ) {

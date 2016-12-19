@@ -54,6 +54,17 @@ h1, h2, h3, h4, h5, h6
     font-weight: $font-bold-weight
     font-family: $font-bold
 
+h2, h3, h4
+  &:before
+    content: " "
+    display: block
+    position: absolute
+    width: 0.25em
+    height: 1em
+    background: nth($colorScheme, 4)
+    top: 0
+    left: -5.5%
+
 em, var
   font-family: $font-italic
   font-weight: $font-italic-weight
