@@ -1,33 +1,53 @@
 
-$family-3: "le-monde-courrier-std-2" // 400, 700, italic
-$family-4: "lemonde-courrier" // 400, 600, italic
 
-$family-5: "source-code-pro"
-$family-6: "t26-carbon"
-$family-7:  "inconsolata"
 
 // Base
-$font-base: $family-4
-$font-base-weight: 400
+%font-base
+  font-family: "lemonde-courrier"
+  font-weight: 400
 
 // Italic
-$font-italic: $family-3
-$font-italic-weight: 400
+%font-italic
+  font-family: "le-monde-courrier-std-2"
+  font-weight: 400
 
 // Bold
-$font-bold: $family-4
-$font-bold-weight: 600
+%font-bold
+  font-family: "lemonde-courrier"
+  font-weight: 600
+
+%font-mono
+  font-family: "inconsolata"
 
 // Small caps
-$font-sc: $family-3
-$font-sc-weight: 400
-$font-sc-transform: uppercase
-$font-sc-size: 0.85em
+%font-sc
+  text-transform: uppercase
+  font-family: "lemonde-courrier"
+  font-weight: 400
+  font-size: 0.85em
+  letter-spacing: 0.025em
 
-$font-mono: $family-7
+%font-headline
+  line-height: 1.1
+  color: #000
+
+// h1 - h3
+%font-headline-1
+  font-family: "kepler-std"
+  font-weight: 400
+  @extend %font-headline
+
+// h4
+%font-headline-2
+  font-family: "kepler-std-caption"
+  font-weight: 500
+  @extend %font-headline
+
+
+
 
 article
-  max-width: 42em
+  max-width: 34em
   margin: 0 5%
   line-height: 1.5
   padding-bottom: 3em
@@ -37,22 +57,33 @@ html, body
   width: 100%
   overflow-x: hidden
   font-size: 100%
-  font-family: $font-base
-  font-weight: $font-base-weight
+  @extend %font-base
 
 body, select, input, textarea
   color: #444
 
 article
-  font-size: 1.1875em
+  font-size: 1.4em
 
-h1, h2, h3, h4, h5, h6
-  font-family: $font-bold
-  font-weight: $font-bold-weight
-  line-height: 1.1
-  em
-    font-weight: $font-bold-weight
-    font-family: $font-bold
+h1, h2, h3
+  @extend %font-headline-1
+
+h1
+  font-size: 3.25em
+  line-height: 1.05
+h2
+  font-size: 2.25em
+h3
+  font-size: 1.75em
+  font-family: "kepler-std-caption"
+  font-style: italic
+  font-weight: 500
+h4
+  font-size: 1.25em
+  text-transform: uppercase
+  letter-spacing: 0.01em
+  @extend %font-headline-2
+
 
 h2, h3, h4
   &:before
@@ -66,30 +97,25 @@ h2, h3, h4
     left: -5.5%
 
 em, var
-  font-family: $font-italic
-  font-weight: $font-italic-weight
+  @extend %font-italic
 
 strong
-  font-family: $font-bold
-  font-weight: $font-bold-weight
+  @extend %font-bold
 
 code, pre
-  font-family: $font-mono
+  @extend %font-mono
 
 .sc, .leader
-  text-transform: $font-sc-transform
-  font-family: $font-sc
-  font-weight: $font-sc-weight
-  font-size: $font-sc-size
-  letter-spacing: 0.025em
+  @extend %font-sc
 
 p
+  margin: 1em 0
   .intro
     font-size: 1.1875em
     margin-bottom: 1.75em
   code
     font-size: 1.1em
-    color: magenta
+    color: nth($colorScheme, 4)
 
 
 

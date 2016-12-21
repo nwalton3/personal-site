@@ -15,9 +15,11 @@ block content
 
 			p This is pretty easy in #[span.sc CSS]. Whether you’re using transitions or animations, you can get custom easing with a cubic-bezier function. Lea Verou has even made it stupidly easy to generate and preview a cubic-bezier easing function at #[a(href="http://cubic-bezier.com") cubic-bezier.com].
 
-			h2 JS Easing is NOT
+			h3 JS Easing is Not
 
 			p If you’re heavy into animation—or even have a slight perfectionist tendency about it—you may find that within a project there are times when it makes sense to use #[span.sc CSS] animation, but other times when JavaScript animation works better. With such a nice #[span.sc CSS] easing function defined, it seems a shame not to apply that to the #[span.sc JS] animations as well.
+
+			h4 Take it from me
 
 			p #[em And you’d be right.]
 
@@ -25,7 +27,7 @@ block content
 
 			p If you look at the visual representation of the cubic-bezier function, it seems that there must be some good way of translating it into a mathematical function that could then be written directly into a #[span.sc JS] easing function.
 
-			p I’ll define a #[span.sc JS] easing function as an algorithm that takes a decimal between 0 and 1 (progress in time) and outputs another decimal, the animation progress that should have taken place at that particular point in time. For example, a linear easing function would simply output the same number as was input, since the animation progress exactly mirrors the timing progress. An easeInOut function might look something like this:
+			p I’ll define a #[span.sc JS] easing function as an algorithm that takes a decimal between 0 and 1 (progress in time) and outputs another decimal, the animation progress that should have taken place at that particular point in time. For example, a linear easing function would simply output the same number as was input, since the animation progress exactly mirrors the timing progress. An #[code easeInOut] function might look something like this:
 
 			pre
 				| function easeInOut ( progress ) {

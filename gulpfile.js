@@ -106,7 +106,7 @@ gulp.task('uglify', function () {
 // Connect server
 gulp.task('connect', function() {
   connect.server({
-    port: 9006,
+    port: 9007,
     root: 'dist'
   });
 });
