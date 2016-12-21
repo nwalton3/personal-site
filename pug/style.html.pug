@@ -1,0 +1,85 @@
+extends _layout
+
+append vars
+	-var page = {title: "Style"};
+
+
+mixin section(title)
+	hr
+	h2.sectionHead= title
+
+
+block content
+	h1 Atoms
+
+	//- **************** -//
+	+section('Headings')
+	h1 Heading 1
+	p Paragraph
+	h2 Heading 2
+	p Paragraph
+	h3 Heading 3
+	p Paragraph
+	h4 Heading 4
+	p Paragraph
+	h5 Heading 5
+	p Paragraph
+	h6 Heading 6
+	p Paragraph
+
+	//- **************** -//
+	+section('Text')
+	p Paragraph
+	pre Preformatted
+	blockquote Blockquote
+	address Address
+	p: em em
+	p: strong strong
+	p: dfn definition
+	p: code code
+	p: samp samp
+	p: kbd kbd
+	p: var variable
+	p: cite cite
+
+	//- **************** -//
+	+section('Lists')
+	ul
+		li Unordered list item
+		li Another
+		li Third
+			ul
+				li Nested
+				li Nested 2
+				li Nested 3
+					ul
+						li Nested again
+						li Nested again 2
+	ol
+		li Ordered list item
+		li Another
+		li Third
+			ol
+				li Nested
+				li Nested 2
+				li Nested 3
+					ol
+						li Nested again
+						li Nested again 2
+
+	dl
+		dt Definition term
+		dd Definition
+
+	//- **************** -//
+	+section('Tables')
+
+	//- **************** -//
+	+section('Forms')
+
+	//- **************** -//
+	+section('Links')
+
+	//- **************** -//
+	+section('Images')
+

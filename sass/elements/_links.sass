@@ -1,0 +1,26 @@
+@import '../shared/colors'
+
+$link-color: nth($colorScheme, 4)
+$hover-color: nth($colorScheme, 5)
+$visited-color: nth($colorScheme, 5)
+$active-color: nth($colorScheme, 5)
+
+/* Links */
+a, a:link
+	text-decoration: none
+	color: $link-color
+	text-decoration: none;
+	text-decoration: none;
+	transition: all 100ms ease
+	position: relative;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	background-image: linear-gradient(to top, $link-color 0px, $link-color 2px, rgba(0, 0, 0, 0) 2px);
+a:hover
+	color: $hover-color
+	background-image: linear-gradient(to top, $hover-color 0px, $hover-color 2px, rgba(0, 0, 0, 0) 2px);
+a:active
+	color: $active-color
+	background-image: linear-gradient(to top, $active-color 0px, $active-color 2px, rgba(0, 0, 0, 0) 2px);
+a:visited
+	color: $visited-color
+	background-image: linear-gradient(to top, $visited-color 0px, $visited-color 2px, rgba(0, 0, 0, 0) 2px);

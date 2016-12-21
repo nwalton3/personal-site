@@ -1,0 +1,1 @@
+!function(){"use strict";window.assets||(window.assets="/"),window.jsVersion||(window.jsVersion=1),document.createElement("picture"),Modernizr.load([{test:Modernizr.touch,nope:window.assets+"js/script.min.js?v="+window.jsVersion,yep:window.assets+"js/script-touch.min.js?v="+window.jsVersion}])}();

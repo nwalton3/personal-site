@@ -1,0 +1,1 @@
+!function(i){"use strict";i(function(){var e=i(window).width(),t=Math.floor(.16*e);t>150&&(t=150),t<50&&(t=50),i(".portfolio .project").swipe({swipeLeft:function(i,e,t,n,o){changeSlide()},swipeRight:function(i,e,t,n,o){changeSlide("prev")},triggerOnTouchEnd:!1,threshold:t})})}(jQuery);

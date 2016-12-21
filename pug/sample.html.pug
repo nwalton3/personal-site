@@ -1,0 +1,47 @@
+extends _layout
+
+append vars
+	-var page = {title: "Article"};
+
+block content
+
+	article
+		header
+			h1 Custom Animation Easing in CSS and JavaScript
+
+			p.intro #[span.leader Many have suggested] that a good #[span.sc UI] style guide should contain a section on motion. #[em I agree.] It should have information about where animation should appear, as well as technical specs on duration and easing. Rachel Nabors has suggested that each project could really use a custom easing function to give it a distinct #[a(href="#hello") personality].
+
+			h2 CSS Easing is Easy
+
+			p This is pretty easy in #[span.sc CSS]. Whether you’re using transitions or animations, you can get custom easing with a cubic-bezier function. Lea Verou has even made it stupidly easy to generate and preview a cubic-bezier easing function at #[a(href="http://cubic-bezier.com") cubic-bezier.com].
+
+			h3 JS Easing is Not
+
+			p If you’re heavy into animation—or even have a slight perfectionist tendency about it—you may find that within a project there are times when it makes sense to use #[span.sc CSS] animation, but other times when JavaScript animation works better. With such a nice #[span.sc CSS] easing function defined, it seems a shame not to apply that to the #[span.sc JS] animations as well.
+
+			h4 Take it from me
+
+			p #[em And you’d be right.]
+
+			p But you’d also be in for some major headaches.
+
+			p If you look at the visual representation of the cubic-bezier function, it seems that there must be some good way of translating it into a mathematical function that could then be written directly into a #[span.sc JS] easing function.
+
+			p I’ll define a #[span.sc JS] easing function as an algorithm that takes a decimal between 0 and 1 (progress in time) and outputs another decimal, the animation progress that should have taken place at that particular point in time. For example, a linear easing function would simply output the same number as was input, since the animation progress exactly mirrors the timing progress. An #[code easeInOut] function might look something like this:
+
+			pre
+				| function easeInOut ( progress ) {
+				|     if (progress < .5) {
+				|         return Math.pow(2 * progress, 2) / 2;
+				|     } else {
+				|         return (2 - Math.pow(2 * (1 - progress), 2)) / 2;
+				|     }
+				| }
+
+			p The curve for this function looks like this:
+
+			p [insert image here]
+
+			p It basically uses the the square of the input to ease the beginning and end of the animation. Fundamentally, I put in a number, and after some logic and math operations another number comes out.
+
+			p It seems like we should be able to do the same thing with our cubic-bezier function as well. But it’s actually not that easy. It turns out it’s really, really hard (perhaps impossible?) to put an #[code x] value in and get a #[code y] value out of a cubic-bezier function. This is because calculating the #[code x] and the #[code y] values takes separate functions, rather than a single function that could be reversed and reduced with algebra.

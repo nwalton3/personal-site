@@ -1,0 +1,151 @@
+
+
+
+// Base
+%font-base
+  font-family: "lemonde-courrier"
+  font-weight: 400
+
+// Italic
+%font-italic
+  font-family: "le-monde-courrier-std-2"
+  font-weight: 400
+
+// Bold
+%font-bold
+  font-family: "lemonde-courrier"
+  font-weight: 600
+
+%font-mono
+  font-family: "inconsolata"
+
+// Small caps
+%font-sc
+  text-transform: uppercase
+  font-family: "lemonde-courrier"
+  font-weight: 400
+  font-size: 0.85em
+  letter-spacing: 0.025em
+
+%font-headline
+  line-height: 1.1
+  color: #000
+
+// h1 - h3
+%font-headline-1
+  font-family: "kepler-std"
+  font-weight: 400
+  @extend %font-headline
+
+// h4
+%font-headline-2
+  font-family: "kepler-std-caption"
+  font-weight: 500
+  @extend %font-headline
+
+
+
+
+article
+  max-width: 34em
+  margin: 0 5%
+  line-height: 1.5
+  padding-bottom: 3em
+
+/*** Base tags ***/
+html, body
+  width: 100%
+  overflow-x: hidden
+  font-size: 100%
+  @extend %font-base
+
+body, select, input, textarea
+  color: #444
+
+article
+  font-size: 1.4em
+
+h1, h2, h3
+  @extend %font-headline-1
+
+h1
+  font-size: 3.25em
+  line-height: 1.05
+h2
+  font-size: 2.25em
+h3
+  font-size: 1.75em
+  font-family: "kepler-std-caption"
+  font-style: italic
+  font-weight: 500
+h4
+  font-size: 1.25em
+  text-transform: uppercase
+  letter-spacing: 0.01em
+  @extend %font-headline-2
+
+
+h2, h3, h4
+  &:before
+    content: " "
+    display: block
+    position: absolute
+    width: 0.25em
+    height: 1em
+    background: nth($colorScheme, 4)
+    top: 0
+    left: -5.5%
+
+em, var
+  @extend %font-italic
+
+strong
+  @extend %font-bold
+
+code, pre
+  @extend %font-mono
+
+.sc, .leader
+  @extend %font-sc
+
+p
+  margin: 1em 0
+  .intro
+    font-size: 1.1875em
+    margin-bottom: 1.75em
+  code
+    font-size: 1.1em
+    color: nth($colorScheme, 4)
+
+
+
+/* Blockquotes */
+blockquote  
+  margin: 1.5em 10px
+  padding: .5em 10px
+  color: #333
+  margin: 25px 20px 25px 0
+  padding: 3px 25px
+  position: relative
+
+blockquote:before  
+  color: #bbb
+  content: "\201C"
+  font-size: 3em
+  line-height: .1em
+  vertical-align: -.4em
+  display: block
+  position: absolute
+  top: 15px
+  left: 1px
+
+blockquote:after  
+  color: #bbb
+  content: "\201D"
+  font-size: 3em
+  line-height: .1em
+  vertical-align: -.45em
+
+blockquote:first-child  
+  display: inline
+

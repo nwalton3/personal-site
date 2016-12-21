@@ -1,0 +1,59 @@
+
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Nate Walton: Article</title>
+    <meta name="description" content="Nathan Walton's graphic design web site"/>
+    <meta name="keywords" content="design, responsive, web, web design, typography, portfolio, education, design education"/>
+    <meta name="viewport" content="width=device-width, , initial-scale=1"/>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="shortcut icon" href="favicon.ico?v=3"/>
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/style.css?v=0.1"/>
+    <!-- Scripts loaded via script loader. See notes in init.js file.-->
+    <!-- Typekit-->
+    <script src="https://use.typekit.net/jni4suj.js"></script>
+    <script>
+      try { Typekit.load({ async: true }); } catch(e){}
+      
+    </script>
+  </head>
+  <body>
+    <header class="main">
+      <h1> <a href="/">Nate Walton</a></h1>
+      <nav><a class="home" href="/">Home</a><a class="work" href="/portfolio.html">Work</a><a class="teaching" href="/students.html">Teaching</a>
+        <!-- a.contact(href="/contact" + extension) Find me-->
+      </nav>
+    </header>
+    <main>
+      <article>
+        <header>
+          <h1>Custom Animation Easing in CSS and JavaScript</h1>
+          <p class="intro"><span class="leader">Many have suggested</span> that a good <span class="sc">UI</span> style guide should contain a section on motion. <em>I agree.</em> It should have information about where animation should appear, as well as technical specs on duration and easing. Rachel Nabors has suggested that each project could really use a custom easing function to give it a distinct <a href="#hello">personality</a>.</p>
+          <h2>CSS Easing is Easy</h2>
+          <p>This is pretty easy in <span class="sc">CSS</span>. Whether you’re using transitions or animations, you can get custom easing with a cubic-bezier function. Lea Verou has even made it stupidly easy to generate and preview a cubic-bezier easing function at <a href="http://cubic-bezier.com">cubic-bezier.com</a>.</p>
+          <h3>JS Easing is Not</h3>
+          <p>If you’re heavy into animation—or even have a slight perfectionist tendency about it—you may find that within a project there are times when it makes sense to use <span class="sc">CSS</span> animation, but other times when JavaScript animation works better. With such a nice <span class="sc">CSS</span> easing function defined, it seems a shame not to apply that to the <span class="sc">JS</span> animations as well.</p>
+          <h4>Take it from me</h4>
+          <p><em>And you’d be right.</em></p>
+          <p>But you’d also be in for some major headaches.</p>
+          <p>If you look at the visual representation of the cubic-bezier function, it seems that there must be some good way of translating it into a mathematical function that could then be written directly into a <span class="sc">JS</span> easing function.</p>
+          <p>I’ll define a <span class="sc">JS</span> easing function as an algorithm that takes a decimal between 0 and 1 (progress in time) and outputs another decimal, the animation progress that should have taken place at that particular point in time. For example, a linear easing function would simply output the same number as was input, since the animation progress exactly mirrors the timing progress. An <code>easeInOut</code> function might look something like this:</p>
+          <pre>function easeInOut ( progress ) {
+    if (progress < .5) {
+        return Math.pow(2 * progress, 2) / 2;
+    } else {
+        return (2 - Math.pow(2 * (1 - progress), 2)) / 2;
+    }
+}</pre>
+          <p>The curve for this function looks like this:</p>
+          <p>[insert image here]</p>
+          <p>It basically uses the the square of the input to ease the beginning and end of the animation. Fundamentally, I put in a number, and after some logic and math operations another number comes out.</p>
+          <p>It seems like we should be able to do the same thing with our cubic-bezier function as well. But it’s actually not that easy. It turns out it’s really, really hard (perhaps impossible?) to put an <code>x</code> value in and get a <code>y</code> value out of a cubic-bezier function. This is because calculating the <code>x</code> and the <code>y</code> values takes separate functions, rather than a single function that could be reversed and reduced with algebra.</p>
+        </header>
+      </article>
+    </main>
+    <footer class="main"></footer>
+  </body>
+</html>

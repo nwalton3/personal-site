@@ -1,11 +1,19 @@
 /* style.sass */
 
+@import "shared/colors"
+
+$colorScheme: $scheme17
+
 @import "base/normalize"
 @import "base/h5bp"
-@import "base/basics"
-@import "typogrify"
-@import "shared/mixins"
-@import "variables"
+@import "base/prettify"
+
+@import "elements/text"
+@import "elements/lists"
+@import "elements/links"
+@import "elements/images"
+@import "elements/tables"
+
 
 
 // General
@@ -13,108 +21,10 @@
 	box-sizing: border-box
 	position: relative
 
-html
-	font-family: $sans-font-family
-	background-color: #000
+header.main
+	border-top: 1px solid #fff
+	background: #fff
+	padding: 1em 5%
 
-body
-	height: 100%
-
-
-html, body, .portfolio
-	max-height: 100%
-	overflow: visible
-
-img
-	max-width: 100%
-	max-height: 100%
-
-picture
-	display: block
-	min-height: 30em
-
-
-// Image loader
-
-%imageloader
-	height: 0
-	background-color: $yellow4
-	img
-		position: absolute
-		top: 0
-		left: 0
-		opacity: 1
-		transition: all 0.3s ease 0.1s
-	&.loading
-		img
-			opacity: 0
-		&:before
-			content: "\21BB"
-			color: $yellow3
-			opacity: 0.25
-			display: block
-			position: absolute
-			padding: 4px 10px
-			-webkit-animation: spin 1.5s infinite linear
-			-moz-animation:    spin 1.5s infinite linear
-			-ms-animation: 	   spin 1.5s infinite linear
-			animation: 		   spin 1.5s infinite linear
-		&:hover:before
-			text-decoration: none
-
-+spinner
-
-
-@import "header"
-@import "portfolio"
-@import "portfolio-intro"
-@import "portfolio-contents"
-@import "home"
-
-
-@media all and (max-width: 768px)
-	.slide 
-		position: absolute
-		width: 100%
-		max-width: 100%
-		.wrapper
-			&.imagewrapper, &.textwrapper
-				position: relative
-			&.buttonwrapper
-				display: none
-		&.intro .wrapper
-			margin-left: 5%
-			width: 90%
-		.infoinner
-			text-align: left
-			top: 15px
-			width: auto
-			padding-left: 5%
-			padding-right: 5%
-	.show-info .slide .image
-		padding-left: 0
-	#intro .projectlinks
-		width: 48%
-		margin-bottom: 0.5em
-		padding-bottom: 48% * 0.75
-
-@media all and (max-width: 550px)
-	header.main h1 a
-		width: 80px
-		overflow: hidden
-
-
-@media all and (max-width: 480px)
-	#intro .projectlinks
-		width: 90%
-		margin-left: 5%
-		margin-bottom: 0.75em
-		padding-bottom: 90% * 0.75
-
-@media all and (max-width: 375px)
-	header nav a.home
-		display: none
-
-
-
-
+article header
+	padding-top: 5em
