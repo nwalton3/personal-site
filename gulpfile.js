@@ -22,7 +22,7 @@ var ext_replace = require('gulp-ext-replace');
 
 // Compile Pug
 gulp.task( 'pug', function(){
-    return gulp.src(['./_pages/*.html.pug'])
+    return gulp.src(['./_pages/**/*.html.pug'])
         .pipe(plumber())
         .pipe(pug({
             pretty: true,

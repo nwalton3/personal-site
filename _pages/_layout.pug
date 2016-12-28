@@ -4,7 +4,7 @@ html.no-js(lang="en")
 			- var localEnv = true
 			- var cssVersion = 0.1
 			- var jsVersion = 0.1
-			- var assetBase = '';
+			- var assetBase = '/';
 
 			- var extension = localEnv ? '.html' : '';
 
@@ -21,7 +21,7 @@ html.no-js(lang="en")
 		link(rel='shortcut icon', href=assetBase + 'favicon.ico?v=3')
 
 		// Styles
-		link(rel='stylesheet', href=assetBase + 'css/style.css?v=' + cssVersion)
+		link(rel='stylesheet', href=assetBase + 'assets/style.css?v=' + cssVersion)
 
 		// Scripts loaded via script loader. See notes in init.js file.
 		//- script(type="text/javascript", src="//use.typekit.net/nyn3skg.js")
