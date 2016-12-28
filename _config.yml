@@ -32,6 +32,11 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - src
+  - package.json
+  - gulpfile.js
+  - README.md
 
 # Server Config options
 livereload: true     # You no longer need to include --livereload
