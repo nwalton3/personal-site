@@ -1,0 +1,43 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// @import "minima"
+
+/* style.sass */
+
+
+@import "shared/colors"
+
+$colorScheme: $scheme17
+
+@import "base/normalize"
+@import "base/h5bp"
+
+@import "vars"
+
+@import "base/syntax"
+
+@import "elements/text"
+@import "elements/lists"
+// @import "elements/links"
+@import "elements/images"
+@import "elements/tables"
+
+
+
+
+
+// General
+*, *:before, *:after
+	box-sizing: border-box
+	position: relative
+
+header.main
+	border-top: 1px solid #fff
+	background: #fff
+	padding: 1em 5%
+
+article header
+	padding-top: 5em

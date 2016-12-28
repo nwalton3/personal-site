@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Test post 2"
 date:   2016-12-28 07:21:15 -0700
 categories: jekyll update
 ---
@@ -16,6 +16,13 @@ def print_hi(name)
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+{% highlight javascript %}
+function hi( message ) {
+  var m = message;
+  console.log( m );
+}
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].

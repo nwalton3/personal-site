@@ -6,7 +6,7 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve --watch'. If you change this file, please restart the server process.
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -14,11 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: nkwalton.com
-email: your-email@domain.com
+email: nate@nkwalton.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Beautiful images and code.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: natewalton
@@ -26,9 +24,15 @@ github_username:  nwalton3
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
 theme: minima
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Server Config options
+livereload: true     # You no longer need to include --livereload
+# reload_port: 5678    # If you don't want to use the default port
