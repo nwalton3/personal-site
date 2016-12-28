@@ -1,0 +1,44 @@
+
+/* Fonts */
+
+// Base
+%font-base
+  font-family: "lemonde-courrier"
+  font-weight: 400
+
+// Italic
+%font-italic
+  font-family: "le-monde-courrier-std-2"
+  font-weight: 400
+
+// Bold
+%font-bold
+  font-family: "lemonde-courrier"
+  font-weight: 600
+
+%font-mono
+  font-family: "inconsolata"
+
+// Small caps
+%font-sc
+  text-transform: uppercase
+  font-family: "lemonde-courrier"
+  font-weight: 400
+  font-size: 0.85em
+  letter-spacing: 0.025em
+
+%font-headline
+  line-height: 1.1
+  color: #000
+
+// h1 - h3
+%font-headline-1
+  font-family: "kepler-std"
+  font-weight: 400
+  @extend %font-headline
+
+// h4
+%font-headline-2
+  font-family: "kepler-std-caption"
+  font-weight: 500
+  @extend %font-headline
